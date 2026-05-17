@@ -178,7 +178,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll(
-        '.problem-card, .solution-card, .advantage-card, .service-card, .process-step, .proof-card'
+        '.problem-card, .solution-card, .advantage-card, .featured-service-card, .secondary-service-item, .process-step, .proof-card'
     );
     
     animatedElements.forEach(el => {
@@ -218,8 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Add click handlers for service buttons
-    document.querySelectorAll('.service-card .btn-secondary').forEach(btn => {
+    // Service CTA buttons (except anchor links)
+    document.querySelectorAll('.featured-service-card .btn-secondary, .brizers-text .btn-secondary').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToForm();
