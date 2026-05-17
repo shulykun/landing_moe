@@ -1,0 +1,44 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node (локальный сервер, если используете)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editors & IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Cursor (локальные настройки сессии)
+.cursor/
+
+# Logs & temp
+*.log
+tmp/
+temp/
