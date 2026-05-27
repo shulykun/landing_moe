@@ -53,8 +53,9 @@ function handleFormSubmit(formId, formData) {
     // For now, we'll use a simple approach
     
     const data = {
-        area: formData.get('area'),
+        message: formData.get('message'),
         phone: formData.get('phone'),
+        fileName: formData.get('file')?.name || '',
         timestamp: new Date().toISOString(),
         source: 'landing_page'
     };
@@ -72,7 +73,7 @@ function handleFormSubmit(formId, formData) {
     // sendToCRM(data);
     
     // Option 4: Open WhatsApp with pre-filled message
-    const message = `Здравствуйте! Хочу получить расчет стоимости кондиционера.\nПлощадь помещения: ${data.area} м²\nТелефон: ${data.phone}`;
+    const message = `Здравствуйте! Хочу получить расчёт.\n${data.message}\nТелефон: ${data.phone}`;
     const whatsappUrl = `https://wa.me/79143350675?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
@@ -109,20 +110,18 @@ function showSuccessMessage(formId) {
 
 // Form validation
 function validateForm(form) {
-    const area = form.querySelector('input[name="area"]');
+    const message = form.querySelector('#message');
     const phone = form.querySelector('input[name="phone"]');
-    
+
     let isValid = true;
-    
-    // Validate area
-    if (!area.value || parseInt(area.value) < 10 || parseInt(area.value) > 500) {
-        area.style.borderColor = '#dc3545';
+
+    if (!message.value.trim()) {
+        message.style.borderColor = '#dc3545';
         isValid = false;
     } else {
-        area.style.borderColor = '#E0E0E0';
+        message.style.borderColor = '#E0E0E0';
     }
-    
-    // Validate phone
+
     const phoneValue = phone.value.replace(/\D/g, '');
     if (!phone.value || phoneValue.length < 11) {
         phone.style.borderColor = '#dc3545';
@@ -130,18 +129,17 @@ function validateForm(form) {
     } else {
         phone.style.borderColor = '#E0E0E0';
     }
-    
+
     return isValid;
 }
 
 // Scroll to form
 function scrollToForm() {
-    const finalCta = document.querySelector('.final-cta');
-    if (finalCta) {
-        finalCta.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // Focus on first input after scroll
+    const heroForm = document.getElementById('hero-form');
+    if (heroForm) {
+        heroForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
         setTimeout(() => {
-            const input = document.querySelector('#finalArea');
+            const input = document.querySelector('#area');
             if (input) {
                 input.focus();
             }
@@ -178,7 +176,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll(
-        '.problem-card, .solution-card, .advantage-card, .featured-service-card, .secondary-service-item, .process-step, .proof-card'
+        '.service-block-media img, .why-us-card, .lead-magnet, .telegram-mock, .expert-photo'
     );
     
     animatedElements.forEach(el => {
@@ -276,10 +274,90 @@ window.addEventListener('load', () => {
         const perfData = window.performance.timing;
         const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
         console.log('Page load time:', pageLoadTime, 'ms');
-        
+
         // Track page load time
         trackEvent('Performance', 'Page Load', Math.round(pageLoadTime));
     }
 });
+
+// Brand info data
+const brandInfo = {
+    tosot: {
+        name: 'TOSOT',
+        desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, расширенная гарантия до 5 лет.',
+        models: ['TOSOT TWH — настенная сплит-система', 'TOSOT TAC — кассетная серия', 'TOSOT TWD — канальный тип']
+    },
+    lessar: {
+        name: 'LESSAR',
+        desc: 'Надёжный бренд с широкой линейкой бытовых и коммерческих систем. Гарантия до 4 лет, доступная цена и стабильная работа.',
+        models: ['LS-HV — настенная серия', 'LS-MUV — мульти-сплит', 'LS-CUV — кассетная серия']
+    },
+    daikin: {
+        name: 'Daikin',
+        desc: 'Японский премиум-бренд. Инверторные технологии, низкий уровень шума и высокая энергоэффективность.',
+        models: ['Daikin FTXK — настенная серия', 'Daikin FTXM — премиум-линейка', 'Daikin FTKC — компактная серия']
+    },
+    mitsubishi: {
+        name: 'Mitsubishi Heavy',
+        desc: 'Японское качество для тех, кто ценит долговечность. Одни из самых надёжных кондиционеров на рынке.',
+        models: ['SRK-ZM — настенная серия', 'SRK-ZJ — премиум-линейка', 'FDT — кассетные системы']
+    },
+    toshiba: {
+        name: 'Toshiba',
+        desc: 'Японский бренд с богатой историей. Инверторные компрессоры, тихая работа и экономичность.',
+        models: ['RAS-BK — настенная серия', 'RAS-BKVG — с Wi-Fi', 'RAS-M10 — мульти-сплит']
+    },
+    kentatsu: {
+        name: 'Kentatsu',
+        desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов.',
+        models: ['KSGB — настенная серия', 'KSRC — кассетная серия', 'KSGT — канальный тип']
+    },
+    midea: {
+        name: 'Midea',
+        desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена.',
+        models: ['MSAG — настенная серия', 'MAB — мульти-сплит', 'MCA — кассетная серия']
+    },
+    fujitsu: {
+        name: 'Fujitsu',
+        desc: 'Японский бренд с фокусом на энергоэффективность и комфорт. Тихие и экономичные сплит-системы.',
+        models: ['ASYG — настенная серия', 'AOYG — наружные блоки', 'AUYG — канальные системы']
+    },
+    lg: {
+        name: 'LG',
+        desc: 'Корейский технологический гигант. Стильный дизайн, умное управление через приложение, тихая работа.',
+        models: ['LG S13EW — настенная серия', 'LG Dual Inverter — с двойным инвертором', 'LG Art Cool — дизайнерская серия']
+    }
+};
+
+function initBrandModal() {
+    const overlay = document.getElementById('brandModal');
+    const closeBtn = document.getElementById('brandModalClose');
+    if (!overlay) return;
+
+    document.querySelectorAll('.brand-tag').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const key = btn.dataset.brand;
+            const info = brandInfo[key];
+            if (!info) return;
+
+            document.getElementById('brandModalName').textContent = info.name;
+            document.getElementById('brandModalDesc').textContent = info.desc;
+            const modelsList = document.getElementById('brandModalModels');
+            modelsList.innerHTML = info.models.map(m => `<li>${m}</li>`).join('');
+
+            overlay.hidden = false;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => { overlay.hidden = true; });
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) overlay.hidden = true;
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !overlay.hidden) overlay.hidden = true;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initBrandModal);
 
 
