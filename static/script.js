@@ -282,82 +282,144 @@ window.addEventListener('load', () => {
 
 // Brand info data
 const brandInfo = {
+    energolux: {
+        name: 'ENERGOLUX',
+        desc: 'Современный бренд с расширенной гарантией 5 лет. Инверторные сплит-системы с функцией самоочистки, низким уровнем шума и управлением по Wi-Fi.',
+        models: [
+            { name: 'ENERGOLUX SAS', desc: 'Настенная сплит-система с инвертором. Класс A+++, Wi-Fi, ночной режим.' },
+            { name: 'ENERGOLUX SAM', desc: 'Мульти-сплит — до 4 внутренних блоков на один наружный.' },
+            { name: 'ENERGOLUX SAD', desc: 'Канальная серия для скрытой установки за подвесным потолком.' }
+        ],
+        link: 'https://energolux.ru.com/catalog/split-sistemy/'
+    },
     tosot: {
         name: 'TOSOT',
         desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, расширенная гарантия до 5 лет.',
-        models: ['TOSOT TWH — настенная сплит-система', 'TOSOT TAC — кассетная серия', 'TOSOT TWD — канальный тип']
+        models: [
+            { name: 'TOSOT TWH', desc: 'Настенная сплит-система с инверторным компрессором. Тихая работа, быстрое охлаждение.' },
+            { name: 'TOSOT TAC', desc: 'Кассетная серия для коммерческих помещений. Равномерное распределение воздуха.' },
+            { name: 'TOSOT TWD', desc: 'Канальный тип — скрытая установка за потолком. Идеален для ремонта.' }
+        ],
+        link: 'https://tosot.ru'
     },
     lessar: {
         name: 'LESSAR',
         desc: 'Надёжный бренд с широкой линейкой бытовых и коммерческих систем. Гарантия до 4 лет, доступная цена и стабильная работа.',
-        models: ['LS-HV — настенная серия', 'LS-MUV — мульти-сплит', 'LS-CUV — кассетная серия']
+        models: [
+            { name: 'LS-HV', desc: 'Настенная серия с Wi-Fi управлением. Класс энергоэффективности A++.' },
+            { name: 'LS-MUV', desc: 'Мульти-сплит система — до 5 внутренних блоков на один наружный.' },
+            { name: 'LS-CUV', desc: 'Кассетная серия для офисов и магазинов с функцией подмеса свежего воздуха.' }
+        ],
+        link: 'https://lessar.ru'
     },
     daikin: {
         name: 'Daikin',
         desc: 'Японский премиум-бренд. Инверторные технологии, низкий уровень шума и высокая энергоэффективность.',
-        models: ['Daikin FTXK — настенная серия', 'Daikin FTXM — премиум-линейка', 'Daikin FTKC — компактная серия']
+        models: [
+            { name: 'Daikin FTXK', desc: 'Настенная серия с трёхступенчатой очисткой воздуха и ночным режимом.' },
+            { name: 'Daikin FTXM', desc: 'Премиум-линейка с датчиком присутствия и интеллектуальным управлением.' },
+            { name: 'Daikin FTKC', desc: 'Компактная серия — минимальный внутренний блок, подходит для небольших комнат.' }
+        ],
+        link: 'https://www.daikin.ru'
     },
     mitsubishi: {
         name: 'Mitsubishi Heavy',
         desc: 'Японское качество для тех, кто ценит долговечность. Одни из самых надёжных кондиционеров на рынке.',
-        models: ['SRK-ZM — настенная серия', 'SRK-ZJ — премиум-линейка', 'FDT — кассетные системы']
+        models: [
+            { name: 'SRK-ZM', desc: 'Настенная серия с энергоэффективностью A+++ и фильтром Plasma Quad.' },
+            { name: 'SRK-ZJ', desc: 'Премиум-линейка с 3D-автоматикой и датчиком температуры в пульте.' },
+            { name: 'FDT', desc: 'Кассетные системы для коммерческих объектов с циркуляцией по всему помещению.' }
+        ],
+        link: 'https://www.mhi-machinery.co.jp'
     },
     toshiba: {
         name: 'Toshiba',
         desc: 'Японский бренд с богатой историей. Инверторные компрессоры, тихая работа и экономичность.',
-        models: ['RAS-BK — настенная серия', 'RAS-BKVG — с Wi-Fi', 'RAS-M10 — мульти-сплит']
+        models: [
+            { name: 'RAS-BK', desc: 'Настенная серия с ультразвуковым увлажнением и фильтром IAQ.' },
+            { name: 'RAS-BKVG', desc: 'Серия с Wi-Fi — управление через приложение из любой точки мира.' },
+            { name: 'RAS-M10', desc: 'Мульти-сплит до 4 комнат. Один наружный блок, до 4 внутренних.' }
+        ],
+        link: 'https://www.toshiba-aircon.com'
     },
     kentatsu: {
         name: 'Kentatsu',
-        desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов.',
-        models: ['KSGB — настенная серия', 'KSRC — кассетная серия', 'KSGT — канальный тип']
+        desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов. Гарантия 3 года.',
+        models: [
+            { name: 'KSGB', desc: 'Настенная серия с генератором кислорода и ионизатором воздуха.' },
+            { name: 'KSRC', desc: 'Кассетная серия для офисов — встроенный дренажный насос, низкий профиль.' },
+            { name: 'KSGT', desc: 'Канальный тип для скрытой установки — подача свежего воздуха.' }
+        ],
+        link: 'https://kentatsu.ru'
     },
     midea: {
         name: 'Midea',
-        desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена.',
-        models: ['MSAG — настенная серия', 'MAB — мульти-сплит', 'MCA — кассетная серия']
+        desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена. Гарантия 3 года.',
+        models: [
+            { name: 'MSAG', desc: 'Настенная серия с функцией самоочистки и режимом энергосбережения.' },
+            { name: 'MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.' },
+            { name: 'MCA', desc: 'Кассетная серия с автоматической заслонкой и таймером работы.' }
+        ],
+        link: 'https://www.midea.com'
     },
     fujitsu: {
         name: 'Fujitsu',
         desc: 'Японский бренд с фокусом на энергоэффективность и комфорт. Тихие и экономичные сплит-системы.',
-        models: ['ASYG — настенная серия', 'AOYG — наружные блоки', 'AUYG — канальные системы']
+        models: [
+            { name: 'ASYG', desc: 'Настенная серия с минимальным шумом 21 дБ и режимом «тихий сон».' },
+            { name: 'AOYG', desc: 'Наружные блоки с двухроторным компрессором — высокая надёжность.' },
+            { name: 'AUYG', desc: 'Канальные системы для скрытой установки с функцией подогрева.' }
+        ],
+        link: 'https://www.fujitsu-general.com'
     },
     lg: {
         name: 'LG',
         desc: 'Корейский технологический гигант. Стильный дизайн, умное управление через приложение, тихая работа.',
-        models: ['LG S13EW — настенная серия', 'LG Dual Inverter — с двойным инвертором', 'LG Art Cool — дизайнерская серия']
+        models: [
+            { name: 'LG S13EW', desc: 'Настенная серия с Dual Inverter — на 40% быстрее охлаждает и на 70% экономичнее.' },
+            { name: 'LG Dual Inverter', desc: 'С двойным инверторным компрессором — сверхтихая работа и долгий ресурс.' },
+            { name: 'LG Art Cool', desc: 'Дизайнерская серия с интерьерной панелью — кондиционер как элемент декора.' }
+        ],
+        link: 'https://www.lg.com'
     }
 };
 
-function initBrandModal() {
-    const overlay = document.getElementById('brandModal');
-    const closeBtn = document.getElementById('brandModalClose');
-    if (!overlay) return;
+function renderBrandShowcase(key) {
+    const info = brandInfo[key];
+    if (!info) return;
 
-    document.querySelectorAll('.brand-tag').forEach(btn => {
+    const showcase = document.getElementById('brandShowcase');
+    showcase.innerHTML = `
+        <p class="brand-showcase-desc">${info.desc}</p>
+        <div class="brand-showcase-grid">
+            ${info.models.map(m => `
+                <div class="brand-model-card">
+                    <h4>${m.name}</h4>
+                    <p>${m.desc}</p>
+                </div>
+            `).join('')}
+        </div>
+        <a href="${info.link}" target="_blank" rel="noopener noreferrer" class="brand-showcase-link">Перейти на сайт ${info.name} &rarr;</a>
+    `;
+}
+
+function initBrandSwitcher() {
+    const buttons = document.querySelectorAll('.brand-tag');
+    if (!buttons.length) return;
+
+    // Show first brand by default
+    const firstKey = buttons[0].dataset.brand;
+    renderBrandShowcase(firstKey);
+
+    buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const key = btn.dataset.brand;
-            const info = brandInfo[key];
-            if (!info) return;
-
-            document.getElementById('brandModalName').textContent = info.name;
-            document.getElementById('brandModalDesc').textContent = info.desc;
-            const modelsList = document.getElementById('brandModalModels');
-            modelsList.innerHTML = info.models.map(m => `<li>${m}</li>`).join('');
-
-            overlay.hidden = false;
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderBrandShowcase(btn.dataset.brand);
         });
-    });
-
-    closeBtn.addEventListener('click', () => { overlay.hidden = true; });
-    overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) overlay.hidden = true;
-    });
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !overlay.hidden) overlay.hidden = true;
     });
 }
 
-document.addEventListener('DOMContentLoaded', initBrandModal);
+document.addEventListener('DOMContentLoaded', initBrandSwitcher);
 
 

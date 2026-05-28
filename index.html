@@ -73,43 +73,31 @@
     <!-- 2. Продажа кондиционеров -->
     <section class="service-block install-block" id="sale">
         <div class="container">
-            <div class="service-block-inner">
-                <div class="service-block-media">
-                    <img src="images/montage_3.jpg" alt="Продажа кондиционеров Climate Hall" width="560" height="360" loading="lazy">
-                </div>
-                <div class="service-block-content">
-                    <h2 class="section-title section-title--left">Продажа кондиционеров</h2>
-                    <p class="service-block-lead">Подберём модель под площадь и задачи, поставим оборудование с гарантией производителя — от бытовых сплит-систем до коммерческих решений.</p>
-                    <div class="brand-tags" aria-label="Бренды">
-                        <button type="button" class="brand-tag" data-brand="tosot">TOSOT</button>
-                        <button type="button" class="brand-tag" data-brand="lessar">LESSAR</button>
-                        <button type="button" class="brand-tag" data-brand="daikin">Daikin</button>
-                        <button type="button" class="brand-tag" data-brand="mitsubishi">Mitsubishi Heavy</button>
-                        <button type="button" class="brand-tag" data-brand="toshiba">Toshiba</button>
-                        <button type="button" class="brand-tag" data-brand="kentatsu">Kentatsu</button>
-                        <button type="button" class="brand-tag" data-brand="midea">Midea</button>
-                        <button type="button" class="brand-tag" data-brand="fujitsu">Fujitsu</button>
-                        <button type="button" class="brand-tag" data-brand="lg">LG</button>
-                    </div>
-                    <ul class="service-features">
-                        <li>Официальный дилер — гарантия производителя до 5 лет (TOSOT), 4 года (LESSAR)</li>
-                        <li>Бытовые и коммерческие сплит-системы, в том числе с притоком воздуха</li>
-                        <li>Подлинное оборудование, помощь в подборе под бюджет</li>
-                    </ul>
-                    <button type="button" class="btn btn-secondary" onclick="scrollToForm()">Получить расчёт</button>
-                </div>
-            </div>
-        </div>
+            <h2 class="section-title">Продажа кондиционеров</h2>
+            <p class="section-lead">Подберём модель под площадь и задачи, поставим оборудование с гарантией производителя.</p>
 
-        <!-- Brand modal -->
-        <div class="brand-modal-overlay" id="brandModal" hidden>
-            <div class="brand-modal">
-                <button type="button" class="brand-modal-close" id="brandModalClose" aria-label="Закрыть">&times;</button>
-                <h3 class="brand-modal-name" id="brandModalName"></h3>
-                <p class="brand-modal-desc" id="brandModalDesc"></p>
-                <h4>Лучшие модели</h4>
-                <ul class="brand-modal-models" id="brandModalModels"></ul>
+            <div class="brand-tags" aria-label="Бренды">
+                <button type="button" class="brand-tag active" data-brand="energolux">ENERGOLUX</button>
+                <button type="button" class="brand-tag" data-brand="tosot">TOSOT</button>
+                <button type="button" class="brand-tag" data-brand="lessar">LESSAR</button>
+                <button type="button" class="brand-tag" data-brand="daikin">Daikin</button>
+                <button type="button" class="brand-tag" data-brand="mitsubishi">Mitsubishi Heavy</button>
+                <button type="button" class="brand-tag" data-brand="toshiba">Toshiba</button>
+                <button type="button" class="brand-tag" data-brand="kentatsu">Kentatsu</button>
+                <button type="button" class="brand-tag" data-brand="midea">Midea</button>
+                <button type="button" class="brand-tag" data-brand="fujitsu">Fujitsu</button>
+                <button type="button" class="brand-tag" data-brand="lg">LG</button>
             </div>
+
+            <div class="brand-showcase" id="brandShowcase">
+                <!-- Content filled by JS -->
+            </div>
+
+            <ul class="service-features sale-features">
+                <li>Официальный дилер — гарантия до 5 лет (ENERGOLUX, TOSOT), 4 года (LESSAR), 3 года (Kentatsu, Midea)</li>                <li>Бытовые и коммерческие сплит-системы, в том числе с притоком воздуха</li>
+                <li>Подлинное оборудование, помощь в подборе под бюджет</li>
+            </ul>
+            <button type="button" class="btn btn-secondary" onclick="scrollToForm()">Получить расчёт</button>
         </div>
     </section>
 
@@ -256,6 +244,16 @@
                     <h2 class="section-title section-title--left">Бризеры и рекуператоры</h2>
                     <p><strong>Бризер</strong> — компактная приточная установка: подаёт свежий воздух с улицы, очищает и подогревает его, не открывая окна зимой.</p>
                     <p>Продаём и устанавливаем бризеры и рекуператоры для квартир, домов и офисов. Подберём модель под площадь и задачи — от устранения духоты до постоянного притока чистого воздуха.</p>
+                    <div class="brizer-brands">
+                        <a href="https://tion.ru/" target="_blank" rel="noopener noreferrer" class="brizer-brand-card">
+                            <strong>ТИОН</strong>
+                            <span>Российский лидер приточной вентиляции. Тихие компактные бризеры с HEPA-фильтрами и климат-контролем.</span>
+                        </a>
+                        <a href="https://www.ballu.ru/catalog/tekhnika_dlya_doma_i_ofisa/ventilyatsiya_i_ochistka_vozdukha/pritochno-ochistitelnye_multikompleksy/seriya_ballu_oneair/" target="_blank" rel="noopener noreferrer" class="brizer-brand-card">
+                            <strong>Ballu OneAir</strong>
+                            <span>Приточно-очистительные мультивентиляторы. Очистка, подогрев и увлажнение воздуха в одном устройстве.</span>
+                        </a>
+                    </div>
                     <ul class="brizers-list">
                         <li>Приточная вентиляция без сквозняков</li>
                         <li>Многоступенчатая фильтрация</li>
