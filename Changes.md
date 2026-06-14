@@ -11,3 +11,19 @@
 
 5. Добавляем новый раздел установка кондиционеров где рассказываем об установке
 
+6. Добавь марки в раздел бризеров
+ТИОН https://tion.ru/
+
+Ballu
+https://www.ballu.ru/catalog/tekhnika_dlya_doma_i_ofisa/ventilyatsiya_i_ochistka_vozdukha/pritochno_ochistitelnye_multikompleksy/seriya_ballu_oneair/
+
+
+7. Еще пожалуйста добавь один бренд среди первых среди кондеров
+
+ENERGOLUX
+https://energolux.ru.com/catalog/split-sistemy/
+
+
+8. В информацию о бендах и гарантии добавь энерголюкс у него 5 лет тоже и кентатсу и мидея  у них три года
+
+9. В разделе Телеграм‑канал Climate Hall надо дополнить ссылку на мессенджер Макс https://max.ru/join/sl6iVfoDwWF3yfeYOX-5p98XSjidkRfma1rHktmBN5Q 

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kentatsu OMORI",
+    "desc": "Дизайнерский флагман с энергоэффективностью А+++, поворотными жалюзи на 180 градусов и глубоким фильтром очистки воздуха.",
+    "image": "https://kentatsurussia.ru/upload/resize_cache/iblock/7fd/1920_1920_1/73q79kqk2ztkk9qdy1r1hn5x21eksa4n.jpg"
+  },
+  {
+    "name": "Kentatsu SEMPAI",
+    "desc": "Инверторная сплит-система с биполярным ионизатором, низким уровнем шума от 20,5 дБ и технологией Easy Climate Pro.",
+    "image": "https://kentatsurussia.ru/upload/resize_cache/iblock/195/1920_1920_1/4yaifm4ex4beeh8fervorrp4xzlxz2v9.jpg"
+  },
+  {
+    "name": "Kentatsu OTARI",
+    "desc": "Инверторная сплит-система с функцией теплового насоса, обогрев до -25 °C и охлаждение до -15 °C.",
+    "image": "https://kentatsurussia.ru/upload/resize_cache/iblock/84d/1920_1920_1/r0tpe4t08rfsipys50ebwl9g518sorgp.jpg"
+  },
+  {
+    "name": "Kentatsu YUKI",
+    "desc": "Доступная инверторная сплит-система на хладагенте R32 с объёмным воздушным потоком 3D и компактным дизайном.",
+    "image": "https://kentatsurussia.ru/upload/resize_cache/iblock/572/1920_1920_1/js1badgc8arikhugauwi11x8kkbp3669.jpg"
+  }
+]

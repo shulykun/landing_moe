@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Daichi SIB",
+    "desc": "Базовая настенная инверторная сплит-система с энергоэффективностью класса A и тихой работой для комфортного климата в доме.",
+    "image": "https://daichi-aircon.com/upload/resize_cache/iblock/3ca/mq5s4bvaeb06nkb72fi3gbfagowx19de/800_800_1/Daichi_SIB25AVQS1R_1.png"
+  },
+  {
+    "name": "Daichi ATX",
+    "desc": "Настенная инверторная сплит-система с расширенным функционалом, Wi-Fi управлением и режимом обогрева до -25°C.",
+    "image": "https://daichi-aircon.com/upload/resize_cache/iblock/1b4/2d9rfh9op8c2kei02cx2e7f1xd9sshbj/800_800_1/catalog_banner.png"
+  },
+  {
+    "name": "Daichi ACE",
+    "desc": "Продвинутая настенная сплит-система с функцией притока свежего воздуха и многоступенчатой фильтрацией для здорового микроклимата.",
+    "image": "https://daichi-aircon.com/upload/resize_cache/iblock/e8c/0ngiz03sn6d6qqxtda0opp4avpdtf2xc/800_800_1/catalog_1.png"
+  },
+  {
+    "name": "Daichi Elegant",
+    "desc": "Стильная настенная сплит-система с элегантным дизайном, низким уровнем шума от 19 дБ и управлением через приложение Daichi Comfort.",
+    "image": "https://daichi-aircon.com/upload/resize_cache/iblock/ff8/dpx4i867haid07iqum1yjl9q20n5iaip/800_800_1/catalog_2.png"
+  }
+]

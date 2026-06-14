@@ -1,3 +1,109 @@
+// Yandex Metrika — virtual pageviews
+(function() {
+    function hit(url) {
+        if (typeof ym === 'function') {
+            ym(109687297, 'hit', url);
+        }
+    }
+
+    // --- Навигация (меню) ---
+    document.querySelectorAll('.site-nav a').forEach(function(a) {
+        a.addEventListener('click', function() {
+            hit('/nav/' + a.textContent.trim().toLowerCase().replace(/\s+/g, '-'));
+        });
+    });
+
+    // --- CTA-кнопки (data-modal) ---
+    document.querySelectorAll('[data-modal]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            hit('/cta/' + btn.textContent.trim().toLowerCase().replace(/\s+/g, '-'));
+        });
+    });
+
+    // --- Кнопка Расчёт в навигации ---
+    var navCta = document.querySelector('.site-nav-cta');
+    if (navCta) {
+        navCta.addEventListener('click', function() {
+            hit('/nav/raschet');
+        });
+    }
+
+    // --- Hero мобильный CTA ---
+    var heroCta = document.querySelector('.hero-cta-mobile');
+    if (heroCta) {
+        heroCta.addEventListener('click', function() {
+            hit('/cta/hero-mobile-raschet');
+        });
+    }
+
+    // --- Бренды (клик по тегу) ---
+    document.querySelectorAll('.brand-tag').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            hit('/brand/' + btn.dataset.brand);
+        });
+    });
+
+    // --- Ссылка на сайт бренда ---
+    document.addEventListener('click', function(e) {
+        var link = e.target.closest('.brand-showcase-link');
+        if (link) {
+            var brandName = link.textContent.replace(/[^\w\s]/g, '').trim().split(' ').pop().toLowerCase();
+            hit('/brand/' + brandName + '/site');
+        }
+    });
+
+    // --- Telegram ---
+    document.querySelectorAll('a[href*="t.me/climate_hall"]').forEach(function(a) {
+        a.addEventListener('click', function() {
+            hit('/social/telegram');
+        });
+    });
+
+    // --- МАКС ---
+    document.querySelectorAll('a[href*="max.ru"]').forEach(function(a) {
+        a.addEventListener('click', function() {
+            hit('/social/maks');
+        });
+    });
+
+    // --- WhatsApp ---
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(a) {
+        a.addEventListener('click', function() {
+            hit('/social/whatsapp');
+        });
+    });
+
+    // --- Кнопка «Что входит в мойку» ---
+    var washBtn = document.querySelector('a[href="#maintenance-detail"]');
+    if (washBtn) {
+        washBtn.addEventListener('click', function() {
+            hit('/cta/chto-vhodit-v-moyku');
+        });
+    }
+
+    // --- Форма отправлена ---
+    document.addEventListener('submit', function(e) {
+        var formId = e.target.id || 'unknown';
+        hit('/form/submit/' + formId);
+    });
+})();
+
+// Sticky header: hide logo on scroll
+(function() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                header.classList.toggle('scrolled', window.scrollY > 60);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+})();
+
 // Phone mask
 function initPhoneMask() {
     const phoneInputs = document.querySelectorAll('input[type="tel"]');
@@ -49,39 +155,43 @@ function initPhoneMask() {
 
 // Form submission handler
 function handleFormSubmit(formId, formData) {
-    // Here you can integrate with your backend, CRM, or email service
-    // For now, we'll use a simple approach
-    
-    const data = {
-        message: formData.get('message'),
-        phone: formData.get('phone'),
-        fileName: formData.get('file')?.name || '',
-        timestamp: new Date().toISOString(),
-        source: 'landing_page'
-    };
-    
-    // Log to console (replace with actual API call)
-    console.log('Form submission:', data);
-    
-    // Option 1: Send to Telegram bot (if you have one)
-    // sendToTelegram(data);
-    
-    // Option 2: Send email
-    // sendEmail(data);
-    
-    // Option 3: Send to CRM
-    // sendToCRM(data);
-    
-    // Option 4: Open WhatsApp with pre-filled message
-    const message = `Здравствуйте! Хочу получить расчёт.\n${data.message}\nТелефон: ${data.phone}`;
-    const whatsappUrl = `https://wa.me/79143350675?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-    
-    // Show success message
-    showSuccessMessage(formId);
-    
-    // Reset form
-    document.getElementById(formId).reset();
+    const formEl = document.getElementById(formId);
+    if (!formEl) return;
+
+    const phone = formData.get('phone') || '';
+    const message = formData.get('message') || '';
+    const fileInput = formData.get('file');
+
+    // Собираем данные для отправки
+    const payload = new FormData();
+    payload.append('phone', phone);
+    payload.append('message', message);
+    payload.append('page', window.location.href);
+    if (fileInput && fileInput.name) {
+        payload.append('file', fileInput);
+    }
+
+    // Отправка на свой PHP-обработчик
+    fetch('sendmail.php', {
+        method: 'POST',
+        body: payload
+    })
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+        if (data.success) {
+            showSuccessMessage(formId);
+        } else {
+            alert('Ошибка отправки: ' + (data.error || 'попробуйте позже'));
+        }
+    })
+    .catch(function(err) {
+        console.error('Send error:', err);
+        // Фолбэк: открыть WhatsApp
+        var msg = 'Здравствуйте! Хочу получить расчёт.\n' + message + '\nТелефон: ' + phone;
+        window.open('https://wa.me/79143350675?text=' + encodeURIComponent(msg), '_blank');
+    });
+
+    formEl.reset();
 }
 
 // Show success message
@@ -134,18 +244,76 @@ function validateForm(form) {
 }
 
 // Scroll to form
-function scrollToForm() {
-    const heroForm = document.getElementById('hero-form');
-    if (heroForm) {
-        heroForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setTimeout(() => {
-            const input = document.querySelector('#area');
-            if (input) {
-                input.focus();
-            }
-        }, 500);
+// Modal form
+(function() {
+    const overlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const closeBtn = document.getElementById('modalClose');
+    const modalForm = document.getElementById('modalForm');
+    if (!overlay) return;
+
+    function openModal(title) {
+        if (modalTitle) modalTitle.textContent = title || 'Получить расчёт';
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        const phoneInput = document.getElementById('modal-phone');
+        if (phoneInput) setTimeout(function() { phoneInput.focus(); }, 300);
     }
-}
+
+    function closeModal() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        if (modalForm) modalForm.reset();
+    }
+
+    // Close on overlay click
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeModal();
+    });
+
+    // Close on × button
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+    });
+
+    // CTA buttons — open modal with button text as title
+    document.querySelectorAll('[data-modal]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            openModal(btn.textContent.trim());
+        });
+    });
+
+    // Nav "Расчёт" link
+    var navCta = document.querySelector('.site-nav-cta');
+    if (navCta) {
+        navCta.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(navCta.textContent.trim());
+        });
+    }
+
+    // Hero mobile CTA
+    var heroCta = document.querySelector('.hero-cta-mobile');
+    if (heroCta) {
+        heroCta.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(heroCta.textContent.trim());
+        });
+    }
+
+    // Modal form submit
+    if (modalForm) {
+        modalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(modalForm);
+            handleFormSubmit('modalForm', formData);
+            closeModal();
+        });
+    }
+})();
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -220,7 +388,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.featured-service-card .btn-secondary, .brizers-text .btn-secondary').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            scrollToForm();
+            const overlay = document.getElementById('modalOverlay');
+            const modalTitle = document.getElementById('modalTitle');
+            if (overlay) {
+                if (modalTitle) modalTitle.textContent = btn.textContent.trim();
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         });
     });
 });
@@ -286,19 +460,20 @@ const brandInfo = {
         name: 'ENERGOLUX',
         desc: 'Современный бренд с расширенной гарантией 5 лет. Инверторные сплит-системы с функцией самоочистки, низким уровнем шума и управлением по Wi-Fi.',
         models: [
-            { name: 'ENERGOLUX SAS', desc: 'Настенная сплит-система с инвертором. Класс A+++, Wi-Fi, ночной режим.' },
-            { name: 'ENERGOLUX SAM', desc: 'Мульти-сплит — до 4 внутренних блоков на один наружный.' },
-            { name: 'ENERGOLUX SAD', desc: 'Канальная серия для скрытой установки за подвесным потолком.' }
+            { name: 'ENERGOLUX SAS', desc: 'Настенная сплит-система с инвертором. Класс A+++, Wi-Fi, ночной режим.', image: 'static/images/brands/energolux_sas.png' },
+            { name: 'ENERGOLUX SAM', desc: 'Мульти-сплит — до 4 внутренних блоков на один наружный.', image: 'static/images/brands/energolux_sam.png' },
+            { name: 'ENERGOLUX SAD', desc: 'Канальная серия для скрытой установки за подвесным потолком.', image: 'static/images/brands/energolux_sad.png' }
         ],
         link: 'https://energolux.ru.com/catalog/split-sistemy/'
     },
     tosot: {
         name: 'TOSOT',
-        desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, расширенная гарантия до 5 лет.',
+        desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, гарантия до 5 лет.',
         models: [
-            { name: 'TOSOT TWH', desc: 'Настенная сплит-система с инверторным компрессором. Тихая работа, быстрое охлаждение.' },
-            { name: 'TOSOT TAC', desc: 'Кассетная серия для коммерческих помещений. Равномерное распределение воздуха.' },
-            { name: 'TOSOT TWD', desc: 'Канальный тип — скрытая установка за потолком. Идеален для ремонта.' }
+            { name: 'TOSOT Clivia DELUXE', desc: 'Флагман с адаптивным ИИ и энергоэффективностью A+++.', image: 'static/images/brands/tosot_clivia.png' },
+            { name: 'TOSOT Synergy', desc: 'Премиальный тепловой насос с эксклюзивным дизайном, A+++.', image: 'static/images/brands/tosot_synergy.png' },
+            { name: 'TOSOT Lyra X', desc: 'Новое поколение популярной LYRA — классический дизайн, актуальные характеристики.', image: 'static/images/brands/tosot_lyra.png' },
+            { name: 'TOSOT Natal Инвертор', desc: 'Базовая инверторная модель 2024 года с полным набором технологий.', image: 'static/images/brands/tosot_natal.png' }
         ],
         link: 'https://tosot.ru'
     },
@@ -306,81 +481,55 @@ const brandInfo = {
         name: 'LESSAR',
         desc: 'Надёжный бренд с широкой линейкой бытовых и коммерческих систем. Гарантия до 4 лет, доступная цена и стабильная работа.',
         models: [
-            { name: 'LS-HV', desc: 'Настенная серия с Wi-Fi управлением. Класс энергоэффективности A++.' },
-            { name: 'LS-MUV', desc: 'Мульти-сплит система — до 5 внутренних блоков на один наружный.' },
-            { name: 'LS-CUV', desc: 'Кассетная серия для офисов и магазинов с функцией подмеса свежего воздуха.' }
+            { name: 'LESSAR Stella', desc: 'Флагманская серия с элегантным дизайном и расширенным функционалом.', image: 'static/images/brands/lessar_stella.png' },
+            { name: 'LESSAR Tiger', desc: 'Высокая энергоэффективность, быстрое охлаждение и обогрев.', image: 'static/images/brands/lessar_tiger.jpg' },
+            { name: 'LESSAR Ego', desc: 'Компактный внутренний блок и тихая работа для домашнего использования.', image: 'static/images/brands/lessar_ego.webp' },
+            { name: 'LESSAR Flexcool', desc: 'Универсальная серия с гибкими настройками для дома и малого бизнеса.', image: 'static/images/brands/lessar_flexcool.webp' }
         ],
         link: 'https://lessar.ru'
     },
-    daikin: {
-        name: 'Daikin',
-        desc: 'Японский премиум-бренд. Инверторные технологии, низкий уровень шума и высокая энергоэффективность.',
+    dahaci: {
+        name: 'Dahaci',
+        desc: 'Современный бренд с широким ассортиментом бытовых и полупромышленных кондиционеров. Отличное соотношение цены и качества.',
         models: [
-            { name: 'Daikin FTXK', desc: 'Настенная серия с трёхступенчатой очисткой воздуха и ночным режимом.' },
-            { name: 'Daikin FTXM', desc: 'Премиум-линейка с датчиком присутствия и интеллектуальным управлением.' },
-            { name: 'Daikin FTKC', desc: 'Компактная серия — минимальный внутренний блок, подходит для небольших комнат.' }
+            { name: 'Dahaci DOMI', desc: 'Инверторная настенная сплит-система с Wi-Fi, класс A+++, шум от 22 дБ.', image: '' },
+            { name: 'Dahaci HERO', desc: 'Настенная инверторная сплит-система с самоочисткой и обогревом до -25°C.', image: '' },
+            { name: 'Dahaci RAY', desc: 'Базовая настенная сплит-система на хладагенте R32, тихая и экономичная.', image: '' }
         ],
-        link: 'https://www.daikin.ru'
-    },
-    mitsubishi: {
-        name: 'Mitsubishi Heavy',
-        desc: 'Японское качество для тех, кто ценит долговечность. Одни из самых надёжных кондиционеров на рынке.',
-        models: [
-            { name: 'SRK-ZM', desc: 'Настенная серия с энергоэффективностью A+++ и фильтром Plasma Quad.' },
-            { name: 'SRK-ZJ', desc: 'Премиум-линейка с 3D-автоматикой и датчиком температуры в пульте.' },
-            { name: 'FDT', desc: 'Кассетные системы для коммерческих объектов с циркуляцией по всему помещению.' }
-        ],
-        link: 'https://www.mhi-machinery.co.jp'
-    },
-    toshiba: {
-        name: 'Toshiba',
-        desc: 'Японский бренд с богатой историей. Инверторные компрессоры, тихая работа и экономичность.',
-        models: [
-            { name: 'RAS-BK', desc: 'Настенная серия с ультразвуковым увлажнением и фильтром IAQ.' },
-            { name: 'RAS-BKVG', desc: 'Серия с Wi-Fi — управление через приложение из любой точки мира.' },
-            { name: 'RAS-M10', desc: 'Мульти-сплит до 4 комнат. Один наружный блок, до 4 внутренних.' }
-        ],
-        link: 'https://www.toshiba-aircon.com'
+        link: 'https://dahaci.biz'
     },
     kentatsu: {
         name: 'Kentatsu',
         desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов. Гарантия 3 года.',
         models: [
-            { name: 'KSGB', desc: 'Настенная серия с генератором кислорода и ионизатором воздуха.' },
-            { name: 'KSRC', desc: 'Кассетная серия для офисов — встроенный дренажный насос, низкий профиль.' },
-            { name: 'KSGT', desc: 'Канальный тип для скрытой установки — подача свежего воздуха.' }
+            { name: 'Kentatsu OMORI', desc: 'Дизайнерский флагман с A+++, жалюзи 180° и глубоким фильтром очистки.', image: '' },
+            { name: 'Kentatsu SEMPAI', desc: 'Биполярный ионизатор, шум от 20,5 дБ, технология Easy Climate Pro.', image: '' },
+            { name: 'Kentatsu OTARI', desc: 'Тепловой насос: обогрев до -25°C, охлаждение до -15°C.', image: '' },
+            { name: 'Kentatsu YUKI', desc: 'Доступная инверторная серия на R32 с 3D потоком и компактным дизайном.', image: '' }
         ],
-        link: 'https://kentatsu.ru'
+        link: 'https://kentatsurussia.ru/catalog/konditsionirovanie/'
+    },
+    daichi: {
+        name: 'Daichi',
+        desc: 'Российский бренд с собственной линейкой климатического оборудования. Комфорт и ничего лишнего.',
+        models: [
+            { name: 'Daichi SIB', desc: 'Базовая инверторная сплит-система с энергоэффективностью класса A.', image: '' },
+            { name: 'Daichi ATX', desc: 'Расширенный функционал, Wi-Fi и режим обогрева до -25°C.', image: '' },
+            { name: 'Daichi ACE', desc: 'Приток свежего воздуха и многоступенчатая фильтрация для здорового микроклимата.', image: '' },
+            { name: 'Daichi Elegant', desc: 'Элегантный дизайн, шум от 19 дБ, управление через приложение Daichi Comfort.', image: '' }
+        ],
+        link: 'https://daichi-aircon.com/catalog/'
     },
     midea: {
         name: 'Midea',
         desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена. Гарантия 3 года.',
         models: [
-            { name: 'MSAG', desc: 'Настенная серия с функцией самоочистки и режимом энергосбережения.' },
-            { name: 'MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.' },
-            { name: 'MCA', desc: 'Кассетная серия с автоматической заслонкой и таймером работы.' }
+            { name: 'Midea MSAG', desc: 'Настенная серия с функцией самоочистки, энергосбережением и Wi-Fi.', image: '' },
+            { name: 'Midea Blanc', desc: 'Инверторная настенная серия с элегантным дизайном и режимом Turbo.', image: '' },
+            { name: 'Midea MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.', image: '' },
+            { name: 'Midea U-Shaped', desc: 'Инновационная U-образная серия с ультратихим инверторным компрессором.', image: '' }
         ],
-        link: 'https://www.midea.com'
-    },
-    fujitsu: {
-        name: 'Fujitsu',
-        desc: 'Японский бренд с фокусом на энергоэффективность и комфорт. Тихие и экономичные сплит-системы.',
-        models: [
-            { name: 'ASYG', desc: 'Настенная серия с минимальным шумом 21 дБ и режимом «тихий сон».' },
-            { name: 'AOYG', desc: 'Наружные блоки с двухроторным компрессором — высокая надёжность.' },
-            { name: 'AUYG', desc: 'Канальные системы для скрытой установки с функцией подогрева.' }
-        ],
-        link: 'https://www.fujitsu-general.com'
-    },
-    lg: {
-        name: 'LG',
-        desc: 'Корейский технологический гигант. Стильный дизайн, умное управление через приложение, тихая работа.',
-        models: [
-            { name: 'LG S13EW', desc: 'Настенная серия с Dual Inverter — на 40% быстрее охлаждает и на 70% экономичнее.' },
-            { name: 'LG Dual Inverter', desc: 'С двойным инверторным компрессором — сверхтихая работа и долгий ресурс.' },
-            { name: 'LG Art Cool', desc: 'Дизайнерская серия с интерьерной панелью — кондиционер как элемент декора.' }
-        ],
-        link: 'https://www.lg.com'
+        link: 'https://air-midea.com/'
     }
 };
 
@@ -394,6 +543,7 @@ function renderBrandShowcase(key) {
         <div class="brand-showcase-grid">
             ${info.models.map(m => `
                 <div class="brand-model-card">
+                    ${m.image ? `<img src="${m.image}" alt="${m.name}" class="brand-model-img" loading="lazy">` : ''}
                     <h4>${m.name}</h4>
                     <p>${m.desc}</p>
                 </div>

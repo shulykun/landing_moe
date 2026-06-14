@@ -1,0 +1,22 @@
+[
+  {
+    "name": "TOSOT Clivia DELUXE",
+    "desc": "Флагман TOSOT — топовый кондиционер с адаптивным искусственным интеллектом и наивысшим классом энергоэффективности A+++.",
+    "image": "https://tosot.ru/local/templates/adapt/images/CliviaDelux.png"
+  },
+  {
+    "name": "TOSOT Synergy",
+    "desc": "Премиальный тепловой насос с эксклюзивным дизайном и энергоэффективностью A+++.",
+    "image": "https://tosot.ru/local/templates/adapt/images/Synergy.png"
+  },
+  {
+    "name": "TOSOT Lyra X",
+    "desc": "Следующее поколение популярной модели LYRA — совершенно новый кондиционер в классическом дизайне с актуальными техническими характеристиками.",
+    "image": "https://tosot.ru/local/templates/adapt/images/Lyra.png"
+  },
+  {
+    "name": "TOSOT Natal Инвертор",
+    "desc": "Базовая инверторная модель 2024 года, воплотившая в себе все преимущества инверторных технологий.",
+    "image": "https://tosot.ru/local/templates/adapt/images/natal.png"
+  }
+]
