@@ -104,6 +104,17 @@
     });
 })();
 
+// Dynamically set brand-tags sticky top to match header height
+(function() {
+    const header = document.querySelector('.site-header');
+    const tags = document.querySelector('.brand-tags');
+    if (!header || !tags) return;
+    const ro = new ResizeObserver(function() {
+        tags.style.top = header.offsetHeight + 'px';
+    });
+    ro.observe(header);
+})();
+
 // Phone mask
 function initPhoneMask() {
     const phoneInputs = document.querySelectorAll('input[type="tel"]');
