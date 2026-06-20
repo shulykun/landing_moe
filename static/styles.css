@@ -554,6 +554,17 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
+.brand-tags-bottom {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    position: static;
+    top: auto;
+    z-index: auto;
+    background: transparent;
+    padding: 0;
+    border-bottom: none;
+}
+
 .sale-features {
     margin-bottom: 2rem;
 }

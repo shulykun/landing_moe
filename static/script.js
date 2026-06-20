@@ -566,18 +566,23 @@ function renderBrandShowcase(key) {
 }
 
 function initBrandSwitcher() {
-    const buttons = document.querySelectorAll('.brand-tag');
-    if (!buttons.length) return;
+    const allButtons = document.querySelectorAll('.brand-tag');
+    if (!allButtons.length) return;
 
     // Show first brand by default
-    const firstKey = buttons[0].dataset.brand;
-    renderBrandShowcase(firstKey);
+    renderBrandShowcase(allButtons[0].dataset.brand);
 
-    buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderBrandShowcase(btn.dataset.brand);
+    // Event delegation on both brand-tag containers
+    document.querySelectorAll('.brand-tags').forEach(container => {
+        container.addEventListener('click', function(e) {
+            const btn = e.target.closest('.brand-tag');
+            if (!btn) return;
+            const brand = btn.dataset.brand;
+            // Sync active state across ALL buttons (top + bottom)
+            document.querySelectorAll('.brand-tag').forEach(b => {
+                b.classList.toggle('active', b.dataset.brand === brand);
+            });
+            renderBrandShowcase(brand);
         });
     });
 }
