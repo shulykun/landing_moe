@@ -503,9 +503,9 @@ const brandInfo = {
         name: 'Dahaci',
         desc: 'Надёжные инверторные сплит-системы с расширенной гарантией. От премиум-моделей с Wi-Fi до экономичных решений — оптимальное соотношение цены и качества.',
         models: [
-            { name: '🏆 Dahaci NiceME — Премиум', desc: 'Инверторная настенная сплит-система с Wi-Fi, класс A, шум от 22 дБ<br><br>• Модель: DI09CNM-D / DO09CNM-D (9K BTU, до 26 м²)<br>• Инверторный компрессор GMCC<br>• Управление со смартфона через Wi-Fi<br>• Энергоэффективность: класс A<br>• Уровень шума: от 22 дБ<br>• Хладагент: R410A', image: 'static/images/brands/dahaci/niceme.png' },
-            { name: '❄️🔥 Dahaci NiceME DNM-F — Всесезонный', desc: 'Инверторная настенная сплит-система с самоочисткой, обогрев до -20°C<br><br>• Модель: DI09DNM-F / DO09DNM-F (9K BTU, до 26 м²)<br>• Инвертор<br>• Функция самоочистки (i-Clean)<br>• Работа на обогрев до -20°C<br>• Хладагент: R32 (экологичный)<br><br>⚠️ В реальности обогрев до -20°C, не -25°C', image: 'static/images/brands/dahaci/niceme_dnm.png' },
-            { name: '💵 Dahaci FreshME — Эконом', desc: 'Базовая настенная сплит-система на хладагенте R32, тихая и экономичная<br><br>• Модель: DI09BFM-D / DO09BFM-D (9K BTU, до 25 м²)<br>• Постоянная производительность (on/off)<br>• Хладагент: R32<br>• Класс энергоэффективности: A<br>• Тихая работа', image: 'static/images/brands/dahaci/freshme.png' }
+            { name: '🏆 Dahaci NiceME — Премиум', desc: 'Инверторная сплит-система с Wi-Fi • Компрессор GMCC • Класс A • Шум от 22 дБ • До 26 м² • R410A', image: 'static/images/brands/dahaci/niceme.png' },
+            { name: '❄️🔥 Dahaci NiceME DNM-F — Всесезонный', desc: 'Инверторная сплит-система • Самоочистка i-Clean • Обогрев до -20°C • До 26 м² • R32<br><br>⚠️ Обогрев до -20°C, не -25°C', image: 'static/images/brands/dahaci/niceme_dnm.png' },
+            { name: '💵 Dahaci FreshME — Эконом', desc: 'Базовая on/off сплит-система • Класс A • Тихая работа • До 25 м² • R32', image: 'static/images/brands/dahaci/freshme.png' }
         ],
         link: 'https://dahaci.biz'
     },
