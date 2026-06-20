@@ -8,8 +8,27 @@
 
     // --- Навигация (меню) ---
     document.querySelectorAll('.site-nav a').forEach(function(a) {
+        // Phone link — separate goal
+        if (a.classList.contains('site-nav-phone') || a.href.startsWith('tel:')) {
+            a.addEventListener('click', function() {
+                hit('/click/phone-header');
+            });
+            return;
+        }
         a.addEventListener('click', function() {
             hit('/nav/' + a.textContent.trim().toLowerCase().replace(/\s+/g, '-'));
+        });
+    });
+
+    // --- Все клики по телефону (header, footer, FAB) ---
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(a) {
+        if (a.classList.contains('site-nav-phone')) return; // already tracked above
+        var placement = 'other';
+        if (a.classList.contains('call-fab')) placement = 'fab';
+        else if (a.closest('footer')) placement = 'footer';
+        else if (a.classList.contains('office-value')) placement = 'contacts';
+        a.addEventListener('click', function() {
+            hit('/click/phone-' + placement);
         });
     });
 
