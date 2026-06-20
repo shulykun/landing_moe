@@ -553,10 +553,10 @@ const brandInfo = {
         name: 'Kentatsu',
         desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов. Гарантия 3 года.',
         models: [
-            { name: '🏆 Kentatsu Omori', desc: 'Премиум. Дизайнерский чёрный корпус, инвертор R32, A+++, шум от 21,5 дБ, Wi-Fi (Daichi Comfort), жалюзи 180°.', image: 'static/images/brands/kentatsu/omori.jpeg', area: 25, btu: 9, price: 67000 },
-            { name: '❄️ Kentatsu Kanami Inverter Wi-Fi', desc: 'Оптимальный. Инвертор R32, Wi-Fi в комплекте, самоочистка, 3D-поток, защита от скачков напряжения (160–250 В).', image: 'static/images/brands/kentatsu/kanami.jpeg', area: 25, btu: 9, price: 37000 },
-            { name: '🌟 Kentatsu YUKI', desc: 'Популярный. Самая продаваемая серия. Инвертор R32, класс A, автоочистка испарителя, объёмный 3D-поток.', image: 'static/images/brands/kentatsu/yuki.jpeg', area: 25, btu: 9, price: 34000 },
-            { name: '💵 Kentatsu ICHI', desc: 'Эконом. Базовая надёжная модель on/off, R410A, самоочистка, антикоррозийное покрытие Golden Fin.', image: 'static/images/brands/kentatsu/ichi.jpeg', area: 25, btu: 9, price: 26000 }
+            { name: 'Kentatsu Omori', desc: 'Дизайнерский чёрный корпус, инвертор R32, A+++, шум от 21,5 дБ, Wi-Fi (Daichi Comfort), жалюзи 180°.', image: 'static/images/brands/kentatsu/omori.jpeg', area: 25, btu: 9, price: 67000, tag: 'Премиум' },
+            { name: 'Kentatsu Kanami Inverter Wi-Fi', desc: 'Инвертор R32, Wi-Fi в комплекте, самоочистка, 3D-поток, защита от скачков напряжения (160–250 В).', image: 'static/images/brands/kentatsu/kanami.jpeg', area: 25, btu: 9, price: 37000, tag: 'Всесезонный' },
+            { name: 'Kentatsu YUKI', desc: 'Самая продаваемая серия. Инвертор R32, класс A, автоочистка испарителя, объёмный 3D-поток.', image: 'static/images/brands/kentatsu/yuki.jpeg', area: 25, btu: 9, price: 34000, tag: 'Популярный' },
+            { name: 'Kentatsu ICHI', desc: 'Базовая надёжная модель on/off, R410A, самоочистка, антикоррозийное покрытие Golden Fin.', image: 'static/images/brands/kentatsu/ichi.jpeg', area: 25, btu: 9, price: 26000, tag: 'Эконом' }
         ],
         link: 'https://kentatsurussia.ru/catalog/konditsionirovanie/'
     },
@@ -594,6 +594,7 @@ function renderBrandShowcase(key) {
         <div class="brand-showcase-grid">
             ${info.models.map(m => `
                 <div class="brand-model-card">
+                    ${m.tag ? `<span class="model-tag">${m.tag}</span>` : ''}
                     ${m.image ? `<img src="${m.image}" alt="${m.name}" class="brand-model-img" loading="lazy">` : ''}
                     <h4>${m.name}</h4>
                     <p>${m.desc}</p>

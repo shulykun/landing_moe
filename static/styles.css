@@ -2124,3 +2124,23 @@ html {
 }
 
 
+
+/* === Model Tag === */
+.brand-model-card {
+    position: relative;
+}
+
+.model-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    z-index: 1;
+}
