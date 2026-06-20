@@ -553,10 +553,10 @@ const brandInfo = {
         name: 'Kentatsu',
         desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов. Гарантия 3 года.',
         models: [
-            { name: 'Kentatsu OMORI', desc: 'Дизайнерский флагман с A+++, жалюзи 180° и глубоким фильтром очистки.', image: '' },
-            { name: 'Kentatsu SEMPAI', desc: 'Биполярный ионизатор, шум от 20,5 дБ, технология Easy Climate Pro.', image: '' },
-            { name: 'Kentatsu OTARI', desc: 'Тепловой насос: обогрев до -25°C, охлаждение до -15°C.', image: '' },
-            { name: 'Kentatsu YUKI', desc: 'Доступная инверторная серия на R32 с 3D потоком и компактным дизайном.', image: '' }
+            { name: '🏆 Kentatsu Omori', desc: 'Премиум. Дизайнерский чёрный корпус, инвертор R32, A+++, шум от 21,5 дБ, Wi-Fi (Daichi Comfort), жалюзи 180°.', image: '', area: 25, btu: 9, price: 67000 },
+            { name: '❄️ Kentatsu Kanami Inverter Wi-Fi', desc: 'Оптимальный. Инвертор R32, Wi-Fi в комплекте, самоочистка, 3D-поток, защита от скачков напряжения (160–250 В).', image: '', area: 25, btu: 9, price: 37000 },
+            { name: '🌟 Kentatsu YUKI', desc: 'Популярный. Самая продаваемая серия. Инвертор R32, класс A, автоочистка испарителя, объёмный 3D-поток.', image: '', area: 25, btu: 9, price: 34000 },
+            { name: '💵 Kentatsu ICHI', desc: 'Эконом. Базовая надёжная модель on/off, R410A, самоочистка, антикоррозийное покрытие Golden Fin.', image: '', area: 25, btu: 9, price: 26000 }
         ],
         link: 'https://kentatsurussia.ru/catalog/konditsionirovanie/'
     },
