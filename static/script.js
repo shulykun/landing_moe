@@ -511,9 +511,9 @@ const brandInfo = {
         name: 'ENERGOLUX',
         desc: 'Премиальные инверторные сплит-системы с расширенной гарантией 5 лет. Интеллектуальное управление по Wi-Fi, энергоэффективность A+++ и ультратихие режимы.',
         models: [
-            { name: '🏆 ENERGOLUX LAUSANNE', desc: 'Дизайнерская серия • Интеллектуальный LED-дисплей • Энергоэффективность A+++ • DC-инвертор, Wi-Fi • Площадь: от 25 м²', image: 'static/images/brands/energolux/energolux_Lausanne-YAndeks-market_7_09.jpeg' },
-            { name: '⭐ ENERGOLUX ZURICH 4', desc: 'Продвинутая серия • 3D-распределение воздуха • Многоступенчатая фильтрация • DC-инвертор, самоочистка • Площадь: от 20 м²', image: 'static/images/brands/energolux/energolux_Render_ProjectZurich_002.png' },
-            { name: '🌙 ENERGOLUX DAVOS', desc: 'Ультратихая серия • Шум всего 20 дБ • Идеален для ночного режима • Инвертор, Wi-Fi • Площадь: от 15 м²', image: 'static/images/brands/energolux/energolux_DAVOS-YAndeks-market_1_09.jpg' }
+            { name: 'ENERGOLUX LAUSANNE', desc: 'Дизайнерская серия • Интеллектуальный LED-дисплей • Энергоэффективность A+++ • DC-инвертор, Wi-Fi • Площадь: от 25 м²', image: 'static/images/brands/energolux/energolux_Lausanne-YAndeks-market_7_09.jpeg', tag: 'Премиум' },
+            { name: 'ENERGOLUX ZURICH 4', desc: 'Продвинутая серия • 3D-распределение воздуха • Многоступенчатая фильтрация • DC-инвертор, самоочистка • Площадь: от 20 м²', image: 'static/images/brands/energolux/energolux_Render_ProjectZurich_002.png', tag: 'Оптимальный' },
+            { name: 'ENERGOLUX DAVOS', desc: 'Ультратихая серия • Шум всего 20 дБ • Идеален для ночного режима • Инвертор, Wi-Fi • Площадь: от 15 м²', image: 'static/images/brands/energolux/energolux_DAVOS-YAndeks-market_1_09.jpg', tag: 'Тихий' }
         ],
         link: 'https://energolux.ru.com/catalog/split-sistemy/'
     },
@@ -521,10 +521,10 @@ const brandInfo = {
         name: 'TOSOT',
         desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, гарантия до 5 лет.',
         models: [
-            { name: 'TOSOT Clivia DELUXE', desc: 'Флагман с адаптивным ИИ и энергоэффективностью A+++.', image: 'static/images/brands/tosot_clivia.png' },
-            { name: 'TOSOT Synergy', desc: 'Премиальный тепловой насос с эксклюзивным дизайном, A+++.', image: 'static/images/brands/tosot_synergy.png' },
-            { name: 'TOSOT Lyra X', desc: 'Новое поколение популярной LYRA — классический дизайн, актуальные характеристики.', image: 'static/images/brands/tosot_lyra.png' },
-            { name: 'TOSOT Natal Инвертор', desc: 'Базовая инверторная модель 2024 года с полным набором технологий.', image: 'static/images/brands/tosot_natal.png' }
+            { name: 'TOSOT Clivia DELUXE', desc: 'Флагман с адаптивным ИИ и энергоэффективностью A+++.', image: 'static/images/brands/tosot_clivia.png', tag: 'Премиум' },
+            { name: 'TOSOT Synergy', desc: 'Премиальный тепловой насос с эксклюзивным дизайном, A+++.', image: 'static/images/brands/tosot_synergy.png', tag: 'Всесезонный' },
+            { name: 'TOSOT Lyra X', desc: 'Новое поколение популярной LYRA — классический дизайн, актуальные характеристики.', image: 'static/images/brands/tosot_lyra.png', tag: 'Популярный' },
+            { name: 'TOSOT Natal Инвертор', desc: 'Базовая инверторная модель 2024 года с полным набором технологий.', image: 'static/images/brands/tosot_natal.png', tag: 'Базовый' }
         ],
         link: 'https://tosot.ru'
     },
@@ -532,10 +532,10 @@ const brandInfo = {
         name: 'LESSAR',
         desc: 'Надёжный бренд с широкой линейкой бытовых и коммерческих систем. Гарантия до 4 лет, доступная цена и стабильная работа.',
         models: [
-            { name: 'LESSAR Stella', desc: 'Флагманская серия с элегантным дизайном и расширенным функционалом.', image: 'static/images/brands/lessar_stella.png' },
-            { name: 'LESSAR Tiger', desc: 'Высокая энергоэффективность, быстрое охлаждение и обогрев.', image: 'static/images/brands/lessar_tiger.jpg' },
-            { name: 'LESSAR Ego', desc: 'Компактный внутренний блок и тихая работа для домашнего использования.', image: 'static/images/brands/lessar_ego.webp' },
-            { name: 'LESSAR Flexcool', desc: 'Универсальная серия с гибкими настройками для дома и малого бизнеса.', image: 'static/images/brands/lessar_flexcool.webp' }
+            { name: 'LESSAR Stella', desc: 'Флагманская серия с элегантным дизайном и расширенным функционалом.', image: 'static/images/brands/lessar_stella.png', tag: 'Премиум' },
+            { name: 'LESSAR Tiger', desc: 'Высокая энергоэффективность, быстрое охлаждение и обогрев.', image: 'static/images/brands/lessar_tiger.jpg', tag: 'Оптимальный' },
+            { name: 'LESSAR Ego', desc: 'Компактный внутренний блок и тихая работа для домашнего использования.', image: 'static/images/brands/lessar_ego.webp', tag: 'Тихий' },
+            { name: 'LESSAR Flexcool', desc: 'Универсальная серия с гибкими настройками для дома и малого бизнеса.', image: 'static/images/brands/lessar_flexcool.webp', tag: 'Универсальный' }
         ],
         link: 'https://lessar.ru'
     },
@@ -543,9 +543,9 @@ const brandInfo = {
         name: 'Dahaci',
         desc: 'Надёжные инверторные сплит-системы с расширенной гарантией. От премиум-моделей с Wi-Fi до экономичных решений — оптимальное соотношение цены и качества.',
         models: [
-            { name: '🏆 Dahaci NiceME — Премиум', desc: 'Инверторная сплит-система с Wi-Fi • Компрессор GMCC • Класс A • Шум от 22 дБ • До 26 м² • R410A', image: 'static/images/brands/dahaci/niceme.png' },
-            { name: '❄️🔥 Dahaci NiceME DNM-F — Всесезонный', desc: 'Инверторная сплит-система • Самоочистка i-Clean • Обогрев до -20°C • До 26 м² • R32<br><br>⚠️ Обогрев до -20°C, не -25°C', image: 'static/images/brands/dahaci/niceme_dnm.png' },
-            { name: '💵 Dahaci FreshME — Эконом', desc: 'Базовая on/off сплит-система • Класс A • Тихая работа • До 25 м² • R32', image: 'static/images/brands/dahaci/freshme.png' }
+            { name: 'Dahaci NiceME', desc: 'Инверторная сплит-система с Wi-Fi • Компрессор GMCC • Класс A • Шум от 22 дБ • До 26 м² • R410A', image: 'static/images/brands/dahaci/niceme.png', tag: 'Премиум' },
+            { name: 'Dahaci NiceME DNM-F', desc: 'Инверторная сплит-система • Самоочистка i-Clean • Обогрев до -20°C • До 26 м² • R32', image: 'static/images/brands/dahaci/niceme_dnm.png', tag: 'Всесезонный' },
+            { name: 'Dahaci FreshME', desc: 'Базовая on/off сплит-система • Класс A • Тихая работа • До 25 м² • R32', image: 'static/images/brands/dahaci/freshme.png', tag: 'Эконом' }
         ],
         link: 'https://dahaci.biz'
     },
@@ -564,10 +564,10 @@ const brandInfo = {
         name: 'Daichi',
         desc: 'Российский бренд с собственной линейкой климатического оборудования. Комфорт и ничего лишнего.',
         models: [
-            { name: 'Daichi SIB', desc: 'Базовая инверторная сплит-система с энергоэффективностью класса A.', image: '' },
-            { name: 'Daichi ATX', desc: 'Расширенный функционал, Wi-Fi и режим обогрева до -25°C.', image: '' },
-            { name: 'Daichi ACE', desc: 'Приток свежего воздуха и многоступенчатая фильтрация для здорового микроклимата.', image: '' },
-            { name: 'Daichi Elegant', desc: 'Элегантный дизайн, шум от 19 дБ, управление через приложение Daichi Comfort.', image: '' }
+            { name: 'Daichi SIB', desc: 'Базовая инверторная сплит-система с энергоэффективностью класса A.', image: '', tag: 'Базовый' },
+            { name: 'Daichi ATX', desc: 'Расширенный функционал, Wi-Fi и режим обогрева до -25°C.', image: '', tag: 'Всесезонный' },
+            { name: 'Daichi ACE', desc: 'Приток свежего воздуха и многоступенчатая фильтрация для здорового микроклимата.', image: '', tag: 'Премиум' },
+            { name: 'Daichi Elegant', desc: 'Элегантный дизайн, шум от 19 дБ, управление через приложение Daichi Comfort.', image: '', tag: 'Тихий' }
         ],
         link: 'https://daichi-aircon.com/catalog/'
     },
@@ -575,10 +575,10 @@ const brandInfo = {
         name: 'Midea',
         desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена. Гарантия 3 года.',
         models: [
-            { name: 'Midea MSAG', desc: 'Настенная серия с функцией самоочистки, энергосбережением и Wi-Fi.', image: '' },
-            { name: 'Midea Blanc', desc: 'Инверторная настенная серия с элегантным дизайном и режимом Turbo.', image: '' },
-            { name: 'Midea MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.', image: '' },
-            { name: 'Midea U-Shaped', desc: 'Инновационная U-образная серия с ультратихим инверторным компрессором.', image: '' }
+            { name: 'Midea MSAG', desc: 'Настенная серия с функцией самоочистки, энергосбережением и Wi-Fi.', image: '', tag: 'Базовый' },
+            { name: 'Midea Blanc', desc: 'Инверторная настенная серия с элегантным дизайном и режимом Turbo.', image: '', tag: 'Оптимальный' },
+            { name: 'Midea MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.', image: '', tag: 'Мульти' },
+            { name: 'Midea U-Shaped', desc: 'Инновационная U-образная серия с ультратихим инверторным компрессором.', image: '', tag: 'Тихий' }
         ],
         link: 'https://air-midea.com/'
     }
