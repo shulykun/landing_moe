@@ -66,8 +66,9 @@
     document.addEventListener('click', function(e) {
         var link = e.target.closest('.brand-showcase-link');
         if (link) {
-            var brandName = link.textContent.replace(/[^\w\s]/g, '').trim().split(' ').pop().toLowerCase();
-            hit('/brand/' + brandName + '/site');
+            var activeBtn = document.querySelector('.brand-tag.active');
+            var brandKey = activeBtn ? activeBtn.dataset.brand : 'unknown';
+            hit('/brand/' + brandKey + '/site');
         }
     });
 
@@ -465,10 +466,30 @@ document.querySelectorAll('.btn').forEach(btn => {
     });
 });
 
-// Track external links
+// Track external links — manufacturer sites
+const manufacturerDomains = {
+    'energolux.ru.com': 'energolux',
+    'tosot.ru': 'tosot',
+    'lessar.ru': 'lessar',
+    'dahaci.biz': 'dahaci',
+    'kentatsurussia.ru': 'kentatsu',
+    'daichi-aircon.com': 'daichi',
+    'air-midea.com': 'midea'
+};
+
 document.querySelectorAll('a[target="_blank"]').forEach(link => {
     link.addEventListener('click', () => {
-        trackEvent('External Link', 'Click', link.href);
+        var brand = 'other';
+        for (var domain in manufacturerDomains) {
+            if (link.href.includes(domain)) {
+                brand = manufacturerDomains[domain];
+                break;
+            }
+        }
+        if (typeof ym === 'function') {
+            ym(109687297, 'hit', '/external/' + brand);
+        }
+        trackEvent('External Link', brand, link.href);
     });
 });
 
