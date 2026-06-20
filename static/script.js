@@ -458,11 +458,11 @@ window.addEventListener('load', () => {
 const brandInfo = {
     energolux: {
         name: 'ENERGOLUX',
-        desc: 'Современный бренд с расширенной гарантией 5 лет. Инверторные сплит-системы с функцией самоочистки, низким уровнем шума и управлением по Wi-Fi.',
+        desc: 'Премиальные инверторные сплит-системы с расширенной гарантией 5 лет. Интеллектуальное управление по Wi-Fi, энергоэффективность A+++ и ультратихие режимы.',
         models: [
-            { name: 'ENERGOLUX SAS', desc: 'Настенная сплит-система с инвертором. Класс A+++, Wi-Fi, ночной режим.', image: 'static/images/brands/energolux_sas.png' },
-            { name: 'ENERGOLUX SAM', desc: 'Мульти-сплит — до 4 внутренних блоков на один наружный.', image: 'static/images/brands/energolux_sam.png' },
-            { name: 'ENERGOLUX SAD', desc: 'Канальная серия для скрытой установки за подвесным потолком.', image: 'static/images/brands/energolux_sad.png' }
+            { name: '🏆 ENERGOLUX LAUSANNE', desc: 'Дизайнерская серия • Интеллектуальный LED-дисплей • Энергоэффективность A+++ • DC-инвертор, Wi-Fi • Площадь: от 25 м²', image: 'static/images/brands/energolux/energolux_Lausanne-YAndeks-market_7_09.jpeg' },
+            { name: '⭐ ENERGOLUX ZURICH 4', desc: 'Продвинутая серия • 3D-распределение воздуха • Многоступенчатая фильтрация • DC-инвертор, самоочистка • Площадь: от 20 м²', image: 'static/images/brands/energolux/energolux_Render_ProjectZurich_002.png' },
+            { name: '🌙 ENERGOLUX DAVOS', desc: 'Ультратихая серия • Шум всего 20 дБ • Идеален для ночного режима • Инвертор, Wi-Fi • Площадь: от 15 м²', image: 'static/images/brands/energolux/energolux_DAVOS-YAndeks-market_1_09.jpg' }
         ],
         link: 'https://energolux.ru.com/catalog/split-sistemy/'
     },
@@ -549,6 +549,7 @@ function renderBrandShowcase(key) {
                 </div>
             `).join('')}
         </div>
+        <p class="sale-note">Подберите любую модель на официальном сайте бренда и обращайтесь к нам — сделаем скидку и обеспечим гарантию.</p>
         <a href="${info.link}" target="_blank" rel="noopener noreferrer" class="brand-showcase-link">Перейти на сайт ${info.name} &rarr;</a>
     `;
 }
