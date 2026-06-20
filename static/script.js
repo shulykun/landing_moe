@@ -576,10 +576,10 @@ const brandInfo = {
         name: 'Midea',
         desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена. Гарантия 3 года.',
         models: [
-            { name: 'Midea MSAG', desc: 'Настенная серия с функцией самоочистки, энергосбережением и Wi-Fi.', image: '', tag: 'Базовый' },
-            { name: 'Midea Blanc', desc: 'Инверторная настенная серия с элегантным дизайном и режимом Turbo.', image: '', tag: 'Оптимальный' },
-            { name: 'Midea MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.', image: '', tag: 'Мульти' },
-            { name: 'Midea U-Shaped', desc: 'Инновационная U-образная серия с ультратихим инверторным компрессором.', image: '', tag: 'Тихий' }
+            { name: 'Midea Breezeless E', desc: 'Безсквозняковая технология Breezeless™ — 7928 микроперфораций. Full DC инвертор, R32, A+++, ионизация AIR MAGIC+, самоочистка i-Clean, Wi-Fi в комплекте. Шум от 20 дБ.', image: 'static/images/brands/midea/Breezeless.jpeg', tag: 'Премиум' },
+            { name: 'Midea Primary Inverter', desc: 'Проверенная серия. Full DC инвертор, R32, A++, шум от 21,5 дБ. Self-clean™, i-ECO, Follow me. Работа до -15°C. Wi-Fi (опция).', image: 'static/images/brands/midea/primary.jpeg', tag: 'Популярный' },
+            { name: 'Midea Easy Inverter', desc: 'Full DC инвертор, R32. ECOMASTER — интеллектуальный мониторинг, i-Clean, объёмный поток. HYPER GRAPFINS™ — усиленная антикоррозия. Wi-Fi (опция).', image: 'static/images/brands/midea/easy_inverter.jpeg', tag: 'Оптимальный' },
+            { name: 'Midea Paramount', desc: 'Базовая надёжная модель on/off. R32, класс A, Self-clean™. «Любимые настройки», Follow me. Wi-Fi (опция). Шум от 27 дБ.', image: 'static/images/brands/midea/paramount.jpeg', tag: 'Эконом' }
         ],
         link: 'https://air-midea.com/'
     }
