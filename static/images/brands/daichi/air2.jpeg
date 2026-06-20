@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Дистрибьютор климатической техники на территорию РФ и СНГ с опытом работы более 25 лет">
+    <link rel="shortcut icon" type="image/x-icon" href="/local/templates/daichi/images/favicon.ico">
+    <link rel="preload" href="/local/templates/daichi/front/build/fonts/suisseIntl-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/local/templates/daichi/front/build/fonts/suisseIntl-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/local/templates/daichi/front/build/fonts/suisseIntl-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/local/templates/daichi/front/build/fonts/suisseIntl-semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Windows/i.test(ua)){cl += ' bx-win';}else if (/Macintosh/i.test(ua)){cl += " bx-mac";}else if (/Linux/i.test(ua) && !/Android/i.test(ua)){cl += " bx-linux";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Firefox/.test(ua)){cl += " bx-firefox";}ht.className = htc ? htc + " " + cl : cl;})(window, document, navigator);</script>
+
+
+<link href="/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?173815044823463" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16861470752320" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?175862312928056" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/daichi/template_3126831d54ebe2b3a2eb214424e66267/template_3126831d54ebe2b3a2eb214424e66267_v1.css?1779095648542797" type="text/css"  data-template-style="true" rel="stylesheet" />
+
+
+
+
+
+
+
+    <script data-skip-moving src="https://smartcaptcha.yandexcloud.net/captcha.js?render=onload&onload=onloadFunction" ></script>
+    <script data-skip-moving>
+    var ysc = {
+        sitekey: 'ysc1_cjrrxiDWZZguMRZQaOiikRAEZ3sbw3YsFuRclP6Bedc14d71',
+        invisible: true,
+    };
+    </script>
+</head>
+<body>
+        <!-- Yandex.Metrika counter -->
+        <noscript><div><img src="https://mc.yandex.ru/watch/96227978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+            
+    <header class="header ">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__inner-wrap">
+                    <button class="header__menu-button" type="button" aria-label="Открыть меню">
+                        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#menu-burger"></use></svg>
+                        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#close"></use></svg>
+                    </button>
+                    <a href="/" class="header__logo">
+                        <img src="/local/templates/daichi/front/build/img/daichi-logo.svg" alt="Daichi">
+                    </a>
+
+                    
+<nav class="header__nav">
+    <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                <a href="/about/"  class="header__nav-link ">
+                    О компании                </a>
+            </li>
+                            <li class="header__nav-item">
+                <a href="/catalog/"  class="header__nav-link active">
+                    Продукция                </a>
+            </li>
+                            <li class="header__nav-item">
+                <a href="/brands/"  class="header__nav-link ">
+                    Бренды                </a>
+            </li>
+                            <li class="header__nav-item">
+                <a href="/support/"  class="header__nav-link ">
+                    Поддержка                </a>
+            </li>
+                            <li class="header__nav-item">
+                <a href="/iotsolutions/"  class="header__nav-link ">
+                    IoT решения                </a>
+            </li>
+                            <li class="header__nav-item">
+                <a href="/contacts/"  class="header__nav-link ">
+                    Контакты                </a>
+            </li>
+                            <li class="header__nav-item">
+                <a href="https://daichi.market/" target="_blank" class="header__nav-link active">
+                    Магазин ↗                </a>
+            </li>
+            </ul>
+</nav>
+                    <a class="header__location-link is--for-desktop" href="#city-select" data-fancybox>
+                        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#location"></use></svg>
+                        Москва                    </a>
+
+                    <a class="header__search-button" href="#search-main" aria-label="Поиск">
+                        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#search"></use></svg>
+                    </a>
+
+                                        <a href="/partners/"  class="header__partnership-button button button--small">Стать партнёром</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-preloader"></div>
+
+    
+<div class="header__menu-mobile">
+    <div class="header__menu-mobile-container">
+
+        <div class="header__menu-mobile-column"><nav class="header__menu-mobile-catalog"><h2 class="h7 header__menu-mobile-catalog-title">Продукция</h2><ul class="header__menu-mobile-catalog-list"><li class="header__menu-mobile-catalog-item"><a href="/catalog/bytovoe-konditsionirovanie/"  class="header__menu-mobile-catalog-link">Бытовое кондиционирование</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/multizonalnye-sistemy/"  class="header__menu-mobile-catalog-link">Мультизональные системы</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/polupromyshlennye-split-sistemy/"  class="header__menu-mobile-catalog-link">Полупромышленные сплит‑системы</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/multi-split-sistemy/"  class="header__menu-mobile-catalog-link">Мульти-сплит-системы</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/otoplenie/"  class="header__menu-mobile-catalog-link">Отопление</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/promyshlennye-sistemy-konditsionirovaniya/"  class="header__menu-mobile-catalog-link">Промышленные системы кондиционирования</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/iot/"  class="header__menu-mobile-catalog-link">IoT решения для климата</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/ventilyatsionnye-sistemy/"  class="header__menu-mobile-catalog-link">Вентиляционные системы</a></li><li class="header__menu-mobile-catalog-item"><a href="/catalog/bytovye-pribory/"  class="header__menu-mobile-catalog-link">Бытовые приборы</a></li></ul></nav></div><div class="header__menu-mobile-column"><nav class="header__menu-mobile-nav"><ul class="header__menu-mobile-nav-list"><li class="header__menu-mobile-nav-item"><a href="/about/"  class="header__menu-mobile-nav-link">О компании</a></li><li class="header__menu-mobile-nav-item"><a href="/brands/"  class="header__menu-mobile-nav-link">Бренды</a></li><li class="header__menu-mobile-nav-item"><a href="/support/"  class="header__menu-mobile-nav-link">Поддержка</a></li><li class="header__menu-mobile-nav-item"><a href="/iotsolutions/"  class="header__menu-mobile-nav-link">IoT решения для климата</a></li><li class="header__menu-mobile-nav-item"><a href="/news/"  class="header__menu-mobile-nav-link">Новости</a></li><li class="header__menu-mobile-nav-item"><a href="/contacts/"  class="header__menu-mobile-nav-link">Контакты</a></li><li class="header__menu-mobile-nav-item"><a href="https://daichi.market/" target="_blank" class="header__menu-mobile-nav-link">Магазин</a></li><li class="header__menu-mobile-nav-item"><a href="/partners/"  class="header__menu-mobile-nav-link">Стать партнёром</a></li></ul></nav></div>
+        <div class="header__menu-mobile-column">
+
+            
+<div class="header__menu-mobile-contact">
+    <p class="header__menu-mobile-contact-title">Служба поддержки</p>
+    <a href="tel:+78002014584" class="header__menu-mobile-contact-link">
+        +7 (800) 201–45–84    </a>
+</div>
+
+<div class="header__menu-mobile-contact">
+    <p class="header__menu-mobile-contact-title">Офис компании</p>
+    <a href="tel:+74957373733" class="header__menu-mobile-contact-link">
+        +7 (495) 737-37-33    </a>
+</div>
+<div class="header__menu-mobile-socials">
+    <a href="https://vk.com/daichicompany" class="header__menu-mobile-social-link">
+        <span
+                class="visually-hidden">Аккаунт ВК</span>
+        <svg>
+            <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#vk"></use>
+        </svg>
+    </a>
+    <a href="https://rutube.ru/channel/24795976/?ysclid=m3ebvepi8p94827329" class="header__menu-mobile-social-link"><span class="visually-hidden">Аккаунт RuTube</span>
+        <svg>
+            <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#youtube"></use>
+        </svg>
+    </a>
+</div>
+<a class="header__location-link" href="#city-select" data-fancybox>
+    <svg>
+        <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#location"></use>
+    </svg>
+    Москва</a>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div style="display: none">
+    <form class="modal--city modal form" id="city-select">
+        <div class="h5 modal__title">
+            <button class="modal__title-close-button mobile-only" type="button" data-fancybox-close>
+                <svg>
+                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+                </svg>
+            </button>
+            <span>Выберите город</span></div>
+        <div class="modal__body">
+            <div class="modal__city-search input-field is--search">
+                <div class="input-field__icon">
+                    <svg>
+                        <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#search"></use>
+                    </svg>
+                </div>
+                <input type="text" name="name1" id="name1" placeholder="Поиск"> <span
+                    class="input-field__outline"></span>
+                <button type="button" class="input-field__clear-button">
+                    <svg>
+                        <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="modal__city-list">
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link active" href="?change_city=Москва">
+                            Москва                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Санкт-Петербург">
+                            Санкт-Петербург                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Астрахань">
+                            Астрахань                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Владивосток">
+                            Владивосток                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Волгоград">
+                            Волгоград                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Воронеж">
+                            Воронеж                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Екатеринбург">
+                            Екатеринбург                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Иркутск">
+                            Иркутск                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Казань">
+                            Казань                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Калининград">
+                            Калининград                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Краснодар">
+                            Краснодар                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Красноярск">
+                            Красноярск                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Нижний Новгород">
+                            Нижний Новгород                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Новосибирск">
+                            Новосибирск                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Омск">
+                            Омск                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Ростов-на-Дону">
+                            Ростов-на-Дону                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Сочи">
+                            Сочи                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Тольятти">
+                            Тольятти                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Уфа">
+                            Уфа                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Хабаровск">
+                            Хабаровск                        </a>
+                    </li>
+                                    <li class="modal__city-item">
+                        <a class="modal__city-link " href="?change_city=Челябинск">
+                            Челябинск                        </a>
+                    </li>
+                            </ul>
+        </div>
+    </form>
+</div>
+
+
+
+<div class="modal-custom__overlay"></div>
+<div class="modal-custom">
+    <form class="modal--search modal form" id="search-main" action="/search/index.php">
+        <div class="modal__body">
+            <div class="modal__search-main-row">
+                <div class="modal__search-main input-field is--search">
+                    <div class="input-field__icon">
+                        <svg>
+                            <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                                            <input type="text" name="q" id="header-search-input" value="" placeholder="Поиск">
+                        <span class="input-field__outline"></span>
+                        <button type="button" class="input-field__clear-button">
+                            <svg>
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                                    </div>
+                <button type="button" class="modal__search-main-close button-secondary button--small">Закрыть</button>
+            </div>
+            <div class="modal__search-main-result">
+                <ul class="modal__search-main-result-list" id="header-search-result"></ul>
+                <div>
+                    <h2 class="h7 modal__search-main-result-title">Быстрые ссылки</h2>
+                    
+
+    <ul class="modal__search-main-result-list">
+                    <li class="modal__search-main-result-item">
+                <a href="/search/?q=Облачные кондиционеры" class="modal__search-main-result-link">
+                    Облачные кондиционеры                </a>
+            </li>
+                    <li class="modal__search-main-result-item">
+                <a href="/search/?q=IoT решения" class="modal__search-main-result-link">
+                    IoT решения                </a>
+            </li>
+                    <li class="modal__search-main-result-item">
+                <a href="/search/?q=Мультизональные системы" class="modal__search-main-result-link">
+                    Мультизональные системы                </a>
+            </li>
+                    <li class="modal__search-main-result-item">
+                <a href="/search/?q=Отопительные котлы" class="modal__search-main-result-link">
+                    Отопительные котлы                </a>
+            </li>
+                    <li class="modal__search-main-result-item">
+                <a href="/search/?q=Wi-Fi контроллеры" class="modal__search-main-result-link">
+                    Wi-Fi контроллеры                </a>
+            </li>
+            </ul>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<main class="page">
+
+    
+        
+            <div class="breadcrumbs"><div class="breadcrumbs__container container"><nav class="breadcrumbs__nav swiper"><ul class="breadcrumbs__nav-list swiper-wrapper"><li class="breadcrumbs__nav-item swiper-slide"><a href="/">Главная</a></li><li class="breadcrumbs__nav-item swiper-slide"><a href="/catalog/">Каталог</a></li><li class="breadcrumbs__nav-item swiper-slide"><a href="/catalog/bytovoe-konditsionirovanie/">Бытовое кондиционирование</a></li><li class="breadcrumbs__nav-item swiper-slide"><a href="/catalog/bytovoe-konditsionirovanie/nastennye-split-sistemy/">Настенные кондиционеры</a></li><li class="breadcrumbs__nav-item swiper-slide"><a href="/catalog/bytovoe-konditsionirovanie/nastennye-split-sistemy/invertornye-nastennye-split-sistemy/">Инверторные сплит-системы</a></li><li class="breadcrumbs__nav-item swiper-slide"><span>Эйр 2 Инвертор (Air 2 Inverter) </span></li></ul></nav></div></div>
+        
+        <section class="product-card">
+
+        
+            <div class="page__title-block">
+                <div class="page__title-block-container container">
+                    <div class="page__title-block-content">
+                        <h1 class="page__title h1 is--small">
+                            Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)                        </h1>
+                                            </div>
+                </div>
+            </div>
+
+        
+    
+
+<div class="product-card__main" id="bx_117848907_19153"
+     itemscope itemtype="http://schema.org/Product">
+    <div class="product-card__main-container container">
+        <!--<span class="product-card__product-code">Артикул: 19153</span>-->
+        <div class="product-card__main-inner">
+            <div class="product-card__images">
+                <a
+                    href="#product-card__image-view"
+                    class="product-card__main-image" data-fancybox
+                >
+                    <picture>
+                        <source srcset="/upload/iblock/897/ldk0g5db1dfv7s94cy9qm7h35zwkb5db/ix3h1icdv19txh1w5f0qio3712sjpadl.jpg">
+                        <img src="/upload/iblock/897/ldk0g5db1dfv7s94cy9qm7h35zwkb5db/ix3h1icdv19txh1w5f0qio3712sjpadl.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                </a>
+                <div class="product-card__image-slider-block">
+                    <button class="product-card__image-slider-nav product-card__image-slider-nav--prev">
+                        <svg>
+                            <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                    <button class="product-card__image-slider-nav product-card__image-slider-nav--next">
+                        <svg>
+                            <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                    <div class="product-card__image-slider-pagination swiper-pagination"></div>
+                    <div class="product-card__image-slider swiper">
+                        <div class="product-card__image-slider-wrapper swiper-wrapper">
+
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/897/ldk0g5db1dfv7s94cy9qm7h35zwkb5db/ix3h1icdv19txh1w5f0qio3712sjpadl.jpg">
+                                        <img src="/upload/iblock/897/ldk0g5db1dfv7s94cy9qm7h35zwkb5db/ix3h1icdv19txh1w5f0qio3712sjpadl.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/109/wqerkx8qqc2hc04y8a3pzahxzd3txi0b/7kwga8eo052ohsvsp9ir4oe16djvmpf1.jpg">
+                                        <img src="/upload/iblock/109/wqerkx8qqc2hc04y8a3pzahxzd3txi0b/7kwga8eo052ohsvsp9ir4oe16djvmpf1.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/770/mvkk28zv2fif984t0k9blyepr3a2f24e/yz0ozaon6146t5r10oay8udg7n68w3zd.jpg">
+                                        <img src="/upload/iblock/770/mvkk28zv2fif984t0k9blyepr3a2f24e/yz0ozaon6146t5r10oay8udg7n68w3zd.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/e3d/e57ebdkc449o435djk2pygu8tubqit8o/6uwbmbgv3z2lw22tqyd11tim11je1d39.jpg">
+                                        <img src="/upload/iblock/e3d/e57ebdkc449o435djk2pygu8tubqit8o/6uwbmbgv3z2lw22tqyd11tim11je1d39.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/bb5/qa9s4cph1iuid2p427211frtd3ivz8le/cuny5otkdnc5uosflv8b8i7bhmwibmc8.jpg">
+                                        <img src="/upload/iblock/bb5/qa9s4cph1iuid2p427211frtd3ivz8le/cuny5otkdnc5uosflv8b8i7bhmwibmc8.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/284/ohybhcfx9ltxznlsyn1jyf4gmx5s1tc2/wqwdh3oza2a2cze293fophkvwk3qxqf3.jpg">
+                                        <img src="/upload/iblock/284/ohybhcfx9ltxznlsyn1jyf4gmx5s1tc2/wqwdh3oza2a2cze293fophkvwk3qxqf3.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/698/hzr22h256r6dsazm5th4h39jdhthj3ik/4xcplsazls4esq6lnt2feu0zy8ilqbny.jpg">
+                                        <img src="/upload/iblock/698/hzr22h256r6dsazm5th4h39jdhthj3ik/4xcplsazls4esq6lnt2feu0zy8ilqbny.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/77d/n5syd82t5pg394tp44zrgr0xmfw19s3c/skimutx974xvcfvtouzjhb6q08qxxiw9.jpg">
+                                        <img src="/upload/iblock/77d/n5syd82t5pg394tp44zrgr0xmfw19s3c/skimutx974xvcfvtouzjhb6q08qxxiw9.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/dd3/npeazndokp8p6fk76ejohc1vxagwqw7e/7kti793mjqboyvuvtqfyxbj8wbuywbr8.jpg">
+                                        <img src="/upload/iblock/dd3/npeazndokp8p6fk76ejohc1vxagwqw7e/7kti793mjqboyvuvtqfyxbj8wbuywbr8.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/85a/i2wnyabmcbp59nispnecyiulbc8li49z/28sxl97d9tqp1st8ia1my62y3441xuvi.jpg">
+                                        <img src="/upload/iblock/85a/i2wnyabmcbp59nispnecyiulbc8li49z/28sxl97d9tqp1st8ia1my62y3441xuvi.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                                                            <div class="product-card__image-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="/upload/iblock/06f/blj220blo96lylw9zr49fbn2qsjj1wfa/enfprwg79ojvl805trn4rpgpvfrsgepy.jpg">
+                                        <img src="/upload/iblock/06f/blj220blo96lylw9zr49fbn2qsjj1wfa/enfprwg79ojvl805trn4rpgpvfrsgepy.jpg" alt="Бытовой кондиционер Daichi Эйр 2 Инвертор (Air 2 Inverter)"></picture>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;">
+                    <div class="modal modal--image-view form" id="product-card__image-view">
+                        <div class="modal__body"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card__stats">
+                                    <img src="/upload/uf/2f3/cfoewu9pxvzs35vd5i4lcam7cfx20w93/Daichi-full-logo.svg" alt="Daichi"
+                         class="product-card__stats-logo">
+                                <div class="product-card__stat-items">
+                                            <div class="product-card__stat-item">
+                            <span class="product-card__stat-title">Для помещения площадью, м²</span>
+                            <span class="product-card__stat-value">25, 35, 50, 60</span>
+                        </div>
+                                            <div class="product-card__stat-item">
+                            <span class="product-card__stat-title">Класс сезонной энергоэффективности</span>
+                            <span class="product-card__stat-value">A++</span>
+                        </div>
+                                            <div class="product-card__stat-item">
+                            <span class="product-card__stat-title">Управление / хладагент</span>
+                            <span class="product-card__stat-value">Inverter / R32</span>
+                        </div>
+                                            <div class="product-card__stat-item">
+                            <span class="product-card__stat-title">Диапазон рабочих температур, °C</span>
+                            <span class="product-card__stat-value">-15~53; -15~30</span>
+                        </div>
+                                            <div class="product-card__stat-item">
+                            <span class="product-card__stat-title">Холодопроизводительность, кВт, ном.</span>
+                            <span class="product-card__stat-value">2.64; 3.52; 5.1; 6.84</span>
+                        </div>
+                                    </div>
+            </div>
+
+            <div class="product-card__links">
+                                <div class="product-card__link-block">
+                                            <img src="/upload/uf/7a7/t3gftj4qyfrl475j5r241l4515z480f3/Daichi-small-logo.svg" alt="Daichi" class="product-card__link-logo">
+                    
+                    <a href="https://daichi-aircon.com/catalog/bytovye-split-sistemy/split-sistemy-daichi-seriya-air-2-inverter/" class="button button-daichi" target="_blank">
+                        Подробнее
+                        <svg>
+                            <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                        </svg>
+                    </a>
+
+                    <p class="product-card__link-desc">Узнайте больше на&nbsp;официальном сайте производителя</p>
+                </div>
+                                                <div class="product-card__link-block product-card__link-block--dealer">
+                    <p class="product-card__link-desc">
+                        Покупайте у официальных дилеров Daichi                    </p>
+                        <a href="https://daichi-aircon.com/where-to-buy/" class="button" target="_blank">Где купить?
+                            <svg>
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                            </svg>
+                        </a>
+                </div>
+                                            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card__main-functions-block">
+        <div class="product-card__main-functions-container container">
+            <ul class="product-card__main-functions-list">
+                                    <li class="product-card__main-functions-item">
+                        <button class="product-card__main-functions-btn">
+                            <div class="product-card__main-function-icon">
+                                <img src="/upload/uf/484/zhtkpu52t0ksr0carzkgajzmmyxqmwbf/bfef87b8d2cabd3688cd1d4927421d67.svg" alt="Высокий показатель SEER">
+                            </div>
+                            <p class="product-card__main-function-desc">Высокий показатель SEER</p>
+                        </button>
+                    </li>
+                                    <li class="product-card__main-functions-item">
+                        <button class="product-card__main-functions-btn">
+                            <div class="product-card__main-function-icon">
+                                <img src="/upload/uf/d4a/e4kmacr63y42zjuwyjr0jmelmdhcx0u6/jd6bl161yzg8k6q7mxc2gjz2fcv23fjs.svg" alt="Wi-Fi, онлайн управление (опция)">
+                            </div>
+                            <p class="product-card__main-function-desc">Wi-Fi, онлайн управление (опция)</p>
+                        </button>
+                    </li>
+                                    <li class="product-card__main-functions-item">
+                        <button class="product-card__main-functions-btn">
+                            <div class="product-card__main-function-icon">
+                                <img src="/upload/uf/d2c/p65ghcmj55xvpy13ftcgxlh3faoc0ctd/076c6afb3675c78a19500039de6f3896.svg" alt="R-32">
+                            </div>
+                            <p class="product-card__main-function-desc">R-32</p>
+                        </button>
+                    </li>
+                                    <li class="product-card__main-functions-item">
+                        <button class="product-card__main-functions-btn">
+                            <div class="product-card__main-function-icon">
+                                <img src="/upload/uf/0fb/eqrc9g714ln1nn32mtosdw7p1ydg10ef/95f88520ca4f22ff04509334d6906ea8.svg" alt="3D-распределение воздушного потока">
+                            </div>
+                            <p class="product-card__main-function-desc">3D-распределение воздушного потока</p>
+                        </button>
+                    </li>
+                                    <li class="product-card__main-functions-item">
+                        <button class="product-card__main-functions-btn">
+                            <div class="product-card__main-function-icon">
+                                <img src="/upload/uf/4dd/rdfpd021e2hcd54h1dps6ebk7ne01jqb/90f3f8fd20ed25543d47aafab2823105.svg" alt="Биполярный ионизатор воздуха">
+                            </div>
+                            <p class="product-card__main-function-desc">Биполярный ионизатор воздуха</p>
+                        </button>
+                    </li>
+                                    <li class="product-card__main-functions-item">
+                        <button class="product-card__main-functions-btn">
+                            <div class="product-card__main-function-icon">
+                                <img src="/upload/uf/977/d0ijwo8rc7tmyqmkr8ijcs1tk9s8fj8l/99598a3a108f66e69b9f7352456a6752.svg" alt="Ультрафиолетовая лампа">
+                            </div>
+                            <p class="product-card__main-function-desc">Ультрафиолетовая лампа</p>
+                        </button>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+<div class="product-card__main-description-block">
+    <div class="product-card__main-description-container container">
+        <p class="product-card__main-description-text">
+            Сплит-система Эйр 2 Инвертор (Air 2 Inverter) с инновационными запатентованными технологиями и минималистичным дизайном создает максимальный комфорт в помещении, обеззараживает воздух, благотворно влияет на самочувствие.        </p>
+    </div>
+</div>
+
+<nav class="product-card__nav-panel nav-panel nav-panel--text">
+    <div class="nav-panel__slider swiper">
+        <ul class="nav-panel__list swiper-wrapper">
+                        <li class="nav-panel__item swiper-slide">
+                <a href="#product-card-models" class="nav-panel__link">
+                    <span class="nav-panel__link-text active">Модели</span>
+                </a>
+            </li>
+                                                    <li class="nav-panel__item swiper-slide">
+                    <a href="#product-card-functions" class="nav-panel__link">
+                        <span class="nav-panel__link-text ">Функции</span>
+                    </a>
+                </li>
+                                        <li class="nav-panel__item swiper-slide">
+                    <a href="#product-card-documents" class="nav-panel__link">
+                        <span class="nav-panel__link-text">Документация</span>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+    <div class="nav-panel__mobile">
+        <div class="nav-panel__mobile-wrapper">
+            <div class="nav-panel__slider-mobile swiper">
+                <ul class="nav-panel__list swiper-wrapper">
+                                                                                        <li class="nav-panel__item swiper-slide" data-nav-link="block1"><a
+                                    href="#product-card-models" class="nav-panel__link"
+                                    data-nav-link="product-card-models"><span class="nav-panel__link-text">Модели</span></a>
+                        </li>
+                                                                                                            <li class="nav-panel__item swiper-slide" data-nav-link="block2"><a
+                                    href="#product-card-functions" class="nav-panel__link"
+                                    data-nav-link="product-card-functions"><span
+                                        class="nav-panel__link-text">Функции</span></a></li>
+                                                                                        <li class="nav-panel__item swiper-slide" data-nav-link="block3"><a
+                                    href="#product-card-documents" class="nav-panel__link"
+                                    data-nav-link="product-card-documents"><span class="nav-panel__link-text">Документация</span></a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="product-card__chars-table-block chars-table" data-id="product-card-models"
+         data-nav-target="product-card-models">
+        <div class="chars-table__container container"><h2 class="chars-table__title">Модели</h2>
+            <div class="chars-table__slider swiper">
+                <div class="chars-table__progress swiper-scrollbar"></div>
+                <div class="slider-scroll-indicator"></div>
+                <div class="chars-table__wrapper swiper-wrapper">
+                    <div class="chars-table__slide swiper-slide">
+                        <table class="chars-table__table">
+                            <tr>
+                                <th colspan="3">Модель</th>
+                                                                    <th data-id="18341">AIR25AVQS1R-2/AIR25FVS1R-2</th>
+                                                                    <th data-id="18343">AIR35AVQS1R-2/AIR35FVS1R-2</th>
+                                                                    <th data-id="18344">AIR50AVQS1R-2/AIR50FVS1R-2</th>
+                                                                    <th data-id="18345">AIR60AVQS1R-2/AIR60FVS1R-2</th>
+                                                            </tr>
+                                                                                        
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Производительность</td>
+                                                                                <td class="chars-table__sub-char">Охлаждение</td>
+                                        <td class="chars-table__char-unit">кВт</td>
+                                                                                    <td>3,3~2,64~0,94</td>
+                                                                                    <td>3,77~3,52~1</td>
+                                                                                    <td>5,9~5,1~1,25</td>
+                                                                                    <td>7,80~6,84~1,83</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Нагрев</td>
+                                        <td class="chars-table__char-unit">кВт</td>
+                                                                                    <td>3,36~2,78~0,94</td>
+                                                                                    <td>3,81~3,66~1</td>
+                                                                                    <td>6,00~5,13~1,25</td>
+                                                                                    <td>7,92~7,05~1,85</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="1">Электропитание</td>
+                                                                                <td class="chars-table__sub-char"></td>
+                                        <td class="chars-table__char-unit">Ф / В / Гц</td>
+                                                                                    <td>1~, 220-240 В, 50 Гц</td>
+                                                                                    <td>1~, 220-240 В, 50 Гц</td>
+                                                                                    <td>1~, 220-240 В, 50 Гц</td>
+                                                                                    <td>1~, 220-240 В, 50 Гц</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Сезонная энергоэффективность / Класс</td>
+                                                                                <td class="chars-table__sub-char">Охлаждение (SEER)</td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>6,1/A++</td>
+                                                                                    <td>6,1/A++</td>
+                                                                                    <td>6,1/A++</td>
+                                                                                    <td>6,5/A++</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Нагрев (SCOP)	</td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>4/A+</td>
+                                                                                    <td>4/A+</td>
+                                                                                    <td>4/A+</td>
+                                                                                    <td>4/A+</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Энергоэффективность / Класс</td>
+                                                                                <td class="chars-table__sub-char">Охлаждение (EER)	</td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>3,21/A</td>
+                                                                                    <td>3,21/A</td>
+                                                                                    <td>3,22/A</td>
+                                                                                    <td>3,21/A</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Нагрев (COP)</td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>3,61/A</td>
+                                                                                    <td>3,61/A</td>
+                                                                                    <td>3,65/A</td>
+                                                                                    <td>3,71/A</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Уровень звукового давления</td>
+                                                                                <td class="chars-table__sub-char">Внутренний блок</td>
+                                        <td class="chars-table__char-unit">дБА</td>
+                                                                                    <td>41/22</td>
+                                                                                    <td>41/22</td>
+                                                                                    <td>43/27</td>
+                                                                                    <td>47/31</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Наружный блок</td>
+                                        <td class="chars-table__char-unit">дБА</td>
+                                                                                    <td>50</td>
+                                                                                    <td>50</td>
+                                                                                    <td>54</td>
+                                                                                    <td>56</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Габариты (ШхВхГ)</td>
+                                                                                <td class="chars-table__sub-char">Внутренний блок</td>
+                                        <td class="chars-table__char-unit">мм</td>
+                                                                                    <td>790x192x275</td>
+                                                                                    <td>790x192x275</td>
+                                                                                    <td>920x195x306</td>
+                                                                                    <td>1100x222x333</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Наружный блок</td>
+                                        <td class="chars-table__char-unit">мм</td>
+                                                                                    <td>650(+62)x276x459</td>
+                                                                                    <td>650(+62)x276x459</td>
+                                                                                    <td>730(+65)x305x549</td>
+                                                                                    <td>788(+65)x349x602</td>
+                                                                            </tr>
+                                
+                                                            
+                                                                <tbody class="chars-table__hidden-block" style="display: none;">
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Вес</td>
+                                                                                <td class="chars-table__sub-char">Внутренний блок</td>
+                                        <td class="chars-table__char-unit">кг</td>
+                                                                                    <td>8.4</td>
+                                                                                    <td>8.4</td>
+                                                                                    <td>9.8</td>
+                                                                                    <td>14</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Наружный блок</td>
+                                        <td class="chars-table__char-unit">кг</td>
+                                                                                    <td>22</td>
+                                                                                    <td>22</td>
+                                                                                    <td>24.5</td>
+                                                                                    <td>31</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Хладагент</td>
+                                                                                <td class="chars-table__sub-char">Тип</td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>R32</td>
+                                                                                    <td>R32</td>
+                                                                                    <td>R32</td>
+                                                                                    <td>R32</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Заправка</td>
+                                        <td class="chars-table__char-unit">кг</td>
+                                                                                    <td>0,49</td>
+                                                                                    <td>0.49</td>
+                                                                                    <td>0.67</td>
+                                                                                    <td>1.06</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="4">Трубопровод хладагента</td>
+                                                                                <td class="chars-table__sub-char">Диаметр для жидкости</td>
+                                        <td class="chars-table__char-unit">мм</td>
+                                                                                    <td>6.35</td>
+                                                                                    <td>6.35</td>
+                                                                                    <td>6.35</td>
+                                                                                    <td>6.35</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Диаметр для газа</td>
+                                        <td class="chars-table__char-unit">мм</td>
+                                                                                    <td>9.52</td>
+                                                                                    <td>9.52</td>
+                                                                                    <td>9.52</td>
+                                                                                    <td>12.7</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Длина между блоками</td>
+                                        <td class="chars-table__char-unit">м</td>
+                                                                                    <td>25</td>
+                                                                                    <td>25</td>
+                                                                                    <td>25</td>
+                                                                                    <td>25</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Перепад между блоками</td>
+                                        <td class="chars-table__char-unit">м</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="2">Диапазон рабочих температур наружного воздуха</td>
+                                                                                <td class="chars-table__sub-char">Охлаждение</td>
+                                        <td class="chars-table__char-unit">°C</td>
+                                                                                    <td>-15~53</td>
+                                                                                    <td>-15~53</td>
+                                                                                    <td>-15~53</td>
+                                                                                    <td>-15~53</td>
+                                                                            </tr>
+                                                                    
+                                    <tr>
+                                                                                <td class="chars-table__sub-char">Нагрев</td>
+                                        <td class="chars-table__char-unit">°C</td>
+                                                                                    <td>-15~30</td>
+                                                                                    <td>-15~30</td>
+                                                                                    <td>-15~30</td>
+                                                                                    <td>-15~30</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="1">Срок эксплуатации</td>
+                                                                                <td class="chars-table__sub-char"></td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>10 лет</td>
+                                                                                    <td>10 лет</td>
+                                                                                    <td>10 лет</td>
+                                                                                    <td>10 лет</td>
+                                                                            </tr>
+                                
+                                                            
+                                
+                                                                    
+                                    <tr>
+                                                                                    <td class="chars-table__char" rowspan="1">Страна изготовитель</td>
+                                                                                <td class="chars-table__sub-char"></td>
+                                        <td class="chars-table__char-unit"></td>
+                                                                                    <td>Китай</td>
+                                                                                    <td>Китай</td>
+                                                                                    <td>Китай</td>
+                                                                                    <td>Китай</td>
+                                                                            </tr>
+                                
+                            
+                                                        </tbody>
+                            <tr>
+                                <td class="chars-table__show-more" colspan="100%">
+                                    <button><span>Показать все</span> <span>Скрыть</span></button>
+                                </td>
+                            </tr>
+                            
+                                                            <tr>
+                                    <td class="chars-table__char">Стоимость</td>
+                                    <td></td>
+                                    <td></td>
+                                                                            <td class="chars-table__price">41&nbsp;390 &#8381;</td>
+                                                                            <td class="chars-table__price">46&nbsp;390 &#8381;</td>
+                                                                            <td class="chars-table__price">79&nbsp;990 &#8381;</td>
+                                                                            <td class="chars-table__price">107&nbsp;290 &#8381;</td>
+                                                                    </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                                                    <td>
+                                                                            <a href="https://daichi-aircon.com/where-to-buy/" class="chars-table__item-link button button--small" target="_blank">
+                                            Где купить?
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                                                                <a href="https://daichi-aircon.com/catalog/bytovye-split-sistemy/split-sistemy-daichi-seriya-air-2-inverter/" class="chars-table__item-link button-secondary button--small" target="_blank">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                            </td>
+                                                                    <td>
+                                                                            <a href="https://daichi-aircon.com/where-to-buy/" class="chars-table__item-link button button--small" target="_blank">
+                                            Где купить?
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                                                                <a href="https://daichi-aircon.com/catalog/bytovye-split-sistemy/split-sistemy-daichi-seriya-air-2-inverter/" class="chars-table__item-link button-secondary button--small" target="_blank">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                            </td>
+                                                                    <td>
+                                                                            <a href="https://daichi-aircon.com/where-to-buy/" class="chars-table__item-link button button--small" target="_blank">
+                                            Где купить?
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                                                                <a href="https://daichi-aircon.com/catalog/bytovye-split-sistemy/split-sistemy-daichi-seriya-air-2-inverter/" class="chars-table__item-link button-secondary button--small" target="_blank">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                            </td>
+                                                                    <td>
+                                                                            <a href="https://daichi-aircon.com/where-to-buy/" class="chars-table__item-link button button--small" target="_blank">
+                                            Где купить?
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                                                                <a href="https://daichi-aircon.com/catalog/bytovye-split-sistemy/split-sistemy-daichi-seriya-air-2-inverter/" class="chars-table__item-link button-secondary button--small" target="_blank">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#external-link"></use>
+                                            </svg>
+                                        </a>
+                                                                            </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card__wifi-control">
+        <div class="product-card__wifi-control-container container">
+            <div class="product-card__wifi-control-inner">
+                <div class="product-card__wifi-control-image-block">
+                    <img src="/local/templates/daichi/front/build/img/app-logo.svg" alt="Daichi comfort" class="product-card__wifi-control-icon">
+                    <a href="https://daichicloud.ru/mobileapp" target="_blank" class="product-card__wifi-control-app-link">
+                        <img src="/local/templates/daichi/front/build/img/appstore.svg" alt="Appstore">
+                    </a>
+                    <a href="https://daichicloud.ru/mobileapp" target="_blank" class="product-card__wifi-control-app-link">
+                        <img src="/local/templates/daichi/front/build/img/googleplay.svg" alt="GooglePlay">
+                    </a>
+                </div>
+                <div class="product-card__wifi-control-content">
+                    <h2 class="product-card__wifi-control-title">
+                        Управляй кондиционером со&nbsp;смартфона!                    </h2>
+                                        <p class="product-card__wifi-control-price">
+                        от 3&nbsp;090 &#8381;                    </p>
+                                        <p class="product-card__wifi-control-desc">
+                        К&nbsp;этому кондиционеру можно подключить мобильное
+управление, установив Wi-Fi модуль.                    </p>
+                    <ol class="product-card__wifi-control-benefits">
+                        <li class="product-card__wifi-control-benefit">
+                            Купите Wi-Fi модуль DW21‑B или&nbsp;DW22‑B                        </li>
+                        <li class="product-card__wifi-control-benefit">
+                            Установите Wi-Fi модуль во&nbsp;внутренний блок
+кондиционера согласно инструкции                        </li>
+                        <li class="product-card__wifi-control-benefit">
+                            Скачайте приложение Daichi Comfort из&nbsp;App
+Store или&nbsp;Google Play                        </li>
+                        <li class="product-card__wifi-control-benefit">
+                            Добавьте кондиционер в&nbsp;приложении и&nbsp;управляйте
+климатом со&nbsp;смартфона или&nbsp;ПК!                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="product-card__functions" data-id="product-card-functions" data-nav-target="product-card-functions">
+        <div class="product-card__functions-container container">
+            <h2 class="product-card__functions-title">Функции</h2>
+            <ul class="product-card__functions-list">
+                                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="263" data-fancybox="">
+                            <img src="/upload/uf/484/zhtkpu52t0ksr0carzkgajzmmyxqmwbf/bfef87b8d2cabd3688cd1d4927421d67.svg" alt="Высокий показатель SEER" class="function-card__icon">
+                            <p class="function-card__text">Высокий показатель SEER</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Высокая сезонная энергоэффективность класса «А++» и «А+++» обеспечит значительное снижение годового потребления электроэнергии.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="293" data-fancybox="">
+                            <img src="/upload/uf/d4a/e4kmacr63y42zjuwyjr0jmelmdhcx0u6/jd6bl161yzg8k6q7mxc2gjz2fcv23fjs.svg" alt="Wi-Fi, онлайн управление (опция)" class="function-card__icon">
+                            <p class="function-card__text">Wi-Fi, онлайн управление (опция)</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Кондиционер может управляться удаленно через интернет или локальную сеть через &quot;Облако Даичи&quot; со смартфона, ПК. Возможность управления кондиционером и наличие уточняйте у поставщика.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="271" data-fancybox="">
+                            <img src="/upload/uf/d2c/p65ghcmj55xvpy13ftcgxlh3faoc0ctd/076c6afb3675c78a19500039de6f3896.svg" alt="R-32" class="function-card__icon">
+                            <p class="function-card__text">R-32</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Наиболее озонобезопасный и энергоэффективный хладагент с низким потенциалом глобального потепления.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="241" data-fancybox="">
+                            <img src="/upload/uf/0fb/eqrc9g714ln1nn32mtosdw7p1ydg10ef/95f88520ca4f22ff04509334d6906ea8.svg" alt="3D-распределение воздушного потока" class="function-card__icon">
+                            <p class="function-card__text">3D-распределение воздушного потока</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Все пространство помещения охлаждается или нагревается равномерно за счет качания горизонтальных и вертикальных заслонок.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="283" data-fancybox="">
+                            <img src="/upload/uf/4dd/rdfpd021e2hcd54h1dps6ebk7ne01jqb/90f3f8fd20ed25543d47aafab2823105.svg" alt="Биполярный ионизатор воздуха" class="function-card__icon">
+                            <p class="function-card__text">Биполярный ионизатор воздуха</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Циклически генерирует «+» и «–» ионы, создавая ионизированную среду в помещении, благотворно влияющую на самочувствие.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="287" data-fancybox="">
+                            <img src="/upload/uf/977/d0ijwo8rc7tmyqmkr8ijcs1tk9s8fj8l/99598a3a108f66e69b9f7352456a6752.svg" alt="Ультрафиолетовая лампа" class="function-card__icon">
+                            <p class="function-card__text">Ультрафиолетовая лампа</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Встроенная УФ-лампа предотвращает развитие бактерий на узлах внутреннего блока и обеззараживает воздух.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="291" data-fancybox="">
+                            <img src="/upload/uf/73f/59un81sn601of0dv7h7ch7cby0fdsxhb/d4cc2042c18559d2fbe8ca0c0129a86e.svg" alt="Комбинированный фильтр &quot;Здоровье&quot;" class="function-card__icon">
+                            <p class="function-card__text">Комбинированный фильтр &quot;Здоровье&quot;</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Фильтр включает в себя биофильтр, фильтр с ионами серебра и катехиновый фильтр, обеззараживает воздух, разрушает клетки бактерий и деактивирует вредные вещества.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="252" data-fancybox="">
+                            <img src="/upload/uf/d69/apoxn726ozvri6m6j6a49s2yrx1c6rl0/f3f23f043d9302d9451aba21a74255d3.svg" alt="Локальный комфорт" class="function-card__icon">
+                            <p class="function-card__text">Локальный комфорт</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Заданная температура поддерживается в месте нахождения дистанционного пульта.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="256" data-fancybox="">
+                            <img src="/upload/uf/64d/dwew2tdamzz2vvim9l4ce0rp26xgff2m/8dd7cf97942b2d60bbfa565160291625.svg" alt="Комфортное воздухораспределение" class="function-card__icon">
+                            <p class="function-card__text">Комфортное воздухораспределение</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Эта функция автоматически меняет направление подачи воздуха в зависимости от температуры и обеспечивает равномерный температурный фон по всему объему помещения.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="258" data-fancybox="">
+                            <img src="/upload/uf/11f/wf6xq9tes8nyk91ymaczqb2fjryywyb1/b398f2949bbc8303f180bee52fa360e4.svg" alt="Протяженный воздушный поток" class="function-card__icon">
+                            <p class="function-card__text">Протяженный воздушный поток</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Конструкция заслонок способствует увеличению дальности распространения воздушного потока для равномерного кондиционирования.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="260" data-fancybox="">
+                            <img src="/upload/uf/b4d/ur9mdfsrusge13rkuzwrgow9bg3muzh2/d7180e2ee4bba991c6d6cd6d7386b852.svg" alt="Дежурный режим 8 °С" class="function-card__icon">
+                            <p class="function-card__text">Дежурный режим 8 °С</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                В режиме обогрева в помещении будет стабильно поддерживаться температура выше 0 °С во время вашего отсутствия.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="270" data-fancybox="">
+                            <img src="/upload/uf/07c/frykbu5pwjeran0f39qc3p03udbv6ozo/1614c0418b6e000bb98b0e8f90b57eab.svg" alt="Режим «Standby»" class="function-card__icon">
+                            <p class="function-card__text">Режим «Standby»</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Режим «Standby» (ожидания) характеризуется низким потреблением электроэнергии (~1 Вт).                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="240" data-fancybox="">
+                            <img src="/upload/uf/eab/d5zebyymieojwioj09b9f24ehzsksk7v/9172d84bc50f92640902eb840e0c4857.svg" alt="Функция «Комфортный сон»" class="function-card__icon">
+                            <p class="function-card__text">Функция «Комфортный сон»</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                &quot;Комфортный сон&quot;. Ее использование предотвращает переохлаждение или перегрев спящего человека.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="242" data-fancybox="">
+                            <img src="/upload/uf/50b/gj32n0yxghyate30q2i2gi6p5y8bpazm/5afaf984a5dbcad68baa4c46a0bbc463.svg" alt="Вертикальное распределение" class="function-card__icon">
+                            <p class="function-card__text">Вертикальное распределение</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Автоматическое качание горизонтальной заслонки.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="301" data-fancybox="">
+                            <img src="/upload/uf/504/30ld0hty8ivjj5rye2kcaxair4r4v5dm/74696c6c562ccc442cc83bb80a821f36.svg" alt="Самодиагностика" class="function-card__icon">
+                            <p class="function-card__text">Самодиагностика</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Функция проверки технических параметров работы, препятствующая выходу оборудования из строя.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="295" data-fancybox="">
+                            <img src="/upload/uf/bff/xlkj44cy3v1kspoj87cb383gdw1r5hgs/86dce1169482007a69c18b85e0337520.svg" alt="Работа по таймеру 24/7" class="function-card__icon">
+                            <p class="function-card__text">Работа по таймеру 24/7</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Позволяет запрограммировать время ВКЛ/ВЫКЛ кондиционера (в зависимости от модели и типа таймер от 24 ч до 2 недель).                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="246" data-fancybox="">
+                            <img src="/upload/uf/8f2/1q4vtoldwc1551bb9nnadb2t6bgg2o6i/5444b33c560eb1ae1a60eef159cfb05b.svg" alt="Авто" class="function-card__icon">
+                            <p class="function-card__text">Авто</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Автоматическое изменение скорости вращения вентилятора для поддержания стабильной температуры.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="238" data-fancybox="">
+                            <img src="/upload/uf/7aa/de1kjisdjwx5z71e7qqzipfb82fsp8ue/6dd692a9a3f18a24ac9c1eb07b2b1513.svg" alt="Скорости вентилятора" class="function-card__icon">
+                            <p class="function-card__text">Скорости вентилятора</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Несколько ступеней скорости вентилятора позволяет создать любому пользователю наиболее приятные условия пребывания.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="236" data-fancybox="">
+                            <img src="/upload/uf/991/3nmj1ok3k1c5npmpzx24a03khe5b16xc/aa929f35a31f5488cedb3abf42bdbbe7.svg" alt="Автоматический режим" class="function-card__icon">
+                            <p class="function-card__text">Автоматический режим</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Кондиционер автоматически выберет подходящий режим работы, на охлаждение или обогрев, в соответствии с заданной температурой.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="307" data-fancybox="">
+                            <img src="/upload/uf/4c5/ka13pmg6ldpy1f4g02y6f6z5hlaca9bc/1673bba348f1203fcdbcae51b9b81e70.svg" alt="Информационный LED дисплей" class="function-card__icon">
+                            <p class="function-card__text">Информационный LED дисплей</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Светодиодный дисплей c четким изображением и возможностью отключения ночью.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="302" data-fancybox="">
+                            <img src="/upload/uf/d28/xlk6vyavolcgw7rdh74tm4e9kgfaf2gm/2617cf6550137e28bd03438e459516c1.svg" alt="Блокировка" class="function-card__icon">
+                            <p class="function-card__text">Блокировка</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Исключается управление кондиционером посторонними и детьми.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="273" data-fancybox="">
+                            <img src="/upload/uf/127/1i7iap7e0ce8vmaxr6k6hjyt7x8jf32c/072299b75fad77e016f34286743d1ecc.svg" alt="Автоматический перезапуск" class="function-card__icon">
+                            <p class="function-card__text">Автоматический перезапуск</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Автоматический перезапуск после устранения сбоя энергоснабжения.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="262" data-fancybox="">
+                            <img src="/upload/uf/aaf/4ulcgdys99xlk8e36q0ak82yq8armbry/af4fb4b11a0450950f33246e8a584a67.svg" alt="Оптимальное оттаивание" class="function-card__icon">
+                            <p class="function-card__text">Оптимальное оттаивание</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Размораживание наружного блока длится строго необходимое время без снижения уровня комфорта в режиме обогрева.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="278" data-fancybox="">
+                            <img src="/upload/uf/5f8/6ewrmvz3r5bqvcajc81a6zlluc88lkxh/bd56130475c12b1f669f688c9bc2b683.svg" alt="Коррозионная стойкость" class="function-card__icon">
+                            <p class="function-card__text">Коррозионная стойкость</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Корпус наружного блока и теплообменники имеют специальные покрытия для защиты от влаги, абразивных частиц и агрессивных веществ.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="268" data-fancybox="">
+                            <img src="/upload/uf/a21/9lozzhigbvvllhw78zjjlfdaq04fx1de/7d87a4bdc640d6de5a130d3ee2a1f06f.svg" alt="Плавный пуск компрессора" class="function-card__icon">
+                            <p class="function-card__text">Плавный пуск компрессора</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Программное обеспечение Soft Start ограничивает пусковой ток компрессора в целях снижения нагрузки на энергосистему.                            </p></a>
+                    </li>
+                                                        <li class="product-card__functions-item is--hidden">
+                        <a href="#function-modal" class="product-card__functions-link function-card" data-id="274" data-fancybox="">
+                            <img src="/upload/uf/985/8gafy3pnp6b15z9je2l512zxxmz1r8x8/cff4ee41a903265c27339207df37dcc3.svg" alt="Устойчивость к перепадам напряжения" class="function-card__icon">
+                            <p class="function-card__text">Устойчивость к перепадам напряжения</p>
+                            <svg class="function-card__info">
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#info"></use>
+                            </svg>
+                            <p class="function-card__full-desc" style="display: none;">
+                                Кондиционер надежно работает при колебаниях напряжения электропитания от 170 В до 265 В                            </p></a>
+                    </li>
+                            </ul>
+                        <button class="product-card__functions-show-more button-secondary">
+                <span>Показать&nbsp;все</span>
+                <span>Скрыть</span>
+            </button>
+                        <div style="display: none;">
+                <div class="modal modal--function-card form" id="function-modal">
+                    <div class="h5 modal__title">
+                        <button class="modal__title-close-button mobile-only" type="button" data-fancybox-close="">
+                            <svg>
+                                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                        <span></span></div>
+                    <div class="modal__body">
+                        <div class="modal__function-icon"><img src="" alt=""></div>
+                        <p class="modal__desc"></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-card__documents" data-id="product-card-documents" data-nav-target="product-card-documents">
+        <div class="product-card__documents-container container">
+            <h2 class="product-card__documents-title">
+                Документация
+            </h2>
+            <ul class="product-card__documents-list">
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/c0a/rjbf1zpvl0lmhyusa489i62syrwk3ceg/DA_Бытовые кондиционеры Daichi_2026_170426_HR.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Каталог Daichi 2026</span><span
+                                        class="download-stroke__info">32.98M, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/e24/twry0pb4gcsaup6mkw4cn4xaj6x5igrc/IOM AIR_DC24-02.02.05_inverter_101224.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Инструкция по эксплуатации и монтажу, серия AIR 2 Inverter, R32</span><span
+                                        class="download-stroke__info">11.19M, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/c00/7rwe976tqiv5ikyh4k968w6hcnozzy76/Daichi_листовкa_Air 2 inverter_A4_2025.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Информационная листовка сплит система настенного типа, серия AIR 2 Inverter, R32</span><span
+                                        class="download-stroke__info">0.99M, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/954/i2q09q51anmv1hzhcirbn7311i2kj4zx/DA_2026_Air 2 Inverter.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Информационная листовка</span><span
+                                        class="download-stroke__info">865.17K, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/8af/26pu0h6hhlkrt3ey5e5qq35v0v4z0l3x/RC Air_DRC15_DC21-03.06.03.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Руководство пользователя. Беспроводной пульт управления DRC15</span><span
+                                        class="download-stroke__info">14.00M, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/331/f8gdfh4o1h9avr04ojh9mvwjdsjvvgyj/2025_Leaflet_Daikin_FDXM-F9.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Каталог климатического оборудования бытового и коммерческого назначения Midea 2025. DM25-02.01.01</span><span
+                                        class="download-stroke__info">134.30K, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                                    <li class="product-card__documents-item">
+                        <a href="/upload/iblock/511/2xf03a7vmpygocvxsk8eaxe0fnwjycgg/DA_2025_DC25-02.01.01_270225.pdf" class="download-stroke" download>
+                            <div class="download-stroke__icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#file-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="download-stroke__content">
+                                <span class="download-stroke__name">Каталог оборудования 2025. Интеллектуальные системы кондиционирования. DC25-02.01.01</span><span
+                                        class="download-stroke__info">17.20M, PDF</span></div>
+                            <div class="download-stroke__save-icon">
+                                <svg>
+                                    <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#save"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                
+            </ul>
+                    </div>
+    </div>
+
+
+<div class="support__phoenix" data-id="phoenix">
+    <div class="support__phoenix-container container">
+        <div class="support__phoenix-card">
+            <h2 class="support__phoenix-title">
+                Полная техническая документация доступна в&nbsp;базе данных Феникс!
+            </h2>
+            <a href="https://daichi.business/phoenix/" target="_blank" class="support__phoenix-link button">Перейти</a>
+        </div>
+    </div>
+</div>
+
+
+</section>
+</main>
+
+
+<div class="modal modal--certificate-check" id="certificate-check" style="display: none">
+    <div class="h5 modal__title">
+        <button class="modal__title-close-button mobile-only" type="button" data-fancybox-close>
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+        <span>Проверьте сертификат дилера!</span></div>
+    <div class="modal__body">
+        <div class="modal__certificate-image">
+            <picture>
+                <source srcset="/local/templates/daichi/front/build/img/certificate.webp">
+                <img src="/local/templates/daichi/front/build/img/certificate.png" alt="Сертификат"></picture>
+        </div>
+        <p class="modal__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit orci et
+urna lobortis, quis malesuada ex consectetur. Donec accumsan id lacus sit amet vulputate. Nunc
+gravida ligula nec mauris pellentesque, a accumsan justo iaculis!        </p>
+        <form action="" id="form-certificate-check">
+            <div class="form__fields-section">
+                <h3 class="form__fields-section-title">Укажите номер сертификата</h3>
+                <input type="hidden" name="sessid" id="sessid" value="d5a62b337e5214bee794d6e316bdee04" />                <div class="form__fields">
+                    <div class="col-100">
+                        <div class="input-field">
+                            <input type="text" name="certificate-number"
+                                   id="certificate-number" placeholder="K000000000001">
+                            <label for="certificate-number"></label> <span class="input-field__note"></span>
+                            <span class="input-field__outline"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <button class="form__submit button button--fullwidth" type="submit">Проверить сертификат
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="template-certificate-check-success" style="display: none">
+    <div class="h5 modal__title">
+        <button class="modal__title-close-button mobile-only" type="button" data-fancybox-close="">
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+        <span>Проверьте сертификат дилера!</span>
+    </div>
+    <div class="modal__body modal__body--centered">
+        <div class="modal__status-icon modal__status-icon--success">
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#close"></use>
+            </svg>
+        </div>
+        <b class="modal__subtitle">#certificate#</b>
+        <p class="modal__alert modal__alert--success">#message#</p>
+        <div class="modal__info-items">
+            <div class="modal__info-item"><span class="modal__info-item-title">Дилер</span> <span class="modal__info-item-value">#dealer#</span></div>
+            <div class="modal__info-item"><span class="modal__info-item-title">Бренд</span> <span class="modal__info-item-value">#brand#</span></div>
+            <div class="modal__info-item"><span class="modal__info-item-title">Действует до</span> <span class="modal__info-item-value">#date#</span></div>
+        </div>
+        <div class="modal__bottom">
+            <button class="modal__close button button--fullwidth" data-fancybox-close="">Закрыть</button>
+        </div>
+    </div>
+    <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+        </svg>
+    </button>
+</div>
+
+<div id="template-certificate-check-fail" style="display: none">
+    <div class="h5 modal__title">
+        <button class="modal__title-close-button mobile-only" type="button" data-fancybox-close="">
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+        <span>Проверьте сертификат дилера!</span></div>
+    <div class="modal__body modal__body--centered">
+        <div class="modal__status-icon modal__status-icon--fail">
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#close"></use>
+            </svg>
+        </div>
+        <b class="modal__subtitle">#certificate#</b>
+        <p class="modal__alert modal__alert--fail">#message#</p>
+        <div class="modal__info-items">
+            <div class="modal__info-item"><span class="modal__info-item-title">Дилер</span> <span class="modal__info-item-value">#dealer#</span></div>
+            <div class="modal__info-item"><span class="modal__info-item-title">Бренд</span> <span class="modal__info-item-value">#brand#</span></div>
+            <div class="modal__info-item"><span class="modal__info-item-title">Действует до</span> <span class="modal__info-item-value alert">#date#</span></div>
+        </div>
+        <div class="modal__bottom">
+            <button class="modal__close button button--fullwidth" data-fancybox-close="">Закрыть</button>
+        </div>
+    </div>
+    <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+        </svg>
+    </button>
+</div>
+
+<div id="template-certificate-check-not-found" style="display: none">
+    <div class="h5 modal__title">
+        <button class="modal__title-close-button mobile-only" type="button" data-fancybox-close="">
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use>
+            </svg>
+        </button>
+        <span>Проверьте сертификат дилера!</span></div>
+    <div class="modal__body modal__body--centered">
+        <div class="modal__status-icon modal__status-icon--fail">
+            <svg>
+                <use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#close"></use>
+            </svg>
+        </div>
+        <b class="modal__subtitle">#certificate#</b>
+        <p class="modal__alert modal__alert--fail">#message#</p>
+        <div class="modal__bottom">
+            <button class="modal__close button button--fullwidth" data-fancybox-close="">Закрыть</button>
+        </div>
+    </div>
+    <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
+</div>
+
+<div class="policy-popup">
+    <p class="policy-popup__text">
+        Мы&nbsp;используем файлы Cookie. Продолжив работу с&nbsp;сайтом,
+        вы&nbsp;соглашаетесь с&nbsp;
+        <a href="/policy/#cookie">политиками использования cookie</a>,
+        <a href="/policy/">обработки персональных данных</a> и&nbsp;
+        <a href="/policy/">конфиденциальности</a>.
+    </p>
+    <button class="policy-popup__button button">Ок</button>
+</div>
+<div class="footer">
+    <div class="button-up">
+        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#arrow-right"></use></svg>
+    </div>
+    <div class="footer__container container">
+        <div class="footer__top">
+            <a href="/" class="footer__logo-link">
+                <img src="/local/templates/daichi/front/build/img/daichi-logo.svg" alt="Daichi"></a>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    
+<nav class="footer__catalog">
+    <h2 class="h7 footer__catalog-title">Продукция</h2>
+    <ul class="footer__catalog-list">
+                    <li class="footer__nav-item">
+                <a href="/catalog/bytovoe-konditsionirovanie/" class="footer__catalog-link">
+                    Бытовое кондиционирование                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/multizonalnye-sistemy/" class="footer__catalog-link">
+                    Мультизональные системы                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/polupromyshlennye-split-sistemy/" class="footer__catalog-link">
+                    Полупромышленные сплит‑системы                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/multi-split-sistemy/" class="footer__catalog-link">
+                    Мульти-сплит-системы                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/otoplenie/" class="footer__catalog-link">
+                    Отопление                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/promyshlennye-sistemy-konditsionirovaniya/" class="footer__catalog-link">
+                    Промышленные системы кондиционирования                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/iot/" class="footer__catalog-link">
+                    IoT решения для климата                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/ventilyatsionnye-sistemy/" class="footer__catalog-link">
+                    Вентиляционные системы                </a>
+            </li>
+                    <li class="footer__nav-item">
+                <a href="/catalog/bytovye-pribory/" class="footer__catalog-link">
+                    Бытовые приборы                </a>
+            </li>
+            </ul>
+</nav>                </div>
+                <div class="footer__column">
+                    
+<nav class="footer__nav">
+    <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+            <a href="/about/"   class="footer__nav-link">
+                    О компании            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="/brands/"   class="footer__nav-link">
+                    Бренды            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="/support/"   class="footer__nav-link">
+                    Поддержка            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="/iotsolutions/"   class="footer__nav-link">
+                    IoT решения для&nbsp;климата            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="/news/"   class="footer__nav-link">
+                    Новости            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="/contacts/"   class="footer__nav-link">
+                    Контакты            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="https://daichi.market/" target="_blank"  class="footer__nav-link">
+                    Магазин            </a>
+        </li>
+            <li class="footer__nav-item">
+            <a href="/partners/"   class="footer__nav-link">
+                    Стать партнёром            </a>
+        </li>
+        </ul>
+</nav>                </div>
+
+                <div class="footer__column">
+                    
+<div class="footer__contact">
+    <p class="footer__contact-title">Служба поддержки</p>
+    <a href="tel:+78002014584" class="footer__contact-link">
+        +7 (800) 201–45–84    </a>
+</div>
+<div class="footer__contact">
+    <p class="footer__contact-title">Офис компании</p>
+    <a href="tel:+74957373733" class="footer__contact-link">
+        +7 (495) 737-37-33    </a>
+</div>
+<div class="footer__socials">
+    <a href="https://vk.com/daichicompany" target="_blank" class="footer__social-link">
+        <span class="visually-hidden">Аккаунт ВК</span>
+        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#vk"></use></svg>
+    </a>
+    <a href="https://rutube.ru/channel/24795976/?ysclid=m3ebvepi8p94827329" target="_blank" class="footer__social-link">
+        <span class="visually-hidden">Аккаунт RuTube</span>
+        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#youtube"></use></svg>
+    </a>
+    <a href="https://t.me/daichiru" target="_blank" class="footer__social-link">
+        <span class="visually-hidden">Телеграм</span>
+        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#telegram"></use></svg>
+    </a>
+    <a href="https://dzen.ru/daichi" target="_blank" class="footer__social-link">
+        <span class="visually-hidden">Яндекс Дзен</span>
+        <svg><use xlink:href="/local/templates/daichi/front/build/img/sprite.svg#yandex-dzen"></use></svg>
+    </a>
+</div>                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span class="footer__bottom-item">© Daichi 2026. Все&nbsp;права защищены</span>
+            <a class="footer__bottom-item" href="/policy/">Политика конфиденциальности</a>
+            <a class="footer__bottom-item" href="/activity/">Деятельность компании</a>
+        </div>
+    </div>
+</div>
+<script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script><script src="/bitrix/js/main/core/core.min.js?1758623208229643"></script><script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js","\/bitrix\/js\/main\/core\/core_promise.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/loadext\/loadext.js","\/bitrix\/js\/main\/loadext\/extension.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js","\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/core\/core.js","\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js","\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
+</script>
+<script>BX.Runtime.registerExtension({"name":"pull.protobuf","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"rest.client","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"pull_server_enabled":"N","pull_config_timestamp":0,"shared_worker_allowed":"Y","pull_guest_mode":"N","pull_guest_user_id":0,"pull_worker_mtime":1750399761});(window.BX||top.BX).message({"PULL_OLD_REVISION":"Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."});</script>
+<script>BX.Runtime.registerExtension({"name":"pull.client","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"pull","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"ui.design-tokens","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"ui.fonts.opensans","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"main.popup","namespace":"BX.Main","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"popup","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"LANGUAGE_ID":"ru","FORMAT_DATE":"DD.MM.YYYY","FORMAT_DATETIME":"DD.MM.YYYY HH:MI:SS","COOKIE_PREFIX":"BITRIX_SM","SERVER_TZ_OFFSET":"10800","UTF_MODE":"Y","SITE_ID":"s1","SITE_DIR":"\/","USER_ID":"","SERVER_TIME":1781984149,"USER_TZ_OFFSET":0,"USER_TZ_AUTO":"Y","bitrix_sessid":"d5a62b337e5214bee794d6e316bdee04"});</script><script src="/bitrix/js/pull/protobuf/protobuf.js?1682011348274055"></script>
+<script src="/bitrix/js/pull/protobuf/model.min.js?168201134814190"></script>
+<script src="/bitrix/js/rest/client/rest.client.min.js?16820113499240"></script>
+<script src="/bitrix/js/pull/client/pull.client.min.js?175039976149849"></script>
+<script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?176838287967480"></script>
+<script>BX.setJSList(["\/local\/templates\/daichi\/front\/build\/js\/vendor.js","\/local\/templates\/daichi\/front\/build\/js\/main.min.js","\/local\/templates\/daichi\/js\/global.js","\/local\/templates\/daichi\/js\/script.js","\/local\/templates\/daichi\/components\/bitrix\/search.form\/header\/script.js"]);</script>
+<script>BX.setCSSList(["\/local\/templates\/daichi\/front\/build\/css\/style.min.css"]);</script>
+<script>
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+
+
+
+<script  src="/bitrix/cache/js/s1/daichi/template_59d6727c3510d33ae08d0a00be25d09d/template_59d6727c3510d33ae08d0a00be25d09d_v1.js?17790956481063135"></script>
+
+<script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(96227978, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+</body>
+</html>

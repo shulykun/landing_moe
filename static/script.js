@@ -564,10 +564,10 @@ const brandInfo = {
         name: 'Daichi',
         desc: 'Российский бренд с собственной линейкой климатического оборудования. Комфорт и ничего лишнего.',
         models: [
-            { name: 'Daichi Miracle Inverter', desc: 'Дизайнерская сплит-система, чёрный зеркальный корпус. Full DC инвертор, R32, A++, обогрев до -20°C, 3D-поток, ионизация, холодная плазма, Wi-Fi (опция).', image: '', area: 25, btu: 9, price: 53000, tag: 'Премиум' },
-            { name: 'Daichi Air 2 Inverter', desc: 'Инверторная сплит-система с очисткой воздуха. R32, A++, шум от 22 дБ, 3D-поток, биполярный ионизатор, УФ-лампа, Wi-Fi (опция).', image: '', area: 25, btu: 9, price: 41000, tag: 'Популярный' },
-            { name: 'Daichi Alpine Inverter', desc: 'Самая тихая сплит-система — шум от 20 дБ. Инвертор R32, 3D-поток, фотокаталитический фильтр, холодная плазма, трасса до 50 м, Wi-Fi (опция).', image: '', area: 25, btu: 9, price: 40000, tag: 'Тихий' },
-            { name: 'Airwave Серия M Inverter', desc: 'Бюджетная инверторная сплит-система. R32, класс A, ионизатор Health, 3D-поток, Wi-Fi (опция).', image: '', area: 25, btu: 9, price: 30000, tag: 'Эконом' }
+            { name: 'Daichi Miracle Inverter', desc: 'Дизайнерская сплит-система, чёрный зеркальный корпус. Full DC инвертор, R32, A++, обогрев до -20°C, 3D-поток, ионизация, холодная плазма, Wi-Fi (опция).', image: 'static/images/brands/daichi/miracle.jpeg', area: 25, btu: 9, price: 53000, tag: 'Премиум' },
+            { name: 'Daichi Air 2 Inverter', desc: 'Инверторная сплит-система с очисткой воздуха. R32, A++, шум от 22 дБ, 3D-поток, биполярный ионизатор, УФ-лампа, Wi-Fi (опция).', image: 'static/images/brands/daichi/air2.jpeg', area: 25, btu: 9, price: 41000, tag: 'Популярный' },
+            { name: 'Daichi Alpine Inverter', desc: 'Самая тихая сплит-система — шум от 20 дБ. Инвертор R32, 3D-поток, фотокаталитический фильтр, холодная плазма, трасса до 50 м, Wi-Fi (опция).', image: 'static/images/brands/daichi/DA_Alpine_02.jpg', area: 25, btu: 9, price: 40000, tag: 'Тихий' },
+            { name: 'Airwave Серия M Inverter', desc: 'Бюджетная инверторная сплит-система. R32, класс A, ионизатор Health, 3D-поток, Wi-Fi (опция).', image: 'static/images/brands/daichi/airwave-m.jpeg', area: 25, btu: 9, price: 30000, tag: 'Эконом' }
         ],
         link: 'https://daichi-aircon.com/catalog/'
     },
