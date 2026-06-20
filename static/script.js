@@ -501,11 +501,11 @@ const brandInfo = {
     },
     dahaci: {
         name: 'Dahaci',
-        desc: 'Современный бренд с широким ассортиментом бытовых и полупромышленных кондиционеров. Отличное соотношение цены и качества.',
+        desc: 'Надёжные инверторные сплит-системы с расширенной гарантией. От премиум-моделей с Wi-Fi до экономичных решений — оптимальное соотношение цены и качества.',
         models: [
-            { name: 'Dahaci DOMI', desc: 'Инверторная настенная сплит-система с Wi-Fi, класс A+++, шум от 22 дБ.', image: '' },
-            { name: 'Dahaci HERO', desc: 'Настенная инверторная сплит-система с самоочисткой и обогревом до -25°C.', image: '' },
-            { name: 'Dahaci RAY', desc: 'Базовая настенная сплит-система на хладагенте R32, тихая и экономичная.', image: '' }
+            { name: '🏆 Dahaci NiceME — Премиум', desc: 'Инверторная настенная сплит-система с Wi-Fi, класс A, шум от 22 дБ<br><br>• Модель: DI09CNM-D / DO09CNM-D (9K BTU, до 26 м²)<br>• Инверторный компрессор GMCC<br>• Управление со смартфона через Wi-Fi<br>• Энергоэффективность: класс A<br>• Уровень шума: от 22 дБ<br>• Хладагент: R410A<br><br><a href="https://www.ozon.ru/search/?text=Dahaci+NiceME" target="_blank" rel="noopener noreferrer">🔗 Купить на Ozon</a>', image: 'static/images/brands/dahaci/niceme.png' },
+            { name: '❄️🔥 Dahaci NiceME DNM-F — Всесезонный', desc: 'Инверторная настенная сплит-система с самоочисткой, обогрев до -20°C<br><br>• Модель: DI09DNM-F / DO09DNM-F (9K BTU, до 26 м²)<br>• Инвертор<br>• Функция самоочистки (i-Clean)<br>• Работа на обогрев до -20°C<br>• Хладагент: R32 (экологичный)<br><br><a href="https://market.yandex.ru/search?text=Dahaci+NiceME+DNM-F" target="_blank" rel="noopener noreferrer">🔗 Купить на Яндекс.Маркет</a><br><a href="https://klimatprof.ru/search/?q=Dahaci+NiceME+DNM-F" target="_blank" rel="noopener noreferrer">🔗 Купить на Klimatprof</a><br><br>⚠️ В реальности обогрев до -20°C, не -25°C', image: 'static/images/brands/dahaci/niceme_dnm.png' },
+            { name: '💵 Dahaci FreshME — Эконом', desc: 'Базовая настенная сплит-система на хладагенте R32, тихая и экономичная<br><br>• Модель: DI09BFM-D / DO09BFM-D (9K BTU, до 25 м²)<br>• Постоянная производительность (on/off)<br>• Хладагент: R32<br>• Класс энергоэффективности: A<br>• Тихая работа', image: 'static/images/brands/dahaci/freshme.png' }
         ],
         link: 'https://dahaci.biz'
     },

@@ -541,6 +541,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
+.brand-model-card p a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.brand-model-card p a:hover {
+    text-decoration: underline;
+}
+
 .brand-showcase-link {
     display: inline-block;
     color: var(--primary-color);
