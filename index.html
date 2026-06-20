@@ -101,6 +101,13 @@
             <h2 class="section-title">Продажа кондиционеров</h2>
             <p class="section-lead">Подберём модель под площадь и задачи, поставим оборудование с гарантией производителя.</p>
 
+            <div class="area-calculator">
+                <label for="area-input">Площадь помещения:</label>
+                <input type="number" id="area-input" placeholder="например, 25" min="10" max="200"> м²
+                <button type="button" id="area-filter-btn" class="btn btn-secondary">Подобрать</button>
+                <button type="button" id="area-reset" class="btn btn-link" style="display:none;">Сбросить</button>
+            </div>
+
             <div class="brand-tags" aria-label="Бренды">
                 <button type="button" class="brand-tag active" data-brand="energolux">ENERGOLUX</button>
                 <button type="button" class="brand-tag" data-brand="tosot">TOSOT</button>

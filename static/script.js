@@ -460,9 +460,9 @@ const brandInfo = {
         name: 'ENERGOLUX',
         desc: 'Современный бренд с расширенной гарантией 5 лет. Инверторные сплит-системы с функцией самоочистки, низким уровнем шума и управлением по Wi-Fi.',
         models: [
-            { name: 'ENERGOLUX SAS', desc: 'Настенная сплит-система с инвертором. Класс A+++, Wi-Fi, ночной режим.', image: 'static/images/brands/energolux_sas.png' },
-            { name: 'ENERGOLUX SAM', desc: 'Мульти-сплит — до 4 внутренних блоков на один наружный.', image: 'static/images/brands/energolux_sam.png' },
-            { name: 'ENERGOLUX SAD', desc: 'Канальная серия для скрытой установки за подвесным потолком.', image: 'static/images/brands/energolux_sad.png' }
+            { name: 'ENERGOLUX SAS', desc: 'Настенная сплит-система с инвертором. Класс A+++, Wi-Fi, ночной режим.', image: 'static/images/brands/energolux_sas.png', area: 25, btu: 9, price: 32000 },
+            { name: 'ENERGOLUX SAM', desc: 'Мульти-сплит — до 4 внутренних блоков на один наружный.', image: 'static/images/brands/energolux_sam.png', area: 70, btu: 24, price: 85000 },
+            { name: 'ENERGOLUX SAD', desc: 'Канальная серия для скрытой установки за подвесным потолком.', image: 'static/images/brands/energolux_sad.png', area: 50, btu: 18, price: 65000 }
         ],
         link: 'https://energolux.ru.com/catalog/split-sistemy/'
     },
@@ -470,10 +470,10 @@ const brandInfo = {
         name: 'TOSOT',
         desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, гарантия до 5 лет.',
         models: [
-            { name: 'TOSOT Clivia DELUXE', desc: 'Флагман с адаптивным ИИ и энергоэффективностью A+++.', image: 'static/images/brands/tosot_clivia.png' },
-            { name: 'TOSOT Synergy', desc: 'Премиальный тепловой насос с эксклюзивным дизайном, A+++.', image: 'static/images/brands/tosot_synergy.png' },
-            { name: 'TOSOT Lyra X', desc: 'Новое поколение популярной LYRA — классический дизайн, актуальные характеристики.', image: 'static/images/brands/tosot_lyra.png' },
-            { name: 'TOSOT Natal Инвертор', desc: 'Базовая инверторная модель 2024 года с полным набором технологий.', image: 'static/images/brands/tosot_natal.png' }
+            { name: 'TOSOT Clivia DELUXE', desc: 'Флагман с адаптивным ИИ и энергоэффективностью A+++.', image: 'static/images/brands/tosot_clivia.png', area: 25, btu: 9, price: 45000 },
+            { name: 'TOSOT Synergy', desc: 'Премиальный тепловой насос с эксклюзивным дизайном, A+++.', image: 'static/images/brands/tosot_synergy.png', area: 35, btu: 12, price: 55000 },
+            { name: 'TOSOT Lyra X', desc: 'Новое поколение популярной LYRA — классический дизайн, актуальные характеристики.', image: 'static/images/brands/tosot_lyra.png', area: 25, btu: 9, price: 30000 },
+            { name: 'TOSOT Natal Инвертор', desc: 'Базовая инверторная модель 2024 года с полным набором технологий.', image: 'static/images/brands/tosot_natal.png', area: 20, btu: 7, price: 26000 }
         ],
         link: 'https://tosot.ru'
     },
@@ -481,10 +481,10 @@ const brandInfo = {
         name: 'LESSAR',
         desc: 'Надёжный бренд с широкой линейкой бытовых и коммерческих систем. Гарантия до 4 лет, доступная цена и стабильная работа.',
         models: [
-            { name: 'LESSAR Stella', desc: 'Флагманская серия с элегантным дизайном и расширенным функционалом.', image: 'static/images/brands/lessar_stella.png' },
-            { name: 'LESSAR Tiger', desc: 'Высокая энергоэффективность, быстрое охлаждение и обогрев.', image: 'static/images/brands/lessar_tiger.jpg' },
-            { name: 'LESSAR Ego', desc: 'Компактный внутренний блок и тихая работа для домашнего использования.', image: 'static/images/brands/lessar_ego.webp' },
-            { name: 'LESSAR Flexcool', desc: 'Универсальная серия с гибкими настройками для дома и малого бизнеса.', image: 'static/images/brands/lessar_flexcool.webp' }
+            { name: 'LESSAR Stella', desc: 'Флагманская серия с элегантным дизайном и расширенным функционалом.', image: 'static/images/brands/lessar_stella.png', area: 25, btu: 9, price: 28000 },
+            { name: 'LESSAR Tiger', desc: 'Высокая энергоэффективность, быстрое охлаждение и обогрев.', image: 'static/images/brands/lessar_tiger.jpg', area: 35, btu: 12, price: 38000 },
+            { name: 'LESSAR Ego', desc: 'Компактный внутренний блок и тихая работа для домашнего использования.', image: 'static/images/brands/lessar_ego.webp', area: 20, btu: 7, price: 22000 },
+            { name: 'LESSAR Flexcool', desc: 'Универсальная серия с гибкими настройками для дома и малого бизнеса.', image: 'static/images/brands/lessar_flexcool.webp', area: 50, btu: 18, price: 52000 }
         ],
         link: 'https://lessar.ru'
     },
@@ -492,9 +492,9 @@ const brandInfo = {
         name: 'Dahaci',
         desc: 'Современный бренд с широким ассортиментом бытовых и полупромышленных кондиционеров. Отличное соотношение цены и качества.',
         models: [
-            { name: 'Dahaci DOMI', desc: 'Инверторная настенная сплит-система с Wi-Fi, класс A+++, шум от 22 дБ.', image: '' },
-            { name: 'Dahaci HERO', desc: 'Настенная инверторная сплит-система с самоочисткой и обогревом до -25°C.', image: '' },
-            { name: 'Dahaci RAY', desc: 'Базовая настенная сплит-система на хладагенте R32, тихая и экономичная.', image: '' }
+            { name: 'Dahaci DOMI', desc: 'Инверторная настенная сплит-система с Wi-Fi, класс A+++, шум от 22 дБ.', image: '', area: 25, btu: 9, price: 25000 },
+            { name: 'Dahaci HERO', desc: 'Настенная инверторная сплит-система с самоочисткой и обогревом до -25°C.', image: '', area: 35, btu: 12, price: 32000 },
+            { name: 'Dahaci RAY', desc: 'Базовая настенная сплит-система на хладагенте R32, тихая и экономичная.', image: '', area: 20, btu: 7, price: 20000 }
         ],
         link: 'https://dahaci.biz'
     },
@@ -502,10 +502,10 @@ const brandInfo = {
         name: 'Kentatsu',
         desc: 'Японские технологии по доступной цене. Широкий модельный ряд для квартир и офисов. Гарантия 3 года.',
         models: [
-            { name: 'Kentatsu OMORI', desc: 'Дизайнерский флагман с A+++, жалюзи 180° и глубоким фильтром очистки.', image: '' },
-            { name: 'Kentatsu SEMPAI', desc: 'Биполярный ионизатор, шум от 20,5 дБ, технология Easy Climate Pro.', image: '' },
-            { name: 'Kentatsu OTARI', desc: 'Тепловой насос: обогрев до -25°C, охлаждение до -15°C.', image: '' },
-            { name: 'Kentatsu YUKI', desc: 'Доступная инверторная серия на R32 с 3D потоком и компактным дизайном.', image: '' }
+            { name: 'Kentatsu OMORI', desc: 'Дизайнерский флагман с A+++, жалюзи 180° и глубоким фильтром очистки.', image: '', area: 25, btu: 9, price: 30000 },
+            { name: 'Kentatsu SEMPAI', desc: 'Биполярный ионизатор, шум от 20,5 дБ, технология Easy Climate Pro.', image: '', area: 20, btu: 7, price: 24000 },
+            { name: 'Kentatsu OTARI', desc: 'Тепловой насос: обогрев до -25°C, охлаждение до -15°C.', image: '', area: 35, btu: 12, price: 36000 },
+            { name: 'Kentatsu YUKI', desc: 'Доступная инверторная серия на R32 с 3D потоком и компактным дизайном.', image: '', area: 25, btu: 9, price: 26000 }
         ],
         link: 'https://kentatsurussia.ru/catalog/konditsionirovanie/'
     },
@@ -513,10 +513,10 @@ const brandInfo = {
         name: 'Daichi',
         desc: 'Российский бренд с собственной линейкой климатического оборудования. Комфорт и ничего лишнего.',
         models: [
-            { name: 'Daichi SIB', desc: 'Базовая инверторная сплит-система с энергоэффективностью класса A.', image: '' },
-            { name: 'Daichi ATX', desc: 'Расширенный функционал, Wi-Fi и режим обогрева до -25°C.', image: '' },
-            { name: 'Daichi ACE', desc: 'Приток свежего воздуха и многоступенчатая фильтрация для здорового микроклимата.', image: '' },
-            { name: 'Daichi Elegant', desc: 'Элегантный дизайн, шум от 19 дБ, управление через приложение Daichi Comfort.', image: '' }
+            { name: 'Daichi SIB', desc: 'Базовая инверторная сплит-система с энергоэффективностью класса A.', image: '', area: 20, btu: 7, price: 23000 },
+            { name: 'Daichi ATX', desc: 'Расширенный функционал, Wi-Fi и режим обогрева до -25°C.', image: '', area: 25, btu: 9, price: 28000 },
+            { name: 'Daichi ACE', desc: 'Приток свежего воздуха и многоступенчатая фильтрация для здорового микроклимата.', image: '', area: 35, btu: 12, price: 40000 },
+            { name: 'Daichi Elegant', desc: 'Элегантный дизайн, шум от 19 дБ, управление через приложение Daichi Comfort.', image: '', area: 25, btu: 9, price: 31000 }
         ],
         link: 'https://daichi-aircon.com/catalog/'
     },
@@ -524,30 +524,64 @@ const brandInfo = {
         name: 'Midea',
         desc: 'Один из крупнейших производителей в мире. Отличная базовая функциональность и конкурентная цена. Гарантия 3 года.',
         models: [
-            { name: 'Midea MSAG', desc: 'Настенная серия с функцией самоочистки, энергосбережением и Wi-Fi.', image: '' },
-            { name: 'Midea Blanc', desc: 'Инверторная настенная серия с элегантным дизайном и режимом Turbo.', image: '' },
-            { name: 'Midea MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.', image: '' },
-            { name: 'Midea U-Shaped', desc: 'Инновационная U-образная серия с ультратихим инверторным компрессором.', image: '' }
+            { name: 'Midea MSAG', desc: 'Настенная серия с функцией самоочистки, энергосбережением и Wi-Fi.', image: '', area: 25, btu: 9, price: 24000 },
+            { name: 'Midea Blanc', desc: 'Инверторная настенная серия с элегантным дизайном и режимом Turbo.', image: '', area: 25, btu: 9, price: 29000 },
+            { name: 'Midea MAB', desc: 'Мульти-сплит система — подключение до 5 внутренних блоков.', image: '', area: 70, btu: 24, price: 75000 },
+            { name: 'Midea U-Shaped', desc: 'Инновационная U-образная серия с ультратихим инверторным компрессором.', image: '', area: 25, btu: 9, price: 33000 }
         ],
         link: 'https://air-midea.com/'
     }
 };
 
-function renderBrandShowcase(key) {
+// Базовая стоимость монтажа по BTU (₽)
+const installPrices = { 7: 5000, 9: 6000, 12: 8000, 18: 12000, 24: 18000 };
+
+function renderBrandShowcase(key, filterArea) {
     const info = brandInfo[key];
     if (!info) return;
 
     const showcase = document.getElementById('brandShowcase');
+    let models = info.models;
+    let areaLabel = '';
+
+    // Filter by area if set
+    if (filterArea && filterArea > 0) {
+        models = models.filter(m => m.area >= filterArea);
+        areaLabel = ` для площади от ${filterArea} м²`;
+    }
+
+    if (models.length === 0) {
+        showcase.innerHTML = `
+            <p class="brand-showcase-desc">${info.desc}</p>
+            <div class="brand-showcase-empty">Нет подходящих моделей в этой категории. Позвоните — подберём индивидуально: <a href="tel:+79143350675">+7 914 335-06-75</a></div>
+        `;
+        return;
+    }
+
+    // Find min total price
+    const minTotal = Math.min(...models.map(m => m.price + (installPrices[m.btu] || 6000)));
+
     showcase.innerHTML = `
         <p class="brand-showcase-desc">${info.desc}</p>
+        ${filterArea ? `<div class="area-filter-result">Найдено ${models.length} ${models.length === 1 ? 'модель' : 'моделей'}${areaLabel}. Под ключ — от <strong>${minTotal.toLocaleString('ru-RU')} ₽</strong></div>` : ''}
         <div class="brand-showcase-grid">
-            ${info.models.map(m => `
+            ${models.map(m => {
+                const install = installPrices[m.btu] || 6000;
+                const total = m.price + install;
+                return `
                 <div class="brand-model-card">
                     ${m.image ? `<img src="${m.image}" alt="${m.name}" class="brand-model-img" loading="lazy">` : ''}
                     <h4>${m.name}</h4>
                     <p>${m.desc}</p>
+                    <div class="model-specs">
+                        <span class="model-area">📊 до ${m.area} м²</span>
+                    </div>
+                    <div class="model-prices">
+                        <span class="model-price-equip">Оборудование: <strong>${m.price.toLocaleString('ru-RU')} ₽</strong></span>
+                        <span class="model-price-total">Под ключ: <strong>${total.toLocaleString('ru-RU')} ₽</strong></span>
+                    </div>
                 </div>
-            `).join('')}
+            `}).join('')}
         </div>
         <a href="${info.link}" target="_blank" rel="noopener noreferrer" class="brand-showcase-link">Перейти на сайт ${info.name} &rarr;</a>
     `;
@@ -557,6 +591,8 @@ function initBrandSwitcher() {
     const buttons = document.querySelectorAll('.brand-tag');
     if (!buttons.length) return;
 
+    let currentArea = 0;
+
     // Show first brand by default
     const firstKey = buttons[0].dataset.brand;
     renderBrandShowcase(firstKey);
@@ -565,8 +601,33 @@ function initBrandSwitcher() {
         btn.addEventListener('click', () => {
             buttons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            renderBrandShowcase(btn.dataset.brand);
+            renderBrandShowcase(btn.dataset.brand, currentArea);
         });
+    });
+
+    // Area calculator
+    const areaInput = document.getElementById('area-input');
+    const areaBtn = document.getElementById('area-filter-btn');
+    const areaReset = document.getElementById('area-reset');
+
+    function applyFilter() {
+        const val = parseInt(areaInput.value);
+        currentArea = (val > 0) ? val : 0;
+        const activeBtn = document.querySelector('.brand-tag.active');
+        const key = activeBtn ? activeBtn.dataset.brand : firstKey;
+        renderBrandShowcase(key, currentArea);
+        if (areaReset) areaReset.style.display = currentArea > 0 ? 'inline-block' : 'none';
+    }
+
+    if (areaBtn) areaBtn.addEventListener('click', applyFilter);
+    if (areaInput) areaInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); applyFilter(); } });
+    if (areaReset) areaReset.addEventListener('click', () => {
+        areaInput.value = '';
+        currentArea = 0;
+        const activeBtn = document.querySelector('.brand-tag.active');
+        const key = activeBtn ? activeBtn.dataset.brand : firstKey;
+        renderBrandShowcase(key);
+        areaReset.style.display = 'none';
     });
 }
 
