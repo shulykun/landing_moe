@@ -612,7 +612,7 @@ function renderBrandShowcase(key) {
         <p class="brand-showcase-desc">${info.desc}</p>
         <div class="brand-showcase-grid">
             ${info.models.map(m => `
-                <div class="brand-model-card">
+                <div class="brand-model-card" data-brand="${key}" data-model="${m.name}">
                     ${m.tag ? `<span class="model-tag">${m.tag}</span>` : ''}
                     ${m.image ? `<img src="${m.image}" alt="${m.name}" class="brand-model-img" loading="lazy">` : ''}
                     <h4>${m.name}</h4>
@@ -623,6 +623,15 @@ function renderBrandShowcase(key) {
         <p class="sale-note">Подберите любую модель на официальном сайте бренда и обращайтесь к нам — сделаем скидку и обеспечим гарантию.</p>
         <a href="${info.link}" target="_blank" rel="noopener noreferrer" class="brand-showcase-link">Перейти на сайт ${info.name} &rarr;</a>
     `;
+
+    // Track model card clicks
+    showcase.querySelectorAll('.brand-model-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            if (typeof ym === 'function') {
+                ym(109687297, 'hit', '/model/' + card.dataset.brand + '/' + card.dataset.model);
+            }
+        });
+    });
 }
 
 function initBrandSwitcher() {
