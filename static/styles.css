@@ -2194,3 +2194,48 @@ html {
     margin-top: 10px;
     animation: fadeIn 0.2s ease;
 }
+
+/* === Hero Badges + Prices (index2) === */
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.hero-badge {
+    background: rgba(167, 139, 250, 0.15);
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    color: #a78bfa;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.hero-prices {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.hero-price-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hero-price-label {
+    font-size: 0.8rem;
+    color: var(--text-light, #666);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-price-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark, #1a1a2e);
+}
