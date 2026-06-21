@@ -85,12 +85,19 @@
                                 <textarea id="message" name="message" rows="3" placeholder="Например: мне нужен кондиционер в квартиру (офис)" required></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="file" class="form-file-label">Прикрепить файл <span class="form-file-hint">(фото помещения, проект — необязательно)</span></label>
-                                <input type="file" id="file" name="file" accept="image/*,.pdf">
-                            </div>
-                            <div class="form-group">
                                 <label for="phone">Телефон</label>
                                 <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form-group form-file-toggle">
+                                <label class="form-checkbox-label">
+                                    <input type="checkbox" id="showFileInput" class="form-toggle-checkbox">
+                                    <span class="form-checkbox-custom"></span>
+                                    Прикрепить файл
+                                </label>
+                                <div class="form-file-wrapper" id="fileWrapper" style="display:none;">
+                                    <label for="file" class="form-file-label">Фото помещения, проект <span class="form-file-hint">(необязательно)</span></label>
+                                    <input type="file" id="file" name="file" accept="image/*,.pdf">
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Получить расчёт</button>
                         </form>
@@ -393,12 +400,19 @@
                     <textarea id="modal-message" name="message" rows="3" placeholder="Например: мне нужен кондиционер в квартиру (офис)" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="modal-file" class="form-file-label">Прикрепить файл <span class="form-file-hint">(фото помещения, проект — необязательно)</span></label>
-                    <input type="file" id="modal-file" name="file" accept="image/*,.pdf">
-                </div>
-                <div class="form-group">
                     <label for="modal-phone">Телефон</label>
                     <input type="tel" id="modal-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-group form-file-toggle">
+                    <label class="form-checkbox-label">
+                        <input type="checkbox" id="modalShowFileInput" class="form-toggle-checkbox">
+                        <span class="form-checkbox-custom"></span>
+                        Прикрепить файл
+                    </label>
+                    <div class="form-file-wrapper" id="modalFileWrapper" style="display:none;">
+                        <label for="modal-file" class="form-file-label">Фото помещения, проект <span class="form-file-hint">(необязательно)</span></label>
+                        <input type="file" id="modal-file" name="file" accept="image/*,.pdf">
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </form>

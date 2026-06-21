@@ -391,6 +391,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize phone mask
     initPhoneMask();
     
+    // File input toggle — hero form
+    const showFileInput = document.getElementById('showFileInput');
+    const fileWrapper = document.getElementById('fileWrapper');
+    if (showFileInput && fileWrapper) {
+        showFileInput.addEventListener('change', function() {
+            fileWrapper.style.display = this.checked ? 'block' : 'none';
+        });
+    }
+    
+    // File input toggle — modal form
+    const modalShowFile = document.getElementById('modalShowFileInput');
+    const modalFileWrapper = document.getElementById('modalFileWrapper');
+    if (modalShowFile && modalFileWrapper) {
+        modalShowFile.addEventListener('change', function() {
+            modalFileWrapper.style.display = this.checked ? 'block' : 'none';
+        });
+    }
+    
     // Handle hero form submission
     const heroForm = document.getElementById('heroForm');
     if (heroForm) {
