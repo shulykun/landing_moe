@@ -768,8 +768,10 @@ function showCalcResult() {
         '<span class="calc-result-badge">' + budgetInfo.label + '</span>';
 
     var modelsEl = document.getElementById('calcResultModels');
-    modelsEl.innerHTML =
-        '<p class="calc-result-text">Оставьте номер — мы пришлём расчёт с подходящими моделями и ценами.</p>';
+    if (modelsEl) {
+        modelsEl.innerHTML =
+            '<p class="calc-result-text">Оставьте номер — мы пришлём расчёт с подходящими моделями и ценами.</p>';
+    }
 
     document.getElementById('calcResult').classList.remove('hidden');
     document.getElementById('calcStep3').classList.add('hidden');
