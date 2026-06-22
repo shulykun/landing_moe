@@ -1733,7 +1733,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .featured-service-card {
-        padding: 32px 24px;
+        padding: 24px 18px;
     }
 
     .section-title {
@@ -1746,28 +1746,28 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero {
-        padding: 60px 0;
+        padding: 40px 0;
         min-height: auto;
     }
     
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.92rem;
     }
     
     .cta-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     .cta-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .form-container {
-        padding: 30px 20px;
+        padding: 24px 18px;
     }
     
     .hero-cta-mobile {
@@ -1791,7 +1791,7 @@ h1, h2, h3, h4, h5, h6 {
     .maintenance-detail,
     .why-us,
     .blog-section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     .service-block-actions {
@@ -1813,7 +1813,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .btn {
@@ -2014,7 +2014,7 @@ html {
 
 /* CTA Form Section */
 .cta-form-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: var(--bg-light);
 }
 
@@ -2184,7 +2184,7 @@ html {
 
 @media (max-width: 768px) {
     .office-section {
-        padding: 56px 0;
+        padding: 40px 0;
     }
 
     .office-gallery {
