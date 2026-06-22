@@ -860,16 +860,19 @@ document.addEventListener('DOMContentLoaded', function() {
         formData.append('phone', phone);
         formData.append('message', msg);
         
-        fetch('/api/submit', { method: 'POST', body: formData })
+        fetch('sendmail.php', { method: 'POST', body: formData })
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                inlineForm.innerHTML = '<p class="calc-success">\u2714 Спасибо! Мы свяжемся с вами в течение часа.</p>';
+                inlineForm.innerHTML = '<p class="calc-success">✔ Спасибо! Мы свяжемся с вами в течение часа.</p>';
                 if (typeof ym === 'function') {
                     ym(109687297, 'reachGoal', 'calc_submit');
                 }
             })
             .catch(function() {
-                inlineForm.innerHTML = '<p class="calc-success">\u2714 Спасибо! Мы свяжемся с вами в течение часа.</p>';
+                // Фолбэк: WhatsApp
+                var msg = 'Здравствуйте! Хочу получить расчёт. ' + msg + ' Телефон: ' + phone;
+                window.open('https://wa.me/79143350675?text=' + encodeURIComponent(msg), '_blank');
+                inlineForm.innerHTML = '<p class="calc-success">✔ Спасибо! Мы свяжемся с вами в течение часа.</p>';
             });
     });
 });
