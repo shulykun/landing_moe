@@ -776,8 +776,21 @@ function showCalcResult() {
     document.getElementById('calcResult').classList.remove('hidden');
     document.getElementById('calcStep3').classList.add('hidden');
 
-    // Pre-fill modal form with calc data
+    // Put calc data into inline form
     var calcSummary = inverterLabel + ', ' + calcState.area + ' м², ' + btuToLabel(btu) + ', ' + budgetInfo.label;
+    var inlineForm = document.getElementById('calcInlineForm');
+    if (inlineForm) {
+        var hidden = inlineForm.querySelector('input[name="message"]');
+        if (!hidden) {
+            hidden = document.createElement('input');
+            hidden.type = 'hidden';
+            hidden.name = 'message';
+            inlineForm.appendChild(hidden);
+        }
+        hidden.value = 'Интересует: ' + calcSummary;
+    }
+
+    // Also fill modal form if exists
     var msgField = document.getElementById('message');
     if (msgField) {
         msgField.value = 'Интересует: ' + calcSummary;
@@ -859,6 +872,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var formData = new FormData();
         formData.append('phone', phone);
         formData.append('message', msg);
+        formData.append('page', window.location.href);
         
         fetch('sendmail.php', { method: 'POST', body: formData })
             .then(function(r) { return r.json(); })
