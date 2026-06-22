@@ -604,8 +604,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    .brand-showcase-grid {
-        grid-template-columns: 1fr;
+    .service-block-content .section-title {
+        font-size: 1.6rem;
     }
 }
 
@@ -1820,8 +1820,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.5rem;
     }
     
-    .section-title {
-        font-size: 1.5rem;
+    .section-title,
+    .service-block-content .section-title {
+        font-size: 1.3rem;
     }
     
     .btn {
