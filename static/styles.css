@@ -2181,35 +2181,11 @@ html {
     margin-bottom: 1.25rem;
 }
 
-.calc-result-model {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 16px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    transition: border-color 0.2s ease;
-}
-
-.calc-result-model:hover {
-    border-color: var(--primary-color);
-}
-
-.calc-result-model-name {
-    font-weight: 600;
+.calc-result-text {
     font-size: 0.95rem;
-}
-
-.calc-result-model-tag {
-    font-size: 0.75rem;
-    color: var(--text-light);
-}
-
-.calc-result-model-price {
-    font-weight: 700;
-    color: var(--primary-color);
-    font-size: 0.95rem;
-    white-space: nowrap;
+    color: var(--text-dark);
+    line-height: 1.45;
+    margin-bottom: 0;
 }
 
 .calc-result-actions {

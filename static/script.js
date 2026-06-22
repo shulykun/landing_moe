@@ -758,7 +758,6 @@ function getCalcModels(budget, area) {
 function showCalcResult() {
     var btu = areaToBtu(calcState.area);
     var budgetInfo = budgetBrands[calcState.budget];
-    var models = getCalcModels(calcState.budget, calcState.area);
 
     var info = document.getElementById('calcResultInfo');
     var inverterLabel = calcState.inverter == 1 ? 'Инверторный' : 'Обычный (on/off)';
@@ -769,23 +768,18 @@ function showCalcResult() {
         '<span class="calc-result-badge">' + budgetInfo.label + '</span>';
 
     var modelsEl = document.getElementById('calcResultModels');
-    if (models.length === 0) {
-        modelsEl.innerHTML = '<p class="brand-showcase-desc">Подойдём оптимальный вариант индивидуально — оставьте заявку!</p>';
-    } else {
-        modelsEl.innerHTML = models.map(function(m) {
-            var priceStr = m.price ? 'от ' + m.price.toLocaleString('ru-RU') + ' ₽' : '';
-            return '<div class="calc-result-model">' +
-                '<div>' +
-                    '<div class="calc-result-model-name">' + m.brand + ' ' + m.name + '</div>' +
-                    (m.tag ? '<div class="calc-result-model-tag">' + m.tag + '</div>' : '') +
-                '</div>' +
-                (priceStr ? '<div class="calc-result-model-price">' + priceStr + '</div>' : '') +
-            '</div>';
-        }).join('');
-    }
+    modelsEl.innerHTML =
+        '<p class="calc-result-text">Оставьте номер — мы пришлём расчёт с подходящими моделями и ценами.</p>';
 
     document.getElementById('calcResult').classList.remove('hidden');
     document.getElementById('calcStep3').classList.add('hidden');
+
+    // Pre-fill modal form with calc data
+    var calcSummary = inverterLabel + ', ' + calcState.area + ' м², ' + btuToLabel(btu) + ', ' + budgetInfo.label;
+    var msgField = document.getElementById('message');
+    if (msgField) {
+        msgField.value = 'Интересует: ' + calcSummary;
+    }
 
     if (typeof ym === 'function') {
         ym(109687297, 'hit', '/calculator/result');
