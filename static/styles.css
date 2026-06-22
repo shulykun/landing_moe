@@ -2011,11 +2011,7 @@ html {
     }
 }
 
-@media (max-width: 768px) {
-    .call-fab {
-        display: flex;
-    }
-}
+/* call-fab disabled — removed by request */
 
 /* Office & contacts section */
 .office-section {
