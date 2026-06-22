@@ -1853,9 +1853,9 @@ h1, h2, h3, h4, h5, h6 {
 .modal {
     background: white;
     border-radius: 16px;
-    padding: 36px 32px;
+    padding: 32px 28px;
     width: 100%;
-    max-width: 480px;
+    max-width: 460px;
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -1894,8 +1894,46 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
     .modal {
-        padding: 28px 20px;
-        margin: auto 10px;
+        padding: 20px 16px;
+        margin: auto 6px;
+        border-radius: 12px;
+        max-height: 94vh;
+    }
+    .modal .form-title {
+        font-size: 1.3rem;
+        padding-right: 28px;
+        margin-bottom: 0.3rem;
+    }
+    .modal .form-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+    .modal .contact-form {
+        gap: 12px;
+    }
+    .modal .form-group label {
+        margin-bottom: 4px;
+        font-size: 0.85rem;
+    }
+    .modal .form-group input,
+    .modal .form-group textarea {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    .modal .form-group textarea {
+        min-height: 60px;
+    }
+    .modal .form-file-hint {
+        font-size: 0.8rem;
+    }
+    .modal-close {
+        top: 8px;
+        right: 10px;
+        font-size: 1.5rem;
+    }
+    .modal .btn-primary {
+        padding: 12px 20px;
+        font-size: 0.95rem;
     }
 }
 
