@@ -71,38 +71,9 @@
                         <span aria-hidden="true">·</span>
                         <a href="#maintenance">Чистка и ТО</a>
                     </p>
-                    <a href="#hero-form" class="btn btn-primary hero-cta-mobile">Получить расчёт</a>
+                    <a href="#cta-form" class="btn btn-primary hero-cta-mobile">Получить расчёт</a>
                 </div>
-                <div class="hero-form" id="hero-form">
-                    <div class="form-container">
-                        <h2 class="form-title">Получить расчёт</h2>
-                        <p class="form-subtitle">Подберём оборудование или услугу и назовём стоимость за 1 час</p>
-                        <form id="heroForm" class="contact-form">
-                            <!-- Honeypot: скрытое поле от спам-ботов -->
-                            <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
-                            <div class="form-group">
-                                <label for="message">Опишите, что нужно</label>
-                                <textarea id="message" name="message" rows="3" placeholder="Например: мне нужен кондиционер в квартиру (офис)" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Телефон</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
-                            </div>
-                            <div class="form-group form-file-toggle">
-                                <label class="form-checkbox-label">
-                                    <input type="checkbox" id="showFileInput" class="form-toggle-checkbox">
-                                    <span class="form-checkbox-custom"></span>
-                                    Прикрепить файл
-                                </label>
-                                <div class="form-file-wrapper" id="fileWrapper" style="display:none;">
-                                    <label for="file" class="form-file-label">Фото помещения, проект <span class="form-file-hint">(необязательно)</span></label>
-                                    <input type="file" id="file" name="file" accept="image/*,.pdf">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Получить расчёт</button>
-                        </form>
-                    </div>
-                </div>
+                <!-- Form moved after Install section -->
             </div>
         </div>
     </section>
@@ -165,6 +136,40 @@
                     </ul>
                     <button type="button" class="btn btn-primary" data-modal>Рассчитать стоимость монтажа</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form (after Install) -->
+    <section class="cta-form-section" id="cta-form">
+        <div class="container">
+            <div class="form-container" style="max-width:520px;margin:0 auto;">
+                <h2 class="form-title">Получить расчёт</h2>
+                <p class="form-subtitle">Подберём оборудование или услугу и назовём стоимость за 1 час</p>
+                <form id="heroForm" class="contact-form">
+                    <!-- Honeypot: скрытое поле от спам-ботов -->
+                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                    <div class="form-group">
+                        <label for="message">Опишите, что нужно</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Например: мне нужен кондиционер в квартиру (офис)" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-group form-file-toggle">
+                        <label class="form-checkbox-label">
+                            <input type="checkbox" id="showFileInput" class="form-toggle-checkbox">
+                            <span class="form-checkbox-custom"></span>
+                            Прикрепить файл
+                        </label>
+                        <div class="form-file-wrapper" id="fileWrapper" style="display:none;">
+                            <label for="file" class="form-file-label">Фото помещения, проект <span class="form-file-hint">(необязательно)</span></label>
+                            <input type="file" id="file" name="file" accept="image/*,.pdf">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Получить расчёт</button>
+                </form>
             </div>
         </div>
     </section>
