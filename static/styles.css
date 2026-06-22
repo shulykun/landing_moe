@@ -2514,3 +2514,85 @@ html {
     font-weight: 700;
     color: var(--text-dark, #1a1a2e);
 }
+
+/* === index3.html fixes === */
+
+/* Calc inline form */
+.calc-inline-form {
+    display: flex;
+    gap: 10px;
+    margin: 1rem 0 0.75rem;
+}
+
+.calc-inline-form input[type="tel"] {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.calc-inline-form input[type="tel"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.calc-reset-link {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: inherit;
+}
+
+.calc-reset-link:hover {
+    color: var(--primary-color);
+}
+
+/* Wider calc widget on desktop */
+@media (min-width: 769px) {
+    .calc-widget {
+        max-width: 760px;
+    }
+    .calc-options {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #calcStep1 .calc-option,
+    #calcStep3 .calc-option {
+        flex: 1 1 calc(50% - 5px);
+    }
+}
+
+/* Section-lead: don't cut off on desktop */
+.section-lead {
+    max-width: 760px;
+}
+
+/* Blog: left-align on desktop, not centered */
+.blog-section--left {
+    text-align: left;
+}
+
+.blog-section--left .blog-section .section-title,
+.blog-section--left .section-title {
+    text-align: left;
+}
+
+.blog-section--left .telegram-lead {
+    margin-left: 0;
+}
+
+/* Mobile calc inline form */
+@media (max-width: 480px) {
+    .calc-inline-form {
+        flex-direction: column;
+    }
+    .calc-inline-form .btn {
+        width: 100%;
+    }
+}

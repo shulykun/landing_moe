@@ -843,4 +843,33 @@ function initCalculator() {
 
 document.addEventListener('DOMContentLoaded', initCalculator);
 
+// Calc inline form submit
+document.addEventListener('DOMContentLoaded', function() {
+    var inlineForm = document.getElementById('calcInlineForm');
+    if (!inlineForm) return;
+    inlineForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var phone = inlineForm.querySelector('#calcPhone').value;
+        var msg = inlineForm.querySelector('input[name="message"]')?.value || '';
+        if (!phone) return;
+        
+        // Submit to same endpoint as main form
+        var formData = new FormData();
+        formData.append('phone', phone);
+        formData.append('message', msg);
+        
+        fetch('/api/submit', { method: 'POST', body: formData })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                inlineForm.innerHTML = '<p class="calc-success">\u2714 Спасибо! Мы свяжемся с вами в течение часа.</p>';
+                if (typeof ym === 'function') {
+                    ym(109687297, 'reachGoal', 'calc_submit');
+                }
+            })
+            .catch(function() {
+                inlineForm.innerHTML = '<p class="calc-success">\u2714 Спасибо! Мы свяжемся с вами в течение часа.</p>';
+            });
+    });
+});
+
 
