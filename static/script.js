@@ -603,12 +603,12 @@ const brandInfo = {
     }
 };
 
-function renderBrandShowcase(key) {
+function renderBrandAccordionContent(key) {
     const info = brandInfo[key];
-    if (!info) return;
-
-    const showcase = document.getElementById('brandShowcase');
-    showcase.innerHTML = `
+    if (!info) return `
+        <p class="brand-showcase-desc">Информация скоро появится.</p>
+    `;
+    return `
         <p class="brand-showcase-desc">${info.desc}</p>
         <div class="brand-showcase-grid">
             ${info.models.map(m => `
@@ -623,9 +623,42 @@ function renderBrandShowcase(key) {
         <p class="sale-note">Подберите любую модель на официальном сайте бренда и обращайтесь к нам — сделаем скидку и обеспечим гарантию.</p>
         <a href="${info.link}" target="_blank" rel="noopener noreferrer" class="brand-showcase-link">Перейти на сайт ${info.name} &rarr;</a>
     `;
+}
+
+function initBrandAccordion() {
+    const container = document.getElementById('brandAccordion');
+    if (!container) return;
+
+    const brandKeys = Object.keys(brandInfo);
+
+    // Build accordion items
+    container.innerHTML = brandKeys.map((key, i) => {
+        const info = brandInfo[key];
+        return `
+            <div class="brand-acc-item${i === 0 ? ' open' : ''}" data-brand="${key}">
+                <div class="brand-acc-header">
+                    <span>${info.name}</span>
+                    <span class="brand-acc-arrow">&#9662;</span>
+                </div>
+                <div class="brand-acc-body">
+                    <div class="brand-acc-content">
+                        ${renderBrandAccordionContent(key)}
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Click handlers
+    container.querySelectorAll('.brand-acc-header').forEach(function(header) {
+        header.addEventListener('click', function() {
+            const item = header.closest('.brand-acc-item');
+            item.classList.toggle('open');
+        });
+    });
 
     // Track model card clicks
-    showcase.querySelectorAll('.brand-model-card').forEach(function(card) {
+    container.querySelectorAll('.brand-model-card').forEach(function(card) {
         card.addEventListener('click', function() {
             if (typeof ym === 'function') {
                 ym(109687297, 'hit', '/model/' + card.dataset.brand + '/' + card.dataset.model);
@@ -634,28 +667,6 @@ function renderBrandShowcase(key) {
     });
 }
 
-function initBrandSwitcher() {
-    const allButtons = document.querySelectorAll('.brand-tag');
-    if (!allButtons.length) return;
-
-    // Show first brand by default
-    renderBrandShowcase(allButtons[0].dataset.brand);
-
-    // Event delegation on both brand-tag containers
-    document.querySelectorAll('.brand-tags').forEach(container => {
-        container.addEventListener('click', function(e) {
-            const btn = e.target.closest('.brand-tag');
-            if (!btn) return;
-            const brand = btn.dataset.brand;
-            // Sync active state across ALL buttons (top + bottom)
-            document.querySelectorAll('.brand-tag').forEach(b => {
-                b.classList.toggle('active', b.dataset.brand === brand);
-            });
-            renderBrandShowcase(brand);
-        });
-    });
-}
-
-document.addEventListener('DOMContentLoaded', initBrandSwitcher);
+document.addEventListener('DOMContentLoaded', initBrandAccordion);
 
 
