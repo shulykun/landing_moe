@@ -2020,6 +2020,221 @@ html {
     }
 }
 
+/* Calculator */
+.calc-section {
+    padding: 60px 0;
+    background: var(--bg-white);
+}
+
+.calc-widget {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.calc-step {
+    animation: fadeIn 0.3s ease;
+}
+
+.calc-step.hidden {
+    display: none;
+}
+
+.calc-step-num {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.calc-step-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    color: var(--text-dark);
+}
+
+.calc-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calc-option {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-family: inherit;
+}
+
+.calc-option:hover {
+    border-color: var(--primary-color);
+    background: #eef5fc;
+}
+
+.calc-option.selected {
+    border-color: var(--primary-color);
+    background: #eef5fc;
+}
+
+.calc-option-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.calc-option-desc {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.35;
+}
+
+.calc-area-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.calc-slider {
+    flex: 1;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--border-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+.calc-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: var(--shadow-sm);
+}
+
+.calc-slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: var(--shadow-sm);
+}
+
+.calc-area-display {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    min-width: 80px;
+    text-align: right;
+}
+
+.calc-area-marks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+    padding: 0 2px;
+}
+
+.calc-result-info {
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.calc-result-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+}
+
+.calc-result-models {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.25rem;
+}
+
+.calc-result-model {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: border-color 0.2s ease;
+}
+
+.calc-result-model:hover {
+    border-color: var(--primary-color);
+}
+
+.calc-result-model-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.calc-result-model-tag {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+.calc-result-model-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.calc-result-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+    .calc-section {
+        padding: 40px 0;
+    }
+    .calc-step-title {
+        font-size: 1.05rem;
+    }
+    .calc-option {
+        padding: 12px 14px;
+    }
+    .calc-result-model {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
+
 /* CTA Form Section */
 .cta-form-section {
     padding: 40px 0;

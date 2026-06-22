@@ -97,6 +97,81 @@
         </div>
     </section>
 
+    <!-- Calculator -->
+    <section class="calc-section" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Какой кондиционер выбрать?</h2>
+            <p class="section-lead">Ответьте на 3 вопроса — подберём подходящие модели.</p>
+
+            <div class="calc-widget" id="calcWidget">
+                <!-- Step 1: Inverter -->
+                <div class="calc-step" id="calcStep1">
+                    <div class="calc-step-num">Шаг 1 из 3</div>
+                    <h3 class="calc-step-title">Для чего нужен кондиционер?</h3>
+                    <div class="calc-options">
+                        <button type="button" class="calc-option" data-inverter="1">
+                            <span class="calc-option-title">Инверторный</span>
+                            <span class="calc-option-desc">Нужно обогреваться зимой, важна тишина и экономия</span>
+                        </button>
+                        <button type="button" class="calc-option" data-inverter="0">
+                            <span class="calc-option-title">Обычный (on/off)</span>
+                            <span class="calc-option-desc">Просто охлаждаться летом и подогрев в демисезон</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Area -->
+                <div class="calc-step hidden" id="calcStep2">
+                    <div class="calc-step-num">Шаг 2 из 3</div>
+                    <h3 class="calc-step-title">Какая площадь помещения?</h3>
+                    <div class="calc-area-wrap">
+                        <input type="range" id="calcArea" min="20" max="100" value="35" step="5" class="calc-slider">
+                        <div class="calc-area-display"><span id="calcAreaVal">35</span> м²</div>
+                    </div>
+                    <div class="calc-area-marks">
+                        <span>20</span><span>40</span><span>60</span><span>80</span><span>100</span>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="calcAreaNext">Далее</button>
+                </div>
+
+                <!-- Step 3: Budget -->
+                <div class="calc-step hidden" id="calcStep3">
+                    <div class="calc-step-num">Шаг 3 из 3</div>
+                    <h3 class="calc-step-title">Что важнее по бюджету?</h4>
+                    <div class="calc-options">
+                        <button type="button" class="calc-option" data-budget="ultra">
+                            <span class="calc-option-title">Ультра-бюджет</span>
+                            <span class="calc-option-desc">Самый доступный вариант</span>
+                        </button>
+                        <button type="button" class="calc-option" data-budget="budget">
+                            <span class="calc-option-title">Бюджет</span>
+                            <span class="calc-option-desc">Лучшее соотношение цена/качество</span>
+                        </button>
+                        <button type="button" class="calc-option" data-budget="optimal">
+                            <span class="calc-option-title">Оптимальный</span>
+                            <span class="calc-option-desc">Баланс функционала и цены</span>
+                        </button>
+                        <button type="button" class="calc-option" data-budget="premium">
+                            <span class="calc-option-title">Премиум</span>
+                            <span class="calc-option-desc">Максимум технологий и комфорта</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="calc-step hidden" id="calcResult">
+                    <div class="calc-step-num">Ваш подбор</div>
+                    <div class="calc-result-info" id="calcResultInfo"></div>
+                    <div class="calc-result-models" id="calcResultModels"></div>
+                    <div class="calc-result-actions">
+                        <button type="button" class="btn btn-primary" data-modal>Получить расчёт</button>
+                        <button type="button" class="btn btn-secondary" id="calcReset">↻ Заново</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Установка кондиционеров -->
     <section class="service-block install-block" id="install" style="background-color: var(--bg-light);">
         <div class="container">

@@ -669,4 +669,184 @@ function initBrandAccordion() {
 
 document.addEventListener('DOMContentLoaded', initBrandAccordion);
 
+// === Calculator ===
+function areaToBtu(area) {
+    if (area <= 25) return 7;
+    if (area <= 35) return 9;
+    if (area <= 50) return 12;
+    if (area <= 70) return 18;
+    return 24;
+}
+
+function btuToLabel(btu) {
+    return btu + 'k BTU';
+}
+
+var calcState = { inverter: null, area: 35, budget: null };
+
+var budgetBrands = {
+    ultra: {
+        label: 'Ультра-бюджет',
+        desc: 'Самый доступный вариант. Можем подобрать ещё бюджетнее — AXIOMA и аналоги.',
+        brands: ['dahaci']
+    },
+    budget: {
+        label: 'Бюджет',
+        desc: 'Лучшее соотношение цена/качество.',
+        brands: ['dahaci', 'kentatsu']
+    },
+    optimal: {
+        label: 'Оптимальный',
+        desc: 'Баланс функционала и цены.',
+        brands: ['kentatsu', 'midea', 'lessar']
+    },
+    premium: {
+        label: 'Премиум',
+        desc: 'Максимум технологий и комфорта.',
+        brands: ['energolux', 'tosot', 'daichi']
+    }
+};
+
+function getCalcModels(budget, area) {
+    var btu = areaToBtu(area);
+    var budgetInfo = budgetBrands[budget];
+    if (!budgetInfo) return [];
+
+    var results = [];
+    budgetInfo.brands.forEach(function(key) {
+        var info = brandInfo[key];
+        if (!info || !info.models) return;
+        info.models.forEach(function(m) {
+            var modelBtu = m.btu || 0;
+            var modelArea = m.area || 0;
+            if (modelBtu === btu || (modelArea >= area * 0.8 && modelArea <= area * 1.3)) {
+                results.push({
+                    brand: info.name,
+                    brandKey: key,
+                    name: m.name,
+                    tag: m.tag || '',
+                    price: m.price || null,
+                    image: m.image || ''
+                });
+            }
+        });
+    });
+
+    // If no exact match, show all from selected budget brands
+    if (results.length === 0) {
+        budgetInfo.brands.forEach(function(key) {
+            var info = brandInfo[key];
+            if (!info || !info.models) return;
+            info.models.forEach(function(m) {
+                results.push({
+                    brand: info.name,
+                    brandKey: key,
+                    name: m.name,
+                    tag: m.tag || '',
+                    price: m.price || null,
+                    image: m.image || ''
+                });
+            });
+        });
+    }
+
+    // Sort by price asc
+    results.sort(function(a, b) { return (a.price || 999999) - (b.price || 999999); });
+    return results;
+}
+
+function showCalcResult() {
+    var btu = areaToBtu(calcState.area);
+    var budgetInfo = budgetBrands[calcState.budget];
+    var models = getCalcModels(calcState.budget, calcState.area);
+
+    var info = document.getElementById('calcResultInfo');
+    var inverterLabel = calcState.inverter == 1 ? 'Инверторный' : 'Обычный (on/off)';
+    info.innerHTML =
+        '<span class="calc-result-badge">' + inverterLabel + '</span>' +
+        '<span class="calc-result-badge">' + calcState.area + ' м²</span>' +
+        '<span class="calc-result-badge">' + btuToLabel(btu) + '</span>' +
+        '<span class="calc-result-badge">' + budgetInfo.label + '</span>';
+
+    var modelsEl = document.getElementById('calcResultModels');
+    if (models.length === 0) {
+        modelsEl.innerHTML = '<p class="brand-showcase-desc">Подойдём оптимальный вариант индивидуально — оставьте заявку!</p>';
+    } else {
+        modelsEl.innerHTML = models.map(function(m) {
+            var priceStr = m.price ? 'от ' + m.price.toLocaleString('ru-RU') + ' ₽' : '';
+            return '<div class="calc-result-model">' +
+                '<div>' +
+                    '<div class="calc-result-model-name">' + m.brand + ' ' + m.name + '</div>' +
+                    (m.tag ? '<div class="calc-result-model-tag">' + m.tag + '</div>' : '') +
+                '</div>' +
+                (priceStr ? '<div class="calc-result-model-price">' + priceStr + '</div>' : '') +
+            '</div>';
+        }).join('');
+    }
+
+    document.getElementById('calcResult').classList.remove('hidden');
+    document.getElementById('calcStep3').classList.add('hidden');
+
+    if (typeof ym === 'function') {
+        ym(109687297, 'hit', '/calculator/result');
+    }
+}
+
+function initCalculator() {
+    // Step 1: Inverter
+    document.querySelectorAll('#calcStep1 .calc-option').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            calcState.inverter = btn.dataset.inverter;
+            document.getElementById('calcStep1').classList.add('hidden');
+            document.getElementById('calcStep2').classList.remove('hidden');
+            if (typeof ym === 'function') {
+                ym(109687297, 'hit', '/calculator/step1');
+            }
+        });
+    });
+
+    // Step 2: Area slider
+    var slider = document.getElementById('calcArea');
+    var display = document.getElementById('calcAreaVal');
+    if (slider) {
+        slider.addEventListener('input', function() {
+            display.textContent = slider.value;
+            calcState.area = parseInt(slider.value);
+        });
+    }
+    var areaNext = document.getElementById('calcAreaNext');
+    if (areaNext) {
+        areaNext.addEventListener('click', function() {
+            document.getElementById('calcStep2').classList.add('hidden');
+            document.getElementById('calcStep3').classList.remove('hidden');
+            if (typeof ym === 'function') {
+                ym(109687297, 'hit', '/calculator/step2');
+            }
+        });
+    }
+
+    // Step 3: Budget
+    document.querySelectorAll('#calcStep3 .calc-option').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            calcState.budget = btn.dataset.budget;
+            showCalcResult();
+        });
+    });
+
+    // Reset
+    var reset = document.getElementById('calcReset');
+    if (reset) {
+        reset.addEventListener('click', function() {
+            calcState = { inverter: null, area: 35, budget: null };
+            if (slider) { slider.value = 35; display.textContent = '35'; }
+            document.getElementById('calcResult').classList.add('hidden');
+            document.getElementById('calcStep3').classList.add('hidden');
+            document.getElementById('calcStep2').classList.add('hidden');
+            document.getElementById('calcStep1').classList.remove('hidden');
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initCalculator);
+
 
