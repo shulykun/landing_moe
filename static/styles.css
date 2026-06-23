@@ -2603,163 +2603,84 @@ html {
     }
 }
 
-/* === Hero: Sale + Care === */
-.hero-intro {
+/* === Hero: Community block === */
+.hero-text {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    margin-top: 8px;
+.hero-text .hero-trust {
+    margin-bottom: 1rem;
 }
 
-.hero-sale, .hero-care {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
+.hero-community {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    padding: 28px 24px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 24px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
-.hero-block-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+.hero-community-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.hero-community-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
     color: #fff;
 }
 
-.hero-block-text {
-    font-size: 0.95rem;
+.hero-community-text {
+    font-size: 0.92rem;
     opacity: 0.9;
-    line-height: 1.45;
-    margin-bottom: 1rem;
-}
-
-.hero-brands-inline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem;
-}
-
-.hero-brands-inline li {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.82rem;
-    font-weight: 600;
-}
-
-.hero-link-more {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.hero-care-actions {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 1rem;
-}
-
-.hero-care-bonus {
-    font-size: 0.88rem;
-    opacity: 0.85;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 10px 14px;
-    border-radius: 10px;
     line-height: 1.4;
+    margin-bottom: 0.85rem;
+}
+
+.hero-community-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.85rem;
+}
+
+.hero-community-bonus {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    line-height: 1.35;
 }
 
 @media (max-width: 768px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .hero-community {
+        padding: 18px 16px;
+        gap: 14px;
     }
     
-    .hero-sale, .hero-care {
-        padding: 20px 18px;
-    }
-    
-    .hero-block-title {
-        font-size: 1.15rem;
+    .hero-community-title {
+        font-size: 1.05rem;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-grid {
-        gap: 16px;
-    }
-    
-    .hero-brands-inline li {
-        font-size: 0.75rem;
-        padding: 3px 10px;
-    }
-}
-
-/* === Price cards (монтаж) === */
-.price-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin: 20px 0;
-}
-
-.price-card {
-    background: #fff;
-    border: 2px solid #e8eef5;
-    border-radius: 12px;
-    padding: 16px 14px;
-    text-align: center;
-    transition: border-color 0.2s;
-}
-
-.price-card:hover {
-    border-color: #0066CC;
-}
-
-.price-card-type {
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: #111;
-    margin-bottom: 4px;
-}
-
-.price-card-desc {
-    font-size: 0.8rem;
-    color: #666;
-    margin-bottom: 8px;
-    line-height: 1.3;
-}
-
-.price-card-amount {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: #0066CC;
-}
-
-@media (max-width: 768px) {
-    .price-cards {
-        grid-template-columns: 1fr;
+    .hero-community {
+        flex-direction: column;
         gap: 10px;
+        padding: 16px 14px;
     }
     
-    .price-card {
-        padding: 14px 12px;
+    .hero-community-icon {
+        font-size: 1.6rem;
+    }
+    
+    .hero-community-actions {
+        flex-wrap: wrap;
     }
 }
 
-@media (max-width: 480px) {
-    .price-card-type {
-        font-size: 0.9rem;
-    }
-    
-    .price-card-amount {
-        font-size: 1.1rem;
-    }
-}
