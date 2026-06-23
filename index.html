@@ -99,26 +99,7 @@
         </div>
     </section>
 
-    <!-- 2. Продажа кондиционеров -->
-    <section class="service-block install-block" id="brands">
-        <div class="container">
-            <h2 class="section-title">Продажа кондиционеров</h2>
-            <p class="section-lead">Не переплачивайте за лишнее. Мы подберём модель под вашу площадь, задачи и кошелёк — от ультра-бюджета до премиума.</p>
-
-            <div class="brand-accordion" id="brandAccordion">
-                <!-- Filled by JS -->
-            </div>
-
-            <ul class="service-features sale-features">
-                <li>Официальный дилер — гарантия до 5 лет (ENERGOLUX, TOSOT), 4 года (LESSAR), 3 года (Kentatsu, Midea)</li>
-                <li>Бытовые и коммерческие сплит-системы, в том числе с притоком воздуха</li>
-                <li>Подлинное оборудование, помощь в подборе под бюджет</li>
-            </ul>
-            <button type="button" class="btn btn-secondary" data-modal>Получить расчёт</button>
-        </div>
-    </section>
-
-    <!-- Calculator -->
+    <!-- Calculator (сразу после hero — люди ищут «по площади») -->
     <section class="calc-section" id="calculator">
         <div class="container">
             <h2 class="section-title">Какой кондиционер выбрать?</h2>
@@ -194,7 +175,7 @@
         </div>
     </section>
 
-    <!-- Установим аккуратно и надёжно -->
+    <!-- Монтаж — с честными ценами -->
     <section class="service-block install-block" id="install" style="background-color: var(--bg-light);">
         <div class="container">
             <div class="service-block-inner service-block-inner--reverse">
@@ -202,52 +183,52 @@
                     <img src="static/images/montage_1.jpg" alt="Монтаж кондиционера Climate Hall" width="560" height="360" loading="lazy">
                 </div>
                 <div class="service-block-content">
-                    <h2 class="section-title section-title--left">Установка кондиционеров</h2>
-                    <p class="service-block-lead">Монтаж любой сложности — от закладки трасс при ремонте до установки на готовом объекте. Нержавеющие кронштейны, аккуратные короба, чистота после работ.</p>
+                    <h2 class="section-title section-title--left">Монтаж под ключ</h2>
+                    <p class="service-block-lead">Купили у нас — установим со скидкой. Принесли свой — тоже поставим. Нержавеющие кронштейны, аккуратные короба, чистота после работ.</p>
+                    <div class="price-cards">
+                        <div class="price-card">
+                            <div class="price-card-type">Стандарт</div>
+                            <div class="price-card-desc">до 3 м трассы, 1 блок</div>
+                            <div class="price-card-amount">от 8 000 ₽</div>
+                        </div>
+                        <div class="price-card">
+                            <div class="price-card-type">Удлинённая трасса</div>
+                            <div class="price-card-desc">4–10 м, сложная прокладка</div>
+                            <div class="price-card-amount">от 12 000 ₽</div>
+                        </div>
+                        <div class="price-card">
+                            <div class="price-card-type">Закладка при ремонте</div>
+                            <div class="price-card-desc">трасса до чистовой отделки</div>
+                            <div class="price-card-amount">от 7 000 ₽</div>
+                        </div>
+                    </div>
                     <ul class="service-features">
-                        <li>Выезд замерщика и расчёт трассы бесплатно</li>
-                        <li>Закладка фреоновой трассы на стадии ремонта</li>
+                        <li>Выезд замерщика и расчёт трассы — бесплатно</li>
                         <li>Нержавеющие кронштейны, декоративные короба</li>
-                        <li>Установка бытовых и коммерческих систем любой сложности</li>
-                        <li>Запуск, тестирование и инструкция по эксплуатации</li>
+                        <li>Запуск, тестирование, инструкция по эксплуатации</li>
                     </ul>
-                    <button type="button" class="btn btn-primary" data-modal>Рассчитать стоимость монтажа</button>
+                    <button type="button" class="btn btn-primary" data-modal>Рассчитать монтаж</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Form (after Install) -->
-    <section class="cta-form-section" id="cta-form">
+    <!-- Продажа кондиционеров (после калькулятора и монтажа) -->
+    <section class="service-block install-block" id="brands">
         <div class="container">
-            <div class="form-container" style="max-width:520px;margin:0 auto;">
-                <h2 class="form-title">Сколько стоит?</h2>
-                <p class="form-subtitle">Цены — как в официальных магазинах. При заказе монтажа даём скидку на оборудование. Звоните, договоримся.</p>
-                <form id="heroForm" class="contact-form">
-                    <!-- Honeypot: скрытое поле от спам-ботов -->
-                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
-                    <div class="form-group">
-                        <label for="message">Опишите, что нужно</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Например: мне нужен кондиционер в квартиру (офис)" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
-                    </div>
-                    <div class="form-group form-file-toggle">
-                        <label class="form-checkbox-label">
-                            <input type="checkbox" id="showFileInput" class="form-toggle-checkbox">
-                            <span class="form-checkbox-custom"></span>
-                            Прикрепить файл
-                        </label>
-                        <div class="form-file-wrapper" id="fileWrapper" style="display:none;">
-                            <label for="file" class="form-file-label">Фото помещения, проект <span class="form-file-hint">(необязательно)</span></label>
-                            <input type="file" id="file" name="file" accept="image/*,.pdf">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Получить расчёт</button>
-                </form>
+            <h2 class="section-title">Бренды и модели</h2>
+            <p class="section-lead">Официальный дилер 7 марок — от ультра-бюджета до премиума. Гарантия до 5 лет.</p>
+
+            <div class="brand-accordion" id="brandAccordion">
+                <!-- Filled by JS -->
             </div>
+
+            <ul class="service-features sale-features">
+                <li>Подлинное оборудование — гарантия производителя (до 5 лет)</li>
+                <li>Бытовые и коммерческие сплит-системы, мульти-сплиты, с притоком воздуха</li>
+                <li>Помощь в подборе под бюджет — не переплатите за лишнее</li>
+            </ul>
+            <button type="button" class="btn btn-secondary" data-modal>Получить расчёт</button>
         </div>
     </section>
 
@@ -338,8 +319,40 @@
         </div>
     </section>
 
-    <!-- 5. Блог -->
-        <!-- Brizers Section -->
+    <!-- CTA Form -->
+    <section class="cta-form-section" id="cta-form">
+        <div class="container">
+            <div class="form-container" style="max-width:520px;margin:0 auto;">
+                <h2 class="form-title">Оставьте заявку — рассчитаем за час</h2>
+                <p class="form-subtitle">Подберём модель, посчитаем монтаж. Без навязывания. Цены — как в официальных магазинах.</p>
+                <form id="heroForm" class="contact-form">
+                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                    <div class="form-group">
+                        <label for="message">Опишите, что нужно</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Например: нужен кондиционер в квартиру 35 м²" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-group form-file-toggle">
+                        <label class="form-checkbox-label">
+                            <input type="checkbox" id="showFileInput" class="form-toggle-checkbox">
+                            <span class="form-checkbox-custom"></span>
+                            Прикрепить файл
+                        </label>
+                        <div class="form-file-wrapper" id="fileWrapper" style="display:none;">
+                            <label for="file" class="form-file-label">Фото помещения, проект <span class="form-file-hint">(необязательно)</span></label>
+                            <input type="file" id="file" name="file" accept="image/*,.pdf">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Получить расчёт</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бризеры -->
     <section class="maintenance-detail" id="brizers">
         <div class="container">
             <div class="brizers-content">
