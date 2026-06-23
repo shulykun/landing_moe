@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://climatehall.ru/">
     <meta property="og:locale" content="ru_RU">
 
-    <link rel="stylesheet" href="static/styles.css?v=10">
+    <link rel="stylesheet" href="static/styles.css?v=12">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -43,65 +43,55 @@
         <div class="container site-header-inner">
             <a href="#" class="site-brand">Climate Hall</a>
             <nav class="site-nav" aria-label="Основная навигация">
-                <a href="#sale">Продажа</a>
+                <a href="#calculator">Калькулятор</a>
+                <a href="#brands">Бренды</a>
                 <a href="#install">Монтаж</a>
                 <a href="#maintenance">Чистка</a>
-                <a href="#blog" class="site-nav-blog">Блог</a>
                 <a href="tel:+79143350675" class="site-nav-phone">📞 +7 (914) 335-06-75</a>
-                <a href="#hero-form" class="site-nav-cta">Расчёт</a>
+                <a href="#cta-form" class="site-nav-cta">Расчёт</a>
             </nav>
         </div>
     </header>
 
     <div class="page-wrap">
-    <!-- 1. Hero -->
+
+    <!-- 1. Hero — компактный -->
     <section class="hero" id="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Кондиционеры во Владивостоке — продажа и монтаж под ключ</h1>
-                    <p class="hero-subtitle">
-                        Подберём модель под вашу площадь и бюджет, поставим оборудование с гарантией производителя. Устанавливаем и обслуживаем. С 2010 года во Владивостоке и крае.
-                    </p>
-                    <p class="hero-trust">Бесплатная консультация · ответим в течение часа</p>
-                    <p class="hero-links">
-                        <a href="#sale">Продажа</a>
-                        <span aria-hidden="true">·</span>
-                        <a href="#install">Монтаж</a>
-                        <span aria-hidden="true">·</span>
-                        <a href="#maintenance">Чистка и ТО</a>
-                    </p>
-                    <a href="#cta-form" class="btn btn-primary hero-cta-mobile">Получить расчёт</a>
+            <div class="hero-text">
+                <h1 class="hero-title">Кондиционеры во Владивостоке — продажа, монтаж, обслуживание</h1>
+                <p class="hero-subtitle">Подберём, привезём, установим. Гарантия до 5 лет. С 2010 года.</p>
+                <div class="hero-badges">
+                    <span class="hero-badge">💰 Цены — как в магазинах</span>
+                    <span class="hero-badge">🔧 Монтаж за 1 день</span>
+                    <span class="hero-badge">🛡️ Гарантия до 5 лет</span>
                 </div>
-                <!-- Form moved after Install section -->
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn btn-primary">Подобрать кондиционер</a>
+                    <a href="tel:+79143350675" class="btn btn-outline-light">Позвонить</a>
+                </div>
+            </div>
+
+            <!-- Компактный блок соцсетей -->
+            <div class="hero-community">
+                <div class="hero-community-icon">💬</div>
+                <div class="hero-community-body">
+                    <strong>Читайте о нашем опыте и задавайте вопросы</strong>
+                    <span>Реальные кейсы, разборы техники, советы от практика. Поможем разобраться, даже если ничего не заказываете.</span>
+                    <div class="hero-community-actions">
+                        <a href="https://t.me/climate_hall" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">Telegram</a>
+                        <a href="https://max.ru/join/sl6iVfoDwWF3yfeYOX-5p98XSjidkRfma1rHktmBN5Q" target="_blank" rel="noopener noreferrer" class="btn btn-max">МАКС</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 2. Продажа кондиционеров -->
-    <section class="service-block install-block" id="sale">
-        <div class="container">
-            <h2 class="section-title">Продажа кондиционеров</h2>
-            <p class="section-lead">Не переплачивайте за лишнее. Мы подберём модель под вашу площадь, задачи и кошелёк — от ультра-бюджета до премиума.</p>
-
-            <div class="brand-accordion" id="brandAccordion">
-                <!-- Filled by JS -->
-            </div>
-
-            <ul class="service-features sale-features">
-                <li>Официальный дилер — гарантия до 5 лет (ENERGOLUX, TOSOT), 4 года (LESSAR), 3 года (Kentatsu, Midea)</li>
-                <li>Бытовые и коммерческие сплит-системы, в том числе с притоком воздуха</li>
-                <li>Подлинное оборудование, помощь в подборе под бюджет</li>
-            </ul>
-            <button type="button" class="btn btn-secondary" data-modal>Получить расчёт</button>
-        </div>
-    </section>
-
-    <!-- Calculator -->
+    <!-- 2. Калькулятор — сразу после hero -->
     <section class="calc-section" id="calculator">
         <div class="container">
             <h2 class="section-title">Какой кондиционер выбрать?</h2>
-            <p class="section-lead">Ответьте на 3 вопроса — подберём подходящие аврианты</p>
+            <p class="section-lead">Ответьте на 3 вопроса — подберём подходящие варианты</p>
 
             <div class="calc-widget" id="calcWidget">
                 <!-- Step 1: Inverter -->
@@ -173,41 +163,17 @@
         </div>
     </section>
 
-    <!-- Установим аккуратно и надёжно -->
-    <section class="service-block install-block" id="install" style="background-color: var(--bg-light);">
-        <div class="container">
-            <div class="service-block-inner service-block-inner--reverse">
-                <div class="service-block-media">
-                    <img src="static/images/montage_1.jpg" alt="Монтаж кондиционера Climate Hall" width="560" height="360" loading="lazy">
-                </div>
-                <div class="service-block-content">
-                    <h2 class="section-title section-title--left">Установка кондиционеров</h2>
-                    <p class="service-block-lead">Монтаж любой сложности — от закладки трасс при ремонте до установки на готовом объекте. Нержавеющие кронштейны, аккуратные короба, чистота после работ.</p>
-                    <ul class="service-features">
-                        <li>Выезд замерщика и расчёт трассы бесплатно</li>
-                        <li>Закладка фреоновой трассы на стадии ремонта</li>
-                        <li>Нержавеющие кронштейны, декоративные короба</li>
-                        <li>Установка бытовых и коммерческих систем любой сложности</li>
-                        <li>Запуск, тестирование и инструкция по эксплуатации</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary" data-modal>Рассчитать стоимость монтажа</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Form (after Install) -->
+    <!-- 3. Форма — сразу после калькулятора -->
     <section class="cta-form-section" id="cta-form">
         <div class="container">
             <div class="form-container" style="max-width:520px;margin:0 auto;">
-                <h2 class="form-title">Сколько стоит?</h2>
-                <p class="form-subtitle">Цены — как в официальных магазинах. При заказе монтажа даём скидку на оборудование. Звоните, договоримся.</p>
+                <h2 class="form-title">Оставьте заявку — рассчитаем за час</h2>
+                <p class="form-subtitle">Подберём модель, посчитаем монтаж. Без навязывания. Цены — как в официальных магазинах.</p>
                 <form id="heroForm" class="contact-form">
-                    <!-- Honeypot: скрытое поле от спам-ботов -->
                     <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
                     <div class="form-group">
                         <label for="message">Опишите, что нужно</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Например: мне нужен кондиционер в квартиру (офис)" required></textarea>
+                        <textarea id="message" name="message" rows="3" placeholder="Например: нужен кондиционер в квартиру 35 м²" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="phone">Телефон</label>
@@ -230,7 +196,82 @@
         </div>
     </section>
 
-    <!-- 3. Чистка / ТО (кратко) -->
+    <!-- 4. Как мы работаем — 4 шага -->
+    <section class="how-it-works" id="process">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div class="step-icon">📞</div>
+                    <h3>Звонок или заявка</h3>
+                    <p>Расскажите, что нужно. Консультируем бесплатно — поможем понять, что подходит.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div class="step-icon">📐</div>
+                    <h3>Замер на объекте</h3>
+                    <p>Приезжаем, считаем трассу, обсуждаем расположение. Бесплатно.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div class="step-icon">🔧</div>
+                    <h3>Монтаж за 1 день</h3>
+                    <p>Устанавливаем аккуратно, чистоту оставляем. Нержавеющие кронштейны, декоративные короба.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <div class="step-icon">✅</div>
+                    <h3>Запуск и гарантия</h3>
+                    <p>Тестируем, показываем как пользоваться. На оборудование — гарантия до 5 лет.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Бренды -->
+    <section class="service-block install-block" id="brands">
+        <div class="container">
+            <h2 class="section-title">Бренды и модели</h2>
+            <p class="section-lead">Официальный дилер 7 марок — от ультра-бюджета до премиума. Гарантия до 5 лет.</p>
+
+            <div class="brand-accordion" id="brandAccordion">
+                <!-- Filled by JS -->
+            </div>
+
+            <ul class="service-features sale-features">
+                <li>Подлинное оборудование — гарантия производителя (до 5 лет)</li>
+                <li>Бытовые и коммерческие сплит-системы, мульти-сплиты, с притоком воздуха</li>
+                <li>Помощь в подборе под бюджет — не переплатите за лишнее</li>
+            </ul>
+            <button type="button" class="btn btn-secondary" data-modal>Получить расчёт</button>
+        </div>
+    </section>
+
+    <!-- 6. Монтаж -->
+    <section class="service-block install-block" id="install" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="service-block-inner service-block-inner--reverse">
+                <div class="service-block-media">
+                    <img src="static/images/montage_1.jpg" alt="Монтаж кондиционера Climate Hall" width="560" height="360" loading="lazy">
+                </div>
+                <div class="service-block-content">
+                    <h2 class="section-title section-title--left">Монтаж под ключ</h2>
+                    <p class="service-block-lead">Купили у нас — установим со скидкой. Принесли свой — тоже поставим. Монтаж любой сложности — от закладки трасс при ремонте до установки на готовом объекте.</p>
+                    <ul class="service-features">
+                        <li>Выезд замерщика и расчёт трассы — бесплатно</li>
+                        <li>Закладка фреоновой трассы на стадии ремонта</li>
+                        <li>Нержавеющие кронштейны, декоративные короба</li>
+                        <li>Установка бытовых и коммерческих систем любой сложности</li>
+                        <li>Запуск, тестирование и инструкция по эксплуатации</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-modal>Рассчитать монтаж</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Чистка / ТО (объединённый) -->
     <section class="service-block maintenance-intro" id="maintenance">
         <div class="container">
             <div class="service-block-inner service-block-inner--reverse">
@@ -238,47 +279,54 @@
                     <img src="static/images/cleaning-conditioner.jpg" alt="Чистка кондиционера Climate Hall" width="560" height="360" loading="lazy">
                 </div>
                 <div class="service-block-content">
-                    <h2 class="section-title section-title--left">Почистим кондиционер как новый</h2>
-                    <p class="service-block-lead">Полная разборка, промывка, безопасная химия. После ТО кондиционер снова работает как новый — охлаждает и греет на 100%.</p>
+                    <h2 class="section-title section-title--left">Чистка и обслуживание</h2>
+                    <p class="service-block-lead">Полная разборка, промывка, безопасная химия. После ТО кондиционер работает как новый.</p>
                     <ul class="service-features">
-                        <li>Полная разборка и промывка в промывочных мешках</li>
-                        <li>Безопасная химия для испарителя и пластика</li>
+                        <li>Полная разборка корпуса и промывка в промывочных мешках</li>
+                        <li>Обработка специальной химией для испарителя и пластика</li>
+                        <li>Промывка аппаратом высокого давления</li>
                         <li>Ежегодное ТО — весна и осень, запись на сезон</li>
                     </ul>
-                    <div class="service-block-actions">
-                        <a href="#maintenance-detail" class="btn btn-secondary">Что входит в мойку</a>
-                        <button type="button" class="btn btn-primary" data-modal>Записаться на ТО</button>
-                    </div>
+                    <button type="button" class="btn btn-primary" data-modal>Записаться на ТО</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Maintenance Detail -->
-    <section class="maintenance-detail" id="maintenance-detail">
+    <!-- 8. Кейсы работ -->
+    <section class="cases-section" id="cases">
         <div class="container">
-            <div class="maintenance-detail-inner">
-                <div class="maintenance-detail-media">
-                    <img src="static/images/montage_3.jpg" alt="Работы Climate Hall по обслуживанию кондиционера" width="480" height="360" loading="lazy">
-                </div>
-                <div class="maintenance-detail-text">
-                    <h2 class="section-title section-title--left">Что мы делаем при ТО</h2>
-                    <p class="maintenance-tagline">Чистота без риска для техники!</p>
-                    <ul class="maintenance-checklist">
-                        <li>Полная разборка корпуса</li>
-                        <li>Обработка специальной химией для испарителя</li>
-                        <li>Отдельная обработка всех пластиковых элементов</li>
-                        <li>Промывка системы и корпуса аппаратом высокого давления</li>
-                        <li>Все работы — только в специальных промывочных мешках</li>
-                        <li>Финальная сборка кондиционера</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary" data-modal>Записаться на обслуживание</button>
-                </div>
+            <h2 class="section-title">Наши работы</h2>
+            <div class="cases-grid">
+                <article class="case-card">
+                    <img src="static/images/montage_1.jpg" alt="Монтаж в квартире" loading="lazy">
+                    <div class="case-body">
+                        <span class="case-tag">Квартира · 35 м²</span>
+                        <h3>LESSAR инвертор</h3>
+                        <p>Стандартный монтаж за 3 часа. Нержавеющий кронштейн, 3 м трассы, декоративный короб.</p>
+                    </div>
+                </article>
+                <article class="case-card">
+                    <img src="static/images/montage_3.jpg" alt="Закладка трасс" loading="lazy">
+                    <div class="case-body">
+                        <span class="case-tag">Офис · 80 м²</span>
+                        <h3>2 блока Kentatsu</h3>
+                        <p>Закладка фреоновых трасс на стадии ремонта. Два внутренних блока, один наружный.</p>
+                    </div>
+                </article>
+                <article class="case-card">
+                    <img src="static/images/cleaning-conditioner.jpg" alt="Чистка кондиционера" loading="lazy">
+                    <div class="case-body">
+                        <span class="case-tag">Обслуживание</span>
+                        <h3>Полная мойка</h3>
+                        <p>Разборка, химическая обработка испарителя, промывка под давлением. Кондиционер как новый.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- 4. Почему мы -->
+    <!-- 9. Почему нам доверяют -->
     <section class="why-us" id="why-us">
         <div class="container">
             <h2 class="section-title">Почему нам доверяют</h2>
@@ -317,35 +365,36 @@
         </div>
     </section>
 
-    <!-- 5. Блог -->
-    <section class="blog-section blog-section--left" id="blog">
+    <!-- 10. FAQ -->
+    <section class="faq-section" id="faq">
         <div class="container">
-            <h2 class="section-title">Полезное о кондиционерах</h2>
-            <p class="telegram-lead">Экспертный канал о климатической технике от практика, а не маркетолога.</p>
-            <p class="telegram-join">Не готовы заказывать, но хотите погрузиться в тему? Подписывайтесь на наш канал — расскажем обо всём самом важном в мире климатической техники.</p>
-            <div class="telegram-block-actions">
-                <a href="https://t.me/climate_hall" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">Telegram</a>
-                <a href="https://max.ru/join/sl6iVfoDwWF3yfeYOX-5p98XSjidkRfma1rHktmBN5Q" target="_blank" rel="noopener noreferrer" class="btn btn-max">МАКС</a>
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Сколько стоит монтаж?</summary>
+                    <p>Зависит от длины трассы, типа стен и сложности. Замерщик приедет бесплатно и назовёт точную цену на месте.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Как выбрать мощность кондиционера?</summary>
+                    <p>Воспользуйтесь <a href="#calculator">калькулятором</a> — он подскажет. Или позвоните: +7 (914) 335-06-75, поможем разобраться.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Когда можете установить?</summary>
+                    <p>Обычно в течение 2–3 дней после заявки. В сезон (май–август) может быть чуть дольше.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Какую гарантию даёте?</summary>
+                    <p>На оборудование — гарантия производителя (до 5 лет, зависит от бренда). На монтаж — 1 год.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Можно установить свой кондиционер?</summary>
+                    <p>Да, устанавливаем любое оборудование. Если купили сами — привозите, смонтируем.</p>
+                </details>
             </div>
-            <div class="lead-magnet">
-                <p class="lead-magnet-label">Бонус для подписчиков</p>
-                <h3>Чек‑лист: 7 ошибок при выборе кондиционера</h3>
-                <p>Напишите в канал слово <strong>«Чеклист»</strong> — пришлём памятку в личные сообщения.</p>
-            </div>
-            <ul class="blog-topics">
-                <li>Подбор мощности — почему слишком мощный кондиционер хуже слабого</li>
-                <li>Влажность воздуха — как она влияет на здоровье и интерьер</li>
-                <li>Инвертор или не инвертор — в чём реальная разница</li>
-                <li>Бризеры и вентиляция — свежий воздух без открытых окон</li>
-                <li>Обслуживание и чистка — когда и зачем делать ТО</li>
-                <li>Винные шкафы — температура, влажность и правильное хранение</li>
-                <li>Монтаж — на что обратить внимание до и после установки</li>
-                <li>Сравнение брендов — какой кондиционер прослужит дольше</li>
-            </ul>
         </div>
     </section>
 
-        <!-- Brizers Section -->
+    <!-- 11. Бризеры -->
     <section class="maintenance-detail" id="brizers">
         <div class="container">
             <div class="brizers-content">
@@ -380,7 +429,7 @@
         </div>
     </section>
 
-    <!-- 6. Офис и контакты -->
+    <!-- 12. Офис и контакты -->
     <section class="office-section" id="office">
         <div class="container">
             <h2 class="section-title">Офис во Владивостоке</h2>
@@ -418,7 +467,7 @@
         </div>
     </section>
 
-    <!-- 7. Footer -->
+    <!-- 13. Footer -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-compact">
@@ -454,7 +503,6 @@
             <h2 class="form-title" id="modalTitle">Получить расчёт</h2>
             <p class="form-subtitle">Подберём оборудование или услугу и назовём стоимость за 1 час</p>
             <form id="modalForm" class="contact-form">
-                <!-- Honeypot: скрытое поле от спам-ботов -->
                 <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="form-group">
                     <label for="modal-message">Опишите, что нужно</label>
