@@ -486,8 +486,8 @@ document.querySelectorAll('.btn').forEach(btn => {
 
 // Track external links — manufacturer sites
 const manufacturerDomains = {
-    'energolux.ru.com': 'energolux',
     'tosot.ru': 'tosot',
+    'energolux.ru.com': 'energolux',
     'lessar.ru': 'lessar',
     'dahaci.biz': 'dahaci',
     'kentatsurussia.ru': 'kentatsu',
@@ -525,17 +525,7 @@ window.addEventListener('load', () => {
 
 // Brand info data
 const brandInfo = {
-    energolux: {
-        name: 'ENERGOLUX',
-        desc: 'Премиальные инверторные сплит-системы с расширенной гарантией 5 лет. Интеллектуальное управление по Wi-Fi, энергоэффективность A+++ и ультратихие режимы.',
-        models: [
-            { name: 'ENERGOLUX LAUSANNE', desc: 'Дизайнерская серия • Интеллектуальный LED-дисплей • Энергоэффективность A+++ • DC-инвертор, Wi-Fi • Площадь: от 25 м²', image: 'static/images/brands/energolux/energolux_Lausanne-YAndeks-market_7_09.jpeg', tag: 'Премиум' },
-            { name: 'ENERGOLUX ZURICH 4', desc: 'Продвинутая серия • 3D-распределение воздуха • Многоступенчатая фильтрация • DC-инвертор, самоочистка • Площадь: от 20 м²', image: 'static/images/brands/energolux/energolux_Render_ProjectZurich_002.png', tag: 'Оптимальный' },
-            { name: 'ENERGOLUX DAVOS', desc: 'Ультратихая серия • Шум всего 20 дБ • Идеален для ночного режима • Инвертор, Wi-Fi • Площадь: от 15 м²', image: 'static/images/brands/energolux/energolux_DAVOS-YAndeks-market_1_09.jpg', tag: 'Тихий' },
-            { name: 'ENERGOLUX BASEL', desc: 'Базовая надёжная серия • Класс A • Обогрев при низких температурах • Угольный фильтр • DC-инвертор • Wi-Fi (опция).', image: 'static/images/brands/energolux/basel.jpeg', tag: 'Популярный' }
-        ],
-        link: 'https://energolux.ru.com/catalog/split-sistemy/'
-    },
+   
     tosot: {
         name: 'TOSOT',
         desc: 'Бренд от корпорации Gree — мирового лидера по производству климатической техники. Отличное соотношение цены и качества, гарантия до 5 лет.',
@@ -557,6 +547,17 @@ const brandInfo = {
             { name: 'LESSAR Flexcool', desc: 'Универсальная серия с гибкими настройками для дома и малого бизнеса.', image: 'static/images/brands/lessar_flexcool.webp', tag: 'Универсальный' }
         ],
         link: 'https://lessar.ru'
+    },
+    energolux: {
+        name: 'ENERGOLUX',
+        desc: 'Премиальные инверторные сплит-системы с расширенной гарантией 5 лет. Интеллектуальное управление по Wi-Fi, энергоэффективность A+++ и ультратихие режимы.',
+        models: [
+            { name: 'ENERGOLUX LAUSANNE', desc: 'Дизайнерская серия • Интеллектуальный LED-дисплей • Энергоэффективность A+++ • DC-инвертор, Wi-Fi • Площадь: от 25 м²', image: 'static/images/brands/energolux/energolux_Lausanne-YAndeks-market_7_09.jpeg', tag: 'Премиум' },
+            { name: 'ENERGOLUX ZURICH 4', desc: 'Продвинутая серия • 3D-распределение воздуха • Многоступенчатая фильтрация • DC-инвертор, самоочистка • Площадь: от 20 м²', image: 'static/images/brands/energolux/energolux_Render_ProjectZurich_002.png', tag: 'Оптимальный' },
+            { name: 'ENERGOLUX DAVOS', desc: 'Ультратихая серия • Шум всего 20 дБ • Идеален для ночного режима • Инвертор, Wi-Fi • Площадь: от 15 м²', image: 'static/images/brands/energolux/energolux_DAVOS-YAndeks-market_1_09.jpg', tag: 'Тихий' },
+            { name: 'ENERGOLUX BASEL', desc: 'Базовая надёжная серия • Класс A • Обогрев при низких температурах • Угольный фильтр • DC-инвертор • Wi-Fi (опция).', image: 'static/images/brands/energolux/basel.jpeg', tag: 'Популярный' }
+        ],
+        link: 'https://energolux.ru.com/catalog/split-sistemy/'
     },
     dahaci: {
         name: 'Dahaci',
