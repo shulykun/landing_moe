@@ -12,17 +12,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Yandex.Metrica counter — вставь свой номер счётчика -->
-  <!--
-  <script>
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
-    ym(00000000, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true });
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}
+    )(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+    ym(109687297, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
   </script>
-  -->
+  <noscript><div><img src="https://mc.yandex.ru/watch/109687297" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -1434,7 +1436,7 @@
       };
 
       // Яндекс.Метрика — цель
-      if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_sent');
+      if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_sent');
 
       try {
         const resp = await fetch('/api/lead', {
@@ -1444,11 +1446,11 @@
         });
         const data = await resp.json();
         showResult();
-        if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_success');
+        if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_success');
       } catch (err) {
         // Fallback: show anyway
         showResult();
-        if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_fallback');
+        if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_fallback');
       }
     }
 
