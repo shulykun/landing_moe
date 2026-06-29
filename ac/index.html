@@ -818,7 +818,7 @@
       <h1>Лучший монтаж кондиционеров<br><span>во Владивостоке</span></h1>
       <p>Лучшие материалы. Аккуратная работа. Безупречное качество. Клиенты, которые выбирают нас — довольны годами.</p>
       <a href="index.html#calc" class="hero-btn">
-        🧊 Записаться на консультацию
+        🧊 Получить расчёт
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <dl class="hero-stats">
@@ -938,7 +938,7 @@
         <div class="calc-nav">
           <button class="btn-prev" onclick="prevStep()">← Назад</button>
           <button class="btn-next" onclick="sendLead()" id="sendBtn">
-            📩 Перезвоните мне
+            🧊 Получить расчёт
           </button>
         </div>
       </div>
@@ -1190,7 +1190,7 @@
       <h2 style="font-weight:800;margin-bottom:8px;">Готовы выбрать кондиционер?</h2>
       <p style="color:var(--text-muted);font-size:15px;max-width:480px;margin:0 auto 20px;">Рассчитайте стоимость установки под ключ за 1 минуту. Честная смета без скрытых платежей.</p>
       <a href="index.html#calc" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg, var(--accent), var(--accent-dark));color:white;padding:14px 32px;border-radius:var(--radius-sm);font-size:16px;font-weight:700;text-decoration:none;transition:0.15s;box-shadow:0 4px 16px rgba(37,99,235,0.3);">
-        📋 Записаться на консультацию
+        🧊 Получить расчёт
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -1337,7 +1337,7 @@
     async function sendLead() {
       if (!state.contact.trim()) {
         document.getElementById('sendBtn').textContent = '✏️ Введите номер телефона';
-        setTimeout(() => { document.getElementById('sendBtn').innerHTML = '📩 Записаться на консультацию'; }, 2000);
+        setTimeout(() => { document.getElementById('sendBtn').innerHTML = '📩 Получить расчёт'; }, 2000);
         return;
       }
 
