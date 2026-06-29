@@ -486,7 +486,10 @@
     /* ─── RESPONSIVE ─── */
     @media (min-width: 1024px) {
       body { font-size: 17px; }
-      .rating-visual-img { width: 320px; }
+      .rating-card { flex-direction: column; }
+      .rating-grid { grid-template-columns: 1fr 1fr; }
+      .rating-visual,
+      .rating-visual-img { width: 100%; }
       .calc-section, .section { max-width: 1060px; }
       .hero-content { max-width: 960px; }
       .hero h1 { font-size: clamp(36px, 4vw, 56px); }
@@ -618,7 +621,6 @@
     .rating-link:hover { text-decoration: underline; }
     @media (max-width: 600px) { 
       .rating-card { flex-direction: column; }
-      .rating-visual-img { width: 100%; }
       .rating-visual,
       .rating-visual-img { width: 100%; flex-direction: column; }
       .rating-visual .pos-badge { top: 4px; left: 4px; }
