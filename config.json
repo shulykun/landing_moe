@@ -1,0 +1,14 @@
+{
+  "botToken": "",
+  "adminId": "",
+  "siteUrl": "http://localhost:3000",
+  "email": {
+    "host": "smtp.yandex.ru",
+    "port": 465,
+    "secure": true,
+    "user": "",
+    "pass": "",
+    "from": "",
+    "to": ["shulginov@roborumba.com", "pichuginda@bk.ru"]
+  }
+}
