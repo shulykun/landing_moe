@@ -898,26 +898,24 @@
 
       <!-- ═══ RESULT (показывается после отправки) ═══ -->
       <div class="result-box" id="resultBox">
-        <div class="result-header">
-          <span class="icon">📋</span>
-          <div>
-            <h3>Спасибо! Мы получили заявку</h3>
-            <p>Перезвоним в ближайшее время, уточним детали и дадим точный расчёт</p>
-          </div>
+        <div class="result-header" style="text-align:center;flex-direction:column;gap:8px;">
+          <span class="icon" style="font-size:56px;">✅</span>
+          <h3>Спасибо! Мы получили заявку</h3>
+          <p style="color:var(--text-muted);font-size:15px;max-width:360px;margin:0 auto;">Свяжемся с вами в ближайшее время, уточним детали и подберём удобное время для монтажа</p>
         </div>
-        <div class="price-breakdown" id="priceBreakdown">
-          <div class="price-row"><span>🏗️ Оборудование (премиум)</span><span id="rAcUnit">28 900 ₽</span></div>
-          <div class="price-row"><span>🔧 Монтаж профессиональный</span><span id="rInstall">7 500 ₽</span></div>
-          <div class="price-row"><span>📦 Материалы качественные</span><span id="rMaterials">3 500 ₽</span></div>
-          <div class="price-row" id="rExtraRow" style="display:none;"><span>📎 Особые условия</span><span id="rExtra">0 ₽</span></div>
-          <div class="price-row total"><span>✅ Итого по смете</span><span id="rTotal">36 900 ₽</span></div>
+        <div style="background:var(--accent-light);border-radius:var(--radius-sm);padding:20px;text-align:center;margin-top:20px;">
+          <p style="font-size:14px;color:var(--text-muted);margin-bottom:12px;">А пока — подписывайтесь на Telegram-канал о климатической технике:</p>
+          <a href="https://t.me/climate_hall" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:white;padding:12px 24px;border-radius:100px;font-size:15px;font-weight:700;text-decoration:none;transition:0.15s;">
+            📖 Climate Hall — канал эксперта
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
-        <div class="result-actions">
-          <a href="tel:+74232423652" class="btn-call-phone">
+        <div class="result-actions" style="margin-top:16px;">
+          <a href="tel:+74232423652" class="btn-call-phone" style="text-decoration:none;">
             📞 Позвонить: +7 (423) 242-36-52
           </a>
-          <button class="btn-call" onclick="resetCalc()">
-            🔄 Рассчитать другую смету
+          <button class="btn-call" onclick="resetCalc()" style="margin-top:8px;">
+            🔄 Заполнить ещё раз
           </button>
         </div>
       </div>
@@ -1329,34 +1327,20 @@
           body: JSON.stringify(payload),
         });
         const data = await resp.json();
-        showResult(price, data.tgLink);
+        showResult();
         if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_success');
       } catch (err) {
         // Fallback: show anyway
-        showResult(price, null);
+        showResult();
         if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_fallback');
       }
     }
 
     // ─── SHOW RESULT ───
-    function showResult(price, _) {
+    function showResult() {
       document.querySelector('#calcCard .calc-step').style.display = 'none';
       document.getElementById('resultBox').classList.add('show');
       document.getElementById('progressBar').style.display = 'none';
-
-      document.getElementById('rAcUnit').textContent = formatPrice(price.unitPrice);
-      document.getElementById('rInstall').textContent = formatPrice(price.installPrice);
-      document.getElementById('rMaterials').textContent = formatPrice(price.materials);
-
-      const extraRow = document.getElementById('rExtraRow');
-      if (price.extrasPrice > 0) {
-        extraRow.style.display = 'flex';
-        document.getElementById('rExtra').textContent = formatPrice(price.extrasPrice);
-      } else {
-        extraRow.style.display = 'none';
-      }
-
-      document.getElementById('rTotal').textContent = formatPrice(price.total);
     }
 
     function formatPrice(p) {
