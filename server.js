@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const { Telegraf } = require('telegraf');
 const fs = require('fs');
+const { exec } = require('child_process');
 
 // ⚙️ Config
 const configPath = path.join(__dirname, 'config.json');
@@ -12,26 +13,6 @@ const PORT = process.env.PORT || 3000;
 const BOT_TOKEN = process.env.BOT_TOKEN || config.botToken || '';
 const ADMIN_ID = process.env.ADMIN_ID || config.adminId || '';  // Твой Telegram ID
 const SITE_URL = process.env.SITE_URL || config.siteUrl || `http://localhost:${PORT}`;
-
-// ─── Email ───
-let transporter = null;
-try {
-  const nodemailer = require('nodemailer');
-  const ec = config.email || {};
-  if (ec.user && ec.pass) {
-    transporter = nodemailer.createTransport({
-      host: ec.host || 'smtp.yandex.ru',
-      port: ec.port || 465,
-      secure: ec.secure !== false,
-      auth: { user: ec.user, pass: ec.pass },
-    });
-    console.log('📧 Email transport ready');
-  } else {
-    console.log('📧 Email not configured (set email.user/pass in config.json)');
-  }
-} catch (e) {
-  console.log('📧 nodemailer not available:', e.message);
-}
 
 // ─── Bot ───
 let bot = null;
@@ -108,32 +89,23 @@ app.post('/api/lead', async (req, res) => {
     }
   }
 
-  // 📧 Send emails
-  const emailTo = (config.email && config.email.to) || ['shulginov@roborumba.com', 'pichuginda@bk.ru'];
-  if (transporter && emailTo.length > 0) {
-    const emailBody =
-      `Новая заявка с сайта Climate Hall\n\n` +
-      `📞 Телефон: ${data.contact}\n` +
-      `🏠 Тип помещения: ${typeName}\n` +
-      `📏 Площадь: ${areaStr}\n` +
-      `🔧 Особые условия: ${extrasStr}\n\n` +
-      `—\nОтправлено с ${config.siteUrl || 'climate.roborumba.com'}`;
-
-    for (const addr of emailTo) {
-      try {
-        await transporter.sendMail({
-          from: config.email.from || config.email.user,
-          to: addr,
-          subject: `📬 Новая заявка — ${data.contact}`,
-          text: emailBody,
-        });
-        console.log(`📧 Email sent to ${addr}`);
-      } catch (err) {
-        console.error(`❌ Email to ${addr} failed:`, err.message);
+  // 📧 Send emails via PHP script
+  const phpScript = path.join(__dirname, 'sendmail.php');
+  if (fs.existsSync(phpScript)) {
+    const phpInput = JSON.stringify({
+      contact: data.contact,
+      type: typeName,
+      area: data.area,
+      extras: data.extras || [],
+    });
+    exec(`echo '${phpInput.replace(/'/g, "'\\''")}' | php ${phpScript}`, (err, stdout, stderr) => {
+      if (err) {
+        console.error('❌ Email send failed:', err.message);
+        if (stderr) console.error('   stderr:', stderr);
+      } else {
+        console.log('📧 Email sent via PHP:', stdout.trim());
       }
-    }
-  } else {
-    console.log('📧 Email not sent — transporter not configured');
+    });
   }
 
   res.json({ ok: true });
@@ -149,3 +121,7 @@ app.listen(PORT, () => {
   console.log(`🧊 AC MVP server running at http://localhost:${PORT}`);
   console.log(`   Open: http://localhost:${PORT}`);
 });
+
+// Graceful shutdown
+process.once('SIGINT', () => { bot?.stop('SIGINT'); });
+process.once('SIGTERM', () => { bot?.stop('SIGTERM'); });

@@ -1,90 +1,52 @@
 <?php
 /*
- * Climate Hall — обработчик формы заявок
- * Отправляет письмо с вложением на shulginov@roborumba.com
+ * Climate Hall — обработчик формы заявок (AC site)
+ * Отправляет письмо на shulginov@roborumba.com и pichuginda@bk.ru
  */
 
 header('Content-Type: application/json; charset=utf-8');
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST');
 
-// Настройки
-$to      = 'shulginov@roborumba.com';
-$subject = 'Обращение с сайта Climate Hall';
+// Получаем данные из stdin (JSON)
+$input = json_decode(file_get_contents('php://stdin'), true);
 
-// Проверяем метод
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode(['success' => false, 'error' => 'Method not allowed']);
-    exit;
-}
-
-// Получаем данные
-$phone   = isset($_POST['phone'])   ? trim($_POST['phone'])   : '';
-$message = isset($_POST['message']) ? trim($_POST['message']) : '';
-$page    = isset($_POST['page'])    ? trim($_POST['page'])    : '';
-
-// Honeypot — скрытое поле, боты его заполняют
-$honeypot = isset($_POST['website']) ? trim($_POST['website']) : '';
-if (!empty($honeypot)) {
-    // Молча «успешно» — бот думает, что прошло
-    echo json_encode(['success' => true]);
-    exit;
-}
-
-if (empty($phone)) {
+if (!$input || empty($input['contact'])) {
     http_response_code(400);
-    echo json_encode(['success' => false, 'error' => 'Телефон обязателен']);
+    echo json_encode(['success' => false, 'error' => 'contact required']);
     exit;
 }
+
+$phone   = $input['contact'];
+$type    = $input['type'] ?? 'Не указан';
+$area    = isset($input['area']) ? $input['area'] . ' м²' : 'Не указана';
+$extras  = !empty($input['extras']) ? implode(', ', $input['extras']) : '—';
 
 // Формируем тело письма
-$body  = "Новая заявка с сайта Climate Hall\n";
-$body .= "================================\n\n";
-$body .= "Телефон:    {$phone}\n";
-$body .= "Сообщение:  {$message}\n";
-$body .= "Страница:   {$page}\n";
-$body .= "Дата:       " . date('d.m.Y H:i:s') . "\n";
+$body  = "Новая заявка с сайта Climate Hall — установка кондиционеров\n";
+$body .= "========================================================\n\n";
+$body .= "📞 Телефон: {$phone}\n";
+$body .= "🏠 Тип:      {$type}\n";
+$body .= "📏 Площадь:  {$area}\n";
+$body .= "🔧 Условия:  {$extras}\n\n";
+$body .= "Дата: " . date('d.m.Y H:i:s') . "\n";
 
 // Заголовки
-$boundary = md5(uniqid(time()));
-$headers  = "From: Climate Hall <noreply@" . $_SERVER['SERVER_NAME'] . ">\r\n";
-$headers .= "Reply-To: noreply@" . $_SERVER['SERVER_NAME'] . "\r\n";
+$headers  = "From: Climate Hall <shulginov@roborumba.com>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
+$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+$headers .= "Content-Transfer-Encoding: 8bit\r\n";
 
-// Текстовая часть
-$mailBody  = "--{$boundary}\r\n";
-$mailBody .= "Content-Type: text/plain; charset=utf-8\r\n";
-$mailBody .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
-$mailBody .= $body . "\r\n";
+// Получатели
+$to = ['shulginov@roborumba.com', 'pichuginda@bk.ru'];
+$subject = '📬 Новая заявка — ' . $phone;
 
-// Обработка вложения
-if (isset($_FILES['file']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
-    $tmpName  = $_FILES['file']['tmp_name'];
-    $fileName = $_FILES['file']['name'];
-    $fileSize = $_FILES['file']['size'];
-    $fileType = $_FILES['file']['type'];
-
-    // Максимальный размер файла — 10 МБ
-    if ($fileSize <= 10 * 1024 * 1024) {
-        $fileContent = file_get_contents($tmpName);
-        $fileContent = chunk_split(base64_encode($fileContent));
-
-        $mailBody .= "--{$boundary}\r\n";
-        $mailBody .= "Content-Type: {$fileType}; name=\"{$fileName}\"\r\n";
-        $mailBody .= "Content-Transfer-Encoding: base64\r\n";
-        $mailBody .= "Content-Disposition: attachment; filename=\"{$fileName}\"\r\n\r\n";
-        $mailBody .= $fileContent . "\r\n";
-    }
+// Отправка на все адреса
+$allSent = true;
+foreach ($to as $addr) {
+    $sent = mail($addr, $subject, $body, $headers);
+    if (!$sent) $allSent = false;
 }
 
-$mailBody .= "--{$boundary}--\r\n";
-
-// Отправка
-$sent = mail($to, $subject, $mailBody, $headers);
-
-if ($sent) {
+if ($allSent) {
     echo json_encode(['success' => true]);
 } else {
     http_response_code(500);
