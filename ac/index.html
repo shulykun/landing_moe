@@ -824,21 +824,21 @@
         </div>
       </div>
 
-      <!-- STEP 1: Сколько комнат -->
+      <!-- STEP 1: Площадь комнаты -->
       <div class="calc-step" data-step="1">
-        <div class="step-label">Шаг 2 из 4</div>
-        <div class="step-question">Сколько комнат нужно охладить?</div>
+        <div class="step-label">Шаг 2 из 4 — площадь комнаты</div>
+        <div class="step-question">📏 Какая площадь помещения?</div>
         <div class="slider-wrap">
-          <label>Количество <span id="roomsDisplay">1</span></label>
-          <input type="range" id="roomsSlider" min="1" max="6" value="1" oninput="updateRooms()">
+          <label>Площадь <span id="areaDisplay">30</span> м²</label>
+          <input type="range" id="areaSlider" min="15" max="100" value="30" step="5" oninput="updateArea()">
         </div>
         <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-top:-16px;margin-bottom:24px;">
-          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6+</span>
+          <span>15 м²</span><span>30</span><span>50</span><span>75</span><span>100 м²</span>
         </div>
         <div class="temp-bar">
           <span class="current" id="previewType">🏢</span>
           <span class="separator"></span>
-          <span class="target" id="previewRooms">1 комната</span>
+          <span class="target" id="previewArea">30 м²</span>
         </div>
         <div class="calc-nav">
           <button class="btn-prev" onclick="prevStep()">← Назад</button>
@@ -850,32 +850,27 @@
       <div class="calc-step" data-step="2">
         <div class="step-label">Шаг 3 из 4</div>
         <div class="step-question">Условия монтажа</div>
-        <p class="subtitle" style="margin-top:-12px;margin-bottom:16px;">Это влияет на сложность и итоговую цену — мы закладываем всё честно:</p>
+        <p class="subtitle" style="margin-top:-12px;margin-bottom:16px;">Что может повлиять на сложность:</p>
         <div class="check-grid" id="extrasGrid">
           <label class="check-item">
-            <input type="checkbox" data-price="1500" data-key="highFloor">
+            <input type="checkbox" data-key="highFloor">
             🏗️ Высокий этаж (3+)
-            <span class="price-tag">+1 500 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="2500" data-key="cage">
+            <input type="checkbox" data-key="cage">
             🔐 Защитная ковка/клетка на блок
-            <span class="price-tag">+2 500 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="2000" data-key="longRoute">
+            <input type="checkbox" data-key="longRoute">
             📏 Удлинённая трасса (более 5 м)
-            <span class="price-tag">+2 000 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="3000" data-key="brick">
+            <input type="checkbox" data-key="brick">
             🧱 Кирпич / бетон (сложное сверление)
-            <span class="price-tag">+3 000 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="1500" data-key="drain">
+            <input type="checkbox" data-key="drain">
             💧 Дополнительный дренаж
-            <span class="price-tag">+1 500 ₽</span>
           </label>
         </div>
         <div class="calc-nav">
@@ -887,20 +882,16 @@
       <!-- STEP 3: Контакты -->
       <div class="calc-step" data-step="3">
         <div class="step-label">Шаг 4 из 4</div>
-        <div class="step-question">📲 Записаться на консультацию</div>
-        <p class="subtitle" style="margin-top:-8px;">Отправим детальную смету в Telegram. Подберём удобное время для монтажа.</p>
-        <div style="margin-bottom:16px;">
-          <label style="font-size:14px;font-weight:600;display:block;margin-bottom:6px;">Ваше имя</label>
-          <input type="text" id="userName" placeholder="Александр" style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;font-family:inherit;outline:none;">
-        </div>
+        <div class="step-question">📲 Оставьте номер телефона</div>
+        <p class="subtitle" style="margin-top:-8px;">Перезвоним и дадим расчёт. Подберём удобное время для монтажа.</p>
         <div style="margin-bottom:24px;">
-          <label style="font-size:14px;font-weight:600;display:block;margin-bottom:6px;">Telegram (username или номер)</label>
-          <input type="text" id="userContact" placeholder="@username или +7..." style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;font-family:inherit;outline:none;">
+          <label style="font-size:14px;font-weight:600;display:block;margin-bottom:6px;">Номер телефона</label>
+          <input type="tel" id="userContact" placeholder="+7 (___)-___-__-__" style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;font-family:inherit;outline:none;">
         </div>
         <div class="calc-nav">
           <button class="btn-prev" onclick="prevStep()">← Назад</button>
           <button class="btn-next" onclick="sendLead()" id="sendBtn">
-            📩 Записаться на консультацию
+            📩 Перезвоните мне
           </button>
         </div>
       </div>
@@ -910,8 +901,8 @@
         <div class="result-header">
           <span class="icon">📋</span>
           <div>
-            <h3>Смета готова!</h3>
-            <p>Проверьте Telegram — там детальная разбивка по работам и материалам</p>
+            <h3>Спасибо! Мы получили заявку</h3>
+            <p>Перезвоним в ближайшее время, уточним детали и дадим точный расчёт</p>
           </div>
         </div>
         <div class="price-breakdown" id="priceBreakdown">
@@ -922,9 +913,6 @@
           <div class="price-row total"><span>✅ Итого по смете</span><span id="rTotal">36 900 ₽</span></div>
         </div>
         <div class="result-actions">
-          <a href="index.html#" class="btn-tg" id="tgDeepLink" target="_blank">
-            💬 Открыть Telegram
-          </a>
           <a href="tel:+74232423652" class="btn-call-phone">
             📞 Позвонить: +7 (423) 242-36-52
           </a>
@@ -1194,18 +1182,9 @@
     // ─── STATE ───
     const state = {
       type: null,      // house | apartment | office | studio
-      rooms: 1,
+      area: 30,
       extras: {},
-      name: '',
       contact: '',
-    };
-
-    const PRICES = {
-      baseUnit: 28900,
-      install: 7500,
-      materials: 3500,
-      seasonDiscount: 3000,
-      roomMultiplier: [0, 1, 1.8, 2.5, 3.2, 3.8, 4.5],
     };
 
     let currentStep = 0;
@@ -1226,7 +1205,7 @@
       });
 
       currentStep = n;
-      if (n === 1) updateRoomsPreview();
+      if (n === 1) updateAreaPreview();
     }
 
     function nextStep() {
@@ -1250,23 +1229,21 @@
         document.querySelectorAll('#stepType .option-card').forEach(c => c.classList.remove('selected'));
         card.classList.add('selected');
         state.type = card.dataset.value;
-        updateRoomsPreview();
+        updateAreaPreview();
       });
     });
 
-    // ─── STEP 1: ROOMS ───
-    function updateRooms() {
-      state.rooms = parseInt(document.getElementById('roomsSlider').value);
-      document.getElementById('roomsDisplay').textContent = state.rooms;
-      updateRoomsPreview();
+    // ─── STEP 1: AREA ───
+    function updateArea() {
+      state.area = parseInt(document.getElementById('areaSlider').value);
+      document.getElementById('areaDisplay').textContent = state.area;
+      updateAreaPreview();
     }
 
-    function updateRoomsPreview() {
+    function updateAreaPreview() {
       const icons = { house: '🏡', apartment: '🏢', office: '🏪', studio: '🏠' };
       document.getElementById('previewType').textContent = icons[state.type] || '🏢';
-      const roomsText = state.rooms === 1 ? '1 комната' :
-                        state.rooms < 5 ? `${state.rooms} комнаты` : `${state.rooms} комнат`;
-      document.getElementById('previewRooms').textContent = roomsText;
+      document.getElementById('previewArea').textContent = `${state.area} м²`;
     }
 
     // ─── STEP 2: EXTRAS ───
@@ -1277,36 +1254,26 @@
     });
 
     // ─── STEP 3: CONTACTS ───
-    document.getElementById('userName').addEventListener('input', e => state.name = e.target.value);
     document.getElementById('userContact').addEventListener('input', e => state.contact = e.target.value);
 
     // ─── CALC ───
     function calcPrice() {
-      const base = PRICES.baseUnit;
-      const install = PRICES.install;
-      const materials = PRICES.materials;
-      const roomMult = PRICES.roomMultiplier[Math.min(state.rooms, 6)] || 4.5;
-      const unitPrice = Math.round(base * roomMult);
-      const installPrice = Math.round(install * roomMult);
+      // Простая оценка на основе площади
+      const areaMult = state.area / 20;  // базовая комната ~20 м²
+      const unitPrice = Math.round(28900 * areaMult);
+      const installPrice = Math.round(7500 * areaMult);
+      const materials = 3500;
+      const extrasPrice = 0;
 
-      let extrasPrice = 0;
-      for (const [key, val] of Object.entries(state.extras)) {
-        if (val) {
-          const price = parseInt(document.querySelector(`[data-key="${key}"]`)?.dataset?.price || 0);
-          extrasPrice += price;
-        }
-      }
-
-      const subtotal = unitPrice + installPrice + materials + extrasPrice;
-      const total = subtotal;
+      const total = unitPrice + installPrice + materials;
 
       return { unitPrice, installPrice, materials, extrasPrice, total };
     }
 
     // ─── SEND ───
     async function sendLead() {
-      if (!state.name.trim() || !state.contact.trim()) {
-        document.getElementById('sendBtn').textContent = '✏️ Заполните имя и Telegram';
+      if (!state.contact.trim()) {
+        document.getElementById('sendBtn').textContent = '✏️ Введите номер телефона';
         setTimeout(() => { document.getElementById('sendBtn').innerHTML = '📩 Записаться на консультацию'; }, 2000);
         return;
       }
@@ -1339,18 +1306,15 @@
       };
 
       const payload = {
-        name: state.name.trim(),
         contact: state.contact.trim(),
         type: types[state.type] || state.type,
-        rooms: state.rooms,
+        area: state.area,
         extras: extrasList,
         utm,
         price: {
           unit: price.unitPrice,
           install: price.installPrice,
           materials: price.materials,
-          extras: price.extrasPrice,
-          // без скидок — честная цена
           total: price.total,
         }
       };
@@ -1375,7 +1339,7 @@
     }
 
     // ─── SHOW RESULT ───
-    function showResult(price, tgLink) {
+    function showResult(price, _) {
       document.querySelector('#calcCard .calc-step').style.display = 'none';
       document.getElementById('resultBox').classList.add('show');
       document.getElementById('progressBar').style.display = 'none';
@@ -1393,13 +1357,6 @@
       }
 
       document.getElementById('rTotal').textContent = formatPrice(price.total);
-
-      const tg = document.getElementById('tgDeepLink');
-      if (tgLink) {
-        tg.href = tgLink;
-      } else {
-        tg.href = `https://t.me/${state.contact.replace('@', '')}`;
-      }
     }
 
     function formatPrice(p) {
@@ -1409,16 +1366,14 @@
     // ─── RESET ───
     function resetCalc() {
       state.type = null;
-      state.rooms = 1;
+      state.area = 30;
       state.extras = {};
-      state.name = '';
       state.contact = '';
 
       document.querySelectorAll('#stepType .option-card').forEach(c => c.classList.remove('selected'));
-      document.getElementById('roomsSlider').value = 1;
-      document.getElementById('roomsDisplay').textContent = '1';
+      document.getElementById('areaSlider').value = 30;
+      document.getElementById('areaDisplay').textContent = '30';
       document.querySelectorAll('#extrasGrid input').forEach(cb => cb.checked = false);
-      document.getElementById('userName').value = '';
       document.getElementById('userContact').value = '';
 
       document.getElementById('resultBox').classList.remove('show');
