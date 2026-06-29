@@ -720,6 +720,53 @@
     }
 
     /* ─── OFFICE ─── */
+    .office-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 768px) {
+      .office-info { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .office-info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+    .office-info-card .label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .office-info-card .value {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .office-info-card .phone {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .office-info-card .phone:hover { color: var(--accent); }
+    .office-info-card .sub {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .office-info-card .hours {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .office-info-card .hours span {
+      font-weight: 400;
+      color: var(--text-muted);
+    }
     .office-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -1153,6 +1200,24 @@
   <section class="section" id="office">
     <h2>Наш офис</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Приезжайте познакомиться и выбрать оборудование</p>
+
+    <div class="office-info">
+      <div class="office-info-card">
+        <div class="label">Адрес</div>
+        <div class="value">📍 Партизанский просп., 28</div>
+        <div class="sub">Владивосток</div>
+      </div>
+      <div class="office-info-card">
+        <div class="label">Телефон</div>
+        <a class="phone" href="tel:+79143350675">📞 +7 (914) 335-06-75</a>
+      </div>
+      <div class="office-info-card">
+        <div class="label">График работы</div>
+        <div class="hours">Пн–Сб <span>10:00–19:00</span></div>
+        <div class="hours">Воскресенье <span>11:00–18:00</span></div>
+      </div>
+    </div>
+
     <div class="office-grid">
       <div class="office-item">
         <img src="images/office.jpg" alt="Офис Climate Hall" loading="lazy">
