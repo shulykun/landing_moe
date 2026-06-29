@@ -1322,6 +1322,14 @@
 
       currentStep = n;
       if (n === 1) updateAreaPreview();
+
+      // 📊 Метрика: шаги заявки как виртуальные страницы
+      if (typeof ym !== 'undefined') {
+        const pages = ['/calc/type', '/calc/area', '/calc/conditions', '/calc/contact'];
+        if (n >= 0 && n < pages.length) {
+          ym(109687297, 'hit', pages[n], { title: 'Калькулятор: шаг ' + (n + 1) });
+        }
+      }
     }
 
     function nextStep() {
@@ -1459,6 +1467,11 @@
       document.querySelector('#calcCard .calc-step').style.display = 'none';
       document.getElementById('resultBox').classList.add('show');
       document.getElementById('progressBar').style.display = 'none';
+
+      // 📊 Метрика: успешная заявка
+      if (typeof ym !== 'undefined') {
+        ym(109687297, 'hit', '/calc/success', { title: 'Заявка отправлена' });
+      }
     }
 
     function formatPrice(p) {
