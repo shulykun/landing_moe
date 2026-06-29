@@ -798,6 +798,57 @@
         grid-template-columns: 1fr 1fr 1fr;
       }
     }
+    /* ─── MOBILE FLOATING NAV ─── */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      padding: 8px 12px;
+      z-index: 99;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+    }
+    .mobile-nav-inner {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .mobile-nav a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.15s;
+    }
+    .mobile-nav .nav-calc {
+      background: var(--accent);
+      color: white;
+    }
+    .mobile-nav .nav-calc:hover { background: var(--accent-dark); }
+    .mobile-nav .nav-tg {
+      background: #24A1DE;
+      color: white;
+    }
+    .mobile-nav .nav-tg:hover { background: #1d8ec7; }
+    .mobile-nav .nav-phone {
+      background: var(--success);
+      color: white;
+    }
+    .mobile-nav .nav-phone:hover { filter: brightness(1.08); }
+
+    @media (max-width: 768px) {
+      .mobile-nav { display: block; }
+      body { padding-bottom: 66px; }
+    }
   </style>
 </head>
 <body>
@@ -1454,5 +1505,13 @@
     style.textContent = `@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }`;
     document.head.appendChild(style);
   </script>
+  <!-- ═══ MOBILE FLOATING NAV ═══ -->
+  <nav class="mobile-nav">
+    <div class="mobile-nav-inner">
+      <a href="#calc" class="nav-calc">🧊 Расчёт</a>
+      <a href="https://t.me/climate_hall" target="_blank" rel="noopener" class="nav-tg">📖 TG канал</a>
+      <a href="tel:+79143350675" class="nav-phone">📞 Позвонить</a>
+    </div>
+  </nav>
 </body>
 </html>
