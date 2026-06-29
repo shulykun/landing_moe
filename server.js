@@ -89,22 +89,26 @@ app.post('/api/lead', async (req, res) => {
     }
   }
 
-  // 📧 Send emails via PHP script
-  const phpScript = path.join(__dirname, 'sendmail.php');
-  if (fs.existsSync(phpScript)) {
-    const phpInput = JSON.stringify({
-      contact: data.contact,
-      type: typeName,
-      area: data.area,
-      extras: data.extras || [],
-    });
-    exec(`echo '${phpInput.replace(/'/g, "'\\''")}' | php ${phpScript}`, (err, stdout, stderr) => {
-      if (err) {
-        console.error('❌ Email send failed:', err.message);
-        if (stderr) console.error('   stderr:', stderr);
-      } else {
-        console.log('📧 Email sent via PHP:', stdout.trim());
-      }
+  // 📧 Send emails via msmtp (без PHP!)
+  const emailBody =
+    `From: Climate Hall <shulginov@roborumba.com>\n` +
+    `Subject: 📬 Новая заявка — ${data.contact}\n` +
+    `MIME-Version: 1.0\n` +
+    `Content-Type: text/plain; charset=utf-8\n` +
+    `Content-Transfer-Encoding: 8bit\n\n` +
+    `Новая заявка с сайта Climate Hall — установка кондиционеров\n` +
+    `========================================================\n\n` +
+    `📞 Телефон: ${data.contact}\n` +
+    `🏠 Тип:      ${typeName}\n` +
+    `📏 Площадь:  ${areaStr}\n` +
+    `🔧 Условия:  ${extrasStr}\n\n` +
+    `Дата: ${new Date().toLocaleString('ru-RU')}\n`;
+
+  const mailTo = ['shulginov@roborumba.com', 'pichuginda@bk.ru'];
+  for (const addr of mailTo) {
+    exec(`echo ${JSON.stringify(emailBody)} | msmtp -a yandex ${addr}`, (err) => {
+      if (err) console.error(`❌ Email to ${addr}:`, err.message);
+      else console.log(`📧 Email sent to ${addr}`);
     });
   }
 
