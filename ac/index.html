@@ -486,6 +486,7 @@
     /* ─── RESPONSIVE ─── */
     @media (min-width: 1024px) {
       body { font-size: 17px; }
+      .rating-visual-img { width: 260px; }
       .calc-section, .section { max-width: 1060px; }
       .hero-content { max-width: 960px; }
       .hero h1 { font-size: clamp(36px, 4vw, 56px); }
@@ -499,6 +500,8 @@
       .calc-card { padding: 44px 40px; }
       h2 { font-size: 34px; }
       .section h2 { font-size: 34px; }
+      .montage-grid { grid-template-columns: 1fr 1fr; }
+      .office-grid { grid-template-columns: 1fr 1fr 1fr; }
       .section .subhead { font-size: 17px; }
       .feature-card h3 { font-size: 17px; }
       .feature-card p { font-size: 14px; }
@@ -548,9 +551,10 @@
       transition: box-shadow 0.2s;
     }
     .rating-card:hover { box-shadow: 0 2px 12px rgba(37,99,235,0.08); }
-    .rating-visual {
+    .rating-visual,
+    .rating-visual-img {
       flex-shrink: 0;
-      width: 80px; height: 80px;
+      width: 120px;
       border-radius: var(--radius-sm);
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
@@ -559,7 +563,12 @@
       letter-spacing: 0.03em;
       color: white;
       position: relative;
+      background: var(--card);
+      padding: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
     }
+    .rating-visual-img { width: 100px; }
     .rating-visual svg { width: 48px; height: 48px; display: block; margin-bottom: 2px; }
     .rating-visual .pos-badge {
       position: absolute; top: -4px; left: -4px;
@@ -609,7 +618,9 @@
     .rating-link:hover { text-decoration: underline; }
     @media (max-width: 600px) { 
       .rating-card { flex-direction: column; }
-      .rating-visual { width: 100%; height: auto; flex-direction: column; }
+      .rating-visual-img { width: 100%; }
+      .rating-visual,
+      .rating-visual-img { width: 100%; flex-direction: column; }
       .rating-visual .pos-badge { top: 4px; left: 4px; }
     }
 
@@ -632,7 +643,7 @@
       pointer-events: none;
     }
     .expert-avatar {
-      width: 80px; height: 80px;
+      width: 100px; height: 100px;
       border-radius: 50%;
       background: linear-gradient(135deg, #60a5fa, #3b82f6);
       display: flex; align-items: center; justify-content: center;
@@ -640,6 +651,7 @@
       margin: 0 auto 16px;
       border: 3px solid rgba(255,255,255,0.2);
       position: relative;
+      overflow: hidden;
     }
     .expert-section h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
     .expert-section .title { font-size: 14px; color: #93c5fd; font-weight: 600; margin-bottom: 16px; }
@@ -686,6 +698,56 @@
       font-size: 14px;
       color: var(--text-muted);
       line-height: 1.6;
+    }
+    /* ─── MONTAGE ─── */
+    .montage-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .montage-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .montage-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ─── OFFICE ─── */
+    .office-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .office-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .office-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .office-item .map-label {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+      color: var(--text-muted);
+    }
+    @media (min-width: 1024px) {
+      .montage-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .office-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
   </style>
 </head>
@@ -903,7 +965,9 @@
   <!-- ═══ EXPERT ─── -->
   <section class="section">
     <div class="expert-section">
-      <div class="expert-avatar">👨‍🔧</div>
+      <div class="expert-avatar" style="overflow:hidden;">
+        <img src="images/dmitriy-pichugin.jpg" alt="Дмитрий Пичугин" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+      </div>
       <h3>Дмитрий Пичугин — ваш эксперт по климатической технике</h3>
       <div class="title">Владелец Climate Hall, практикующий специалист с 2010 года</div>
       <p>Лично подбираю оборудование и контролирую каждый монтаж. Веду Telegram-канал — делюсь разборами техники, сравнением брендов и советами по эксплуатации. Без рекламы, только экспертиза.</p>
@@ -963,6 +1027,20 @@
     </div>
   </section>
 
+  <!-- ═══ MONTAGE ═══ -->
+  <section class="section" id="montage">
+    <h2>Примеры установок</h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Аккуратный монтаж — визитная карточка нашей команды</p>
+    <div class="montage-grid">
+      <div class="montage-item">
+        <img src="images/montage_1.jpg" alt="Пример монтажа кондиционера" loading="lazy">
+      </div>
+      <div class="montage-item">
+        <img src="images/montage_3.jpg" alt="Пример монтажа кондиционера" loading="lazy">
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ RATING ═══ -->
   <section class="section" id="rating">
     <h2>Рейтинг кондиционеров: ТОП-7</h2>
@@ -970,7 +1048,7 @@
         <div class="rating-grid">
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge top1">1</span>
           <img src="ac-img-1-dahaci.png" alt="DAHACI FreshME" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -982,7 +1060,7 @@
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge top2">2</span>
           <img src="ac-img-2-tosot-natal.png" alt="TOSOT Natal" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -994,7 +1072,7 @@
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge top3">3</span>
           <img src="ac-img-3-lyrax.png" alt="TOSOT LyraX" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -1006,7 +1084,7 @@
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge">4</span>
           <img src="ac-img-4-ego.png" alt="LESSAR EGO" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -1018,7 +1096,7 @@
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge">5</span>
           <img src="ac-img-5-tiger.jpg" alt="LESSAR TIGER" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -1030,7 +1108,7 @@
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge">6</span>
           <img src="ac-img-6-stella.png" alt="LESSAR STELLA" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -1042,7 +1120,7 @@
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual" style="background:var(--card);padding:4px;width:180px;height:auto;overflow:hidden;border:1px solid var(--border);">
+        <div class="rating-visual" class="rating-visual-img">
           <span class="pos-badge">7</span>
           <img src="ac-img-7-clivia.png" alt="TOSOT Clivia Deluxe" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
@@ -1080,6 +1158,24 @@
         📋 Записаться на консультацию
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
+    </div>
+  </section>
+
+  <!-- ═══ OFFICE ═══ -->
+  <section class="section" id="office">
+    <h2>Наш офис</h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Приезжайте познакомиться и выбрать оборудование</p>
+    <div class="office-grid">
+      <div class="office-item">
+        <img src="images/office.jpg" alt="Офис Climate Hall" loading="lazy">
+      </div>
+      <div class="office-item">
+        <img src="images/office-2.webp" alt="Офис Climate Hall" loading="lazy">
+      </div>
+      <div class="office-item">
+        <img src="images/office-map.jpg" alt="Карта проезда" loading="lazy">
+        <div class="map-label">📍 Партизанский просп., 28 — схема проезда</div>
+      </div>
     </div>
   </section>
 
