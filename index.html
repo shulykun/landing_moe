@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Установка кондиционеров во Владивостоке — премиальный монтаж, честная цена</title>
   <meta name="description" content="Профессиональная установка кондиционеров во Владивостоке. Честная смета, премиальные материалы, гарантия 5 лет. Монтаж без компромиссов.">
+  <meta property="og:title" content="Лучший монтаж кондиционеров во Владивостоке">
+  <meta property="og:description" content="Кондиционеры под ключ. Честная смета, премиальные материалы, гарантия 5 лет. Запишитесь на консультацию.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rumbik.roborumba.com/ac/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Yandex.Metrica counter — вставь свой номер счётчика -->
-  <!--
-  <script>
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
-    ym(00000000, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true });
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}
+    )(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+    ym(109687297, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
   </script>
-  -->
+  <noscript><div><img src="https://mc.yandex.ru/watch/109687297" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -127,6 +133,7 @@
     .calc-section {
       max-width: 720px;
       margin: 0 auto;
+      padding: 20px 20px 30px;
       padding: 40px 20px 60px;
     }
     @media (min-width: 1024px) { .calc-section { max-width: 900px; } }
@@ -371,7 +378,7 @@
     .section {
       max-width: 720px;
       margin: 0 auto;
-      padding: 40px 20px 50px;
+      padding: 30px 20px 30px;
     }
     @media (min-width: 1024px) { .section { max-width: 900px; } }
     .section h2 {
@@ -481,10 +488,35 @@
 
     /* ─── RESPONSIVE ─── */
     @media (min-width: 1024px) {
+      body { font-size: 17px; }
+      .rating-card { flex-direction: column; }
+      .rating-grid { grid-template-columns: 1fr 1fr; }
+      .rating-visual,
+      .rating-visual-img { width: 100%; }
+      .calc-section, .section { max-width: 1060px; }
+      .hero-content { max-width: 960px; }
       .hero h1 { font-size: clamp(36px, 4vw, 56px); }
       .hero p { max-width: 600px; font-size: 20px; }
       .features-grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
       .expert-section p { max-width: 600px; }
+      .calc-card h2 { font-size: 28px; }
+      .calc-card .subtitle { font-size: 17px; }
+      .step-question { font-size: 22px; }
+      .option-card { font-size: 16px; padding: 20px; }
+      .calc-card { padding: 44px 40px; }
+      h2 { font-size: 34px; }
+      .section h2 { font-size: 34px; }
+      .montage-grid { grid-template-columns: 1fr 1fr; }
+      .office-grid { grid-template-columns: 1fr 1fr 1fr; }
+      .section .subhead { font-size: 17px; }
+      .feature-card h3 { font-size: 17px; }
+      .feature-card p { font-size: 14px; }
+      .rating-card .brand { font-size: 17px; }
+      .rating-card .brand .sub { font-size: 14px; }
+      .rating-card .why { font-size: 14px; }
+      .rating-card .tags span { font-size: 12px; }
+      .quality-card p { font-size: 15px; }
+      .quality-card .label { font-size: 16px; }
     }
     @media (max-width: 600px) {
       .calc-card { padding: 24px 18px; }
@@ -525,9 +557,10 @@
       transition: box-shadow 0.2s;
     }
     .rating-card:hover { box-shadow: 0 2px 12px rgba(37,99,235,0.08); }
-    .rating-visual {
+    .rating-visual,
+    .rating-visual-img {
       flex-shrink: 0;
-      width: 80px; height: 80px;
+      width: 120px;
       border-radius: var(--radius-sm);
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
@@ -536,8 +569,13 @@
       letter-spacing: 0.03em;
       color: white;
       position: relative;
+      background: var(--card);
+      padding: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
     }
-    .rating-visual .icon { font-size: 28px; margin-bottom: 2px; }
+    .rating-visual-img { width: 200px; }
+    .rating-visual svg { width: 48px; height: 48px; display: block; margin-bottom: 2px; }
     .rating-visual .pos-badge {
       position: absolute; top: -4px; left: -4px;
       width: 24px; height: 24px;
@@ -585,9 +623,10 @@
     }
     .rating-link:hover { text-decoration: underline; }
     @media (max-width: 600px) { 
-      .rating-card { flex-wrap: wrap; }
-      .rating-visual { width: 100%; height: 80px; flex-direction: row; gap: 8px; }
-      .rating-visual .icon { font-size: 22px; margin-bottom: 0; }
+      .rating-card { flex-direction: column; }
+      .rating-visual,
+      .rating-visual-img { width: 100%; flex-direction: column; }
+      .rating-visual .pos-badge { top: 4px; left: 4px; }
     }
 
     /* ─── EXPERT ─── */
@@ -609,7 +648,7 @@
       pointer-events: none;
     }
     .expert-avatar {
-      width: 80px; height: 80px;
+      width: 100px; height: 100px;
       border-radius: 50%;
       background: linear-gradient(135deg, #60a5fa, #3b82f6);
       display: flex; align-items: center; justify-content: center;
@@ -617,24 +656,25 @@
       margin: 0 auto 16px;
       border: 3px solid rgba(255,255,255,0.2);
       position: relative;
+      overflow: hidden;
     }
     .expert-section h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
     .expert-section .title { font-size: 14px; color: #93c5fd; font-weight: 600; margin-bottom: 16px; }
     .expert-section p { font-size: 15px; color: #cbd5e1; max-width: 500px; margin: 0 auto 20px; line-height: 1.6; }
     .expert-section .blog-link {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(8px);
-      padding: 12px 24px;
+      background: #24A1DE;
+      padding: 14px 28px;
       border-radius: 100px;
       color: white;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-      border: 1px solid rgba(255,255,255,0.15);
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      box-shadow: 0 4px 16px rgba(36,161,222,0.3);
       transition: 0.2s;
     }
-    .expert-section .blog-link:hover { background: rgba(255,255,255,0.18); }
+    .expert-section .blog-link:hover { background: #1d8ec7; transform: translateY(-1px); }
     .expert-stats {
       display: flex; justify-content: center; gap: 32px; margin-top: 24px; flex-wrap: wrap;
     }
@@ -664,6 +704,169 @@
       color: var(--text-muted);
       line-height: 1.6;
     }
+    /* ─── MONTAGE ─── */
+    .montage-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .montage-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .montage-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ─── OFFICE ─── */
+    .office-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 768px) {
+      .office-info { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .office-info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+    .office-info-card .label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .office-info-card .value {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .office-info-card .phone {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .office-info-card .phone:hover { color: var(--accent); }
+    .office-info-card .sub {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .office-info-card .hours {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .office-info-card .hours span {
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .office-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .office-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .office-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .office-item .map-label {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+      color: var(--text-muted);
+    }
+    @media (min-width: 1024px) {
+      .montage-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .office-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+  
+    .order-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .order-btn:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .order-btn:active { transform: translateY(0); }
+    
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      width: 360px;
+      max-width: 90vw;
+      text-align: center;
+    }
+    .modal-box h3 { font-size: 18px; margin-bottom: 6px; color: #0f172a; }
+    .modal-box p { font-size: 14px; color: #64748b; margin-bottom: 16px; }
+    .modal-box input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.2s;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+    .modal-box input:focus { border-color: #2563eb; }
+    .modal-box .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .modal-box .submit-btn:hover { background: #1d4ed8; }
+    .modal-box .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .order-modal-box { position: relative; }
+
   </style>
 </head>
 <body>
@@ -683,12 +886,12 @@
       </div>
       <h1>Лучший монтаж кондиционеров<br><span>во Владивостоке</span></h1>
       <p>Лучшие материалы. Аккуратная работа. Безупречное качество. Клиенты, которые выбирают нас — довольны годами.</p>
-      <a href="#calc" class="hero-btn">
-        🧊 Записаться на консультацию
+      <a href="index.html#calc" class="hero-btn">
+        🧊 Получить расчёт
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <dl class="hero-stats">
-        <div><dt>1 200+</dt><dd>Установок</dd></div>
+        <div><dt>100+</dt><dd>Установок</dd></div>
         <div><dt>5 лет</dt><dd>Гарантии</dd></div>
         <div><dt>100%</dt><dd>Качество*</dd></div>
         <div><dt>4.9 ★</dt><dd>Оценка клиентов</dd></div>
@@ -705,6 +908,8 @@
   <section class="calc-section" id="calc">
     <div class="calc-card" id="calcCard">
 
+      <h2 style="font-size:28px;font-weight:800;color:#0f172a;margin-bottom:4px;">Быстрый расчет</h2>
+      <p style="font-size:15px;color:#64748b;margin-bottom:16px;">Ответьте на 4 вопроса — получите стоимость</p>
       <!-- Progress -->
       <div class="progress-wrap" id="progressBar">
         <div class="progress-dot" data-step="0"></div>
@@ -737,21 +942,21 @@
         </div>
       </div>
 
-      <!-- STEP 1: Сколько комнат -->
+      <!-- STEP 1: Площадь комнаты -->
       <div class="calc-step" data-step="1">
-        <div class="step-label">Шаг 2 из 4</div>
-        <div class="step-question">Сколько комнат нужно охладить?</div>
+        <div class="step-label">Шаг 2 из 4 — площадь комнаты</div>
+        <div class="step-question">📏 Какая площадь помещения?</div>
         <div class="slider-wrap">
-          <label>Количество <span id="roomsDisplay">1</span></label>
-          <input type="range" id="roomsSlider" min="1" max="6" value="1" oninput="updateRooms()">
+          <label>Площадь <span id="areaDisplay">30</span> м²</label>
+          <input type="range" id="areaSlider" min="15" max="100" value="30" step="5" oninput="updateArea()">
         </div>
         <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-top:-16px;margin-bottom:24px;">
-          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6+</span>
+          <span>15 м²</span><span>30</span><span>50</span><span>75</span><span>100 м²</span>
         </div>
         <div class="temp-bar">
           <span class="current" id="previewType">🏢</span>
           <span class="separator"></span>
-          <span class="target" id="previewRooms">1 комната</span>
+          <span class="target" id="previewArea">30 м²</span>
         </div>
         <div class="calc-nav">
           <button class="btn-prev" onclick="prevStep()">← Назад</button>
@@ -763,32 +968,27 @@
       <div class="calc-step" data-step="2">
         <div class="step-label">Шаг 3 из 4</div>
         <div class="step-question">Условия монтажа</div>
-        <p class="subtitle" style="margin-top:-12px;margin-bottom:16px;">Это влияет на сложность и итоговую цену — мы закладываем всё честно:</p>
+        <p class="subtitle" style="margin-top:-12px;margin-bottom:16px;">Что может повлиять на сложность:</p>
         <div class="check-grid" id="extrasGrid">
           <label class="check-item">
-            <input type="checkbox" data-price="1500" data-key="highFloor">
+            <input type="checkbox" data-key="highFloor">
             🏗️ Высокий этаж (3+)
-            <span class="price-tag">+1 500 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="2500" data-key="cage">
+            <input type="checkbox" data-key="cage">
             🔐 Защитная ковка/клетка на блок
-            <span class="price-tag">+2 500 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="2000" data-key="longRoute">
+            <input type="checkbox" data-key="longRoute">
             📏 Удлинённая трасса (более 5 м)
-            <span class="price-tag">+2 000 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="3000" data-key="brick">
+            <input type="checkbox" data-key="brick">
             🧱 Кирпич / бетон (сложное сверление)
-            <span class="price-tag">+3 000 ₽</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" data-price="1500" data-key="drain">
+            <input type="checkbox" data-key="drain">
             💧 Дополнительный дренаж
-            <span class="price-tag">+1 500 ₽</span>
           </label>
         </div>
         <div class="calc-nav">
@@ -800,49 +1000,40 @@
       <!-- STEP 3: Контакты -->
       <div class="calc-step" data-step="3">
         <div class="step-label">Шаг 4 из 4</div>
-        <div class="step-question">📲 Записаться на консультацию</div>
-        <p class="subtitle" style="margin-top:-8px;">Отправим детальную смету в Telegram. Подберём удобное время для монтажа.</p>
-        <div style="margin-bottom:16px;">
-          <label style="font-size:14px;font-weight:600;display:block;margin-bottom:6px;">Ваше имя</label>
-          <input type="text" id="userName" placeholder="Александр" style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;font-family:inherit;outline:none;">
-        </div>
+        <div class="step-question">📲 Оставьте номер телефона</div>
+        <p class="subtitle" style="margin-top:-8px;">Перезвоним и дадим расчёт. Подберём удобное время для монтажа.</p>
         <div style="margin-bottom:24px;">
-          <label style="font-size:14px;font-weight:600;display:block;margin-bottom:6px;">Telegram (username или номер)</label>
-          <input type="text" id="userContact" placeholder="@username или +7..." style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;font-family:inherit;outline:none;">
+          <label style="font-size:14px;font-weight:600;display:block;margin-bottom:6px;">Номер телефона</label>
+          <input type="tel" id="userContact" placeholder="+7 (___)-___-__-__" style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;font-family:inherit;outline:none;">
         </div>
         <div class="calc-nav">
           <button class="btn-prev" onclick="prevStep()">← Назад</button>
           <button class="btn-next" onclick="sendLead()" id="sendBtn">
-            📩 Записаться на консультацию
+            🧊 Получить расчёт
           </button>
         </div>
       </div>
 
       <!-- ═══ RESULT (показывается после отправки) ═══ -->
       <div class="result-box" id="resultBox">
-        <div class="result-header">
-          <span class="icon">📋</span>
-          <div>
-            <h3>Смета готова!</h3>
-            <p>Проверьте Telegram — там детальная разбивка по работам и материалам</p>
-          </div>
+        <div class="result-header" style="text-align:center;flex-direction:column;gap:8px;">
+          <span class="icon" style="font-size:56px;">✅</span>
+          <h3>Спасибо! Мы получили заявку</h3>
+          <p style="color:var(--text-muted);font-size:15px;max-width:360px;margin:0 auto;">Свяжемся с вами в ближайшее время, уточним детали и подберём удобное время для монтажа</p>
         </div>
-        <div class="price-breakdown" id="priceBreakdown">
-          <div class="price-row"><span>🏗️ Оборудование (премиум)</span><span id="rAcUnit">28 900 ₽</span></div>
-          <div class="price-row"><span>🔧 Монтаж профессиональный</span><span id="rInstall">7 500 ₽</span></div>
-          <div class="price-row"><span>📦 Материалы качественные</span><span id="rMaterials">3 500 ₽</span></div>
-          <div class="price-row" id="rExtraRow" style="display:none;"><span>📎 Особые условия</span><span id="rExtra">0 ₽</span></div>
-          <div class="price-row total"><span>✅ Итого по смете</span><span id="rTotal">36 900 ₽</span></div>
-        </div>
-        <div class="result-actions">
-          <a href="#" class="btn-tg" id="tgDeepLink" target="_blank">
-            💬 Открыть Telegram
+        <div style="background:var(--accent-light);border-radius:var(--radius-sm);padding:20px;text-align:center;margin-top:20px;">
+          <p style="font-size:14px;color:var(--text-muted);margin-bottom:12px;">А пока — подписывайтесь на Telegram-канал о климатической технике:</p>
+          <a href="https://t.me/climate_hall" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:white;padding:12px 24px;border-radius:100px;font-size:15px;font-weight:700;text-decoration:none;transition:0.15s;">
+            📖 Climate Hall — канал эксперта
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="tel:+74232423652" class="btn-call-phone">
+        </div>
+        <div class="result-actions" style="margin-top:16px;">
+          <a href="tel:+74232423652" class="btn-call-phone" style="text-decoration:none;">
             📞 Позвонить: +7 (423) 242-36-52
           </a>
-          <button class="btn-call" onclick="resetCalc()">
-            🔄 Рассчитать другую смету
+          <button class="btn-call" onclick="resetCalc()" style="margin-top:8px;">
+            🔄 Заполнить ещё раз
           </button>
         </div>
       </div>
@@ -880,7 +1071,9 @@
   <!-- ═══ EXPERT ─── -->
   <section class="section">
     <div class="expert-section">
-      <div class="expert-avatar">👨‍🔧</div>
+      <div class="expert-avatar" style="overflow:hidden;">
+        <img src="images/dmitriy-pichugin.jpg" alt="Дмитрий Пичугин" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+      </div>
       <h3>Дмитрий Пичугин — ваш эксперт по климатической технике</h3>
       <div class="title">Владелец Climate Hall, практикующий специалист с 2010 года</div>
       <p>Лично подбираю оборудование и контролирую каждый монтаж. Веду Telegram-канал — делюсь разборами техники, сравнением брендов и советами по эксплуатации. Без рекламы, только экспертиза.</p>
@@ -890,7 +1083,7 @@
       </a>
       <dl class="expert-stats">
         <div><dt>С 2010</dt><dd>На рынке климата</dd></div>
-        <div><dt>1 200+</dt><dd>Установок</dd></div>
+        <div><dt>100+</dt><dd>Установок</dd></div>
         <div><dt>5 лет</dt><dd>Гарантия на оборудование</dd></div>
       </dl>
     </div>
@@ -898,7 +1091,7 @@
 
   <!-- ═══ QUALITY ─── -->
   <section class="section" id="quality">
-    <h2>Стандарт установки премиум-класса</h2>
+    <h2>Стандарты качественной установки</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">7 этапов, которые гарантируют, что ваш кондиционер прослужит 10+ лет</p>
     <div class="quality-grid">
 
@@ -909,7 +1102,7 @@
 
       <div class="quality-card">
         <div class="label">💧 Дренаж с гарантией от протечек</div>
-        <p>Уклон дренажной трубки от 3 мм на метр, гидрозатвор при подключении к канализации. Проверяем слив водой перед запуском — ни одной протечки за 1200+ установок.</p>
+        <p>Уклон дренажной трубки от 3 мм на метр, гидрозатвор при подключении к канализации. Проверяем слив водой перед запуском — ни одной протечки за 100+ установок.</p>
       </div>
 
       <div class="quality-card">
@@ -940,134 +1133,187 @@
     </div>
   </section>
 
+  <!-- ═══ MONTAGE ═══ -->
+  <section class="section" id="montage">
+    <h2>Примеры установок</h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Аккуратный монтаж — визитная карточка нашей команды</p>
+    <div class="montage-grid">
+      <div class="montage-item">
+        <img src="images/montage_1.jpg" alt="Пример монтажа кондиционера" loading="lazy">
+      </div>
+      <div class="montage-item">
+        <img src="images/montage_3.webp" alt="Пример монтажа кондиционера" loading="lazy">
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ RATING ═══ -->
   <section class="section" id="rating">
     <h2>Рейтинг кондиционеров: ТОП-7</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Модели, которые наши клиенты выбирают чаще всего. Краткий обзор за последний квартал.</p>
-    <div class="rating-grid">
+        <div class="rating-grid">
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-dahaci">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge top1">1</span>
-          <span class="icon">🏗️</span>
-          DAHACI
+          <img src="ac-img-1-dahaci.png" alt="DAHACI FreshME" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">DAHACI FreshME <span class="sub">DI09BFM-D/DO09BFM-D ON-OFF</span></div>
           <div class="why"><strong>Почему он?</strong> Соотношение цены и качества от завода Midea. Лаконичный дизайн, надёжность, сервисная поддержка.</div>
           <div class="tags"><span>Гарантия 3 года</span><span>ON-OFF / Инвертор</span><span class="prem">Завод Midea</span></div>
-          <a href="https://dahaci.biz/catalog/split-sistemy-postoyannoy-proizvoditelnosti/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('DAHACI FreshME')">📋 Получить расчет</button>
         </div>
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-tosot">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge top2">2</span>
-          <span class="icon">❄️</span>
-          TOSOT
+          <img src="ac-img-2-tosot-natal.png" alt="TOSOT Natal" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">TOSOT Natal <span class="sub">T09H-SnN2/I/T09H-SnN2/O</span></div>
           <div class="why"><strong>Почему он?</strong> Качество от завода Gree. Компактный внутренний блок. Один из самых популярных выборов для квартир.</div>
           <div class="tags"><span class="prem">Завод Gree</span><span>Компактный</span><span class="prem">Гарантия 5 лет</span></div>
-          <a href="https://tosot.ru/catalog/bytovye_split_sistemy/natal/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('TOSOT Natal')">📋 Получить расчет</button>
         </div>
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-tosot">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge top3">3</span>
-          <span class="icon">📡</span>
-          TOSOT
+          <img src="ac-img-3-lyrax.png" alt="TOSOT LyraX" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">TOSOT LyraX <span class="sub">T09H-SnN2/I/T09H-SnN2/O</span></div>
           <div class="why"><strong>Почему он?</strong> Завод Gree + лаконичный дизайн + объёмный воздушный поток. Wi-Fi встроен. Плавность инвертора.</div>
           <div class="tags"><span class="prem">Завод Gree</span><span>Wi-Fi</span><span>Инвертор</span><span class="prem">Гарантия 5 лет</span></div>
-          <a href="https://tosot.ru/catalog/bytovye_split_sistemy/lyra-x/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('TOSOT LyraX')">📋 Получить расчет</button>
         </div>
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-lessar">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge">4</span>
-          <span class="icon">✨</span>
-          LESSAR
+          <img src="ac-img-4-ego.png" alt="LESSAR EGO" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">LESSAR EGO <span class="sub">LS-HE09KNE2/LU-HE09KNE2</span></div>
           <div class="why"><strong>Почему он?</strong> Класс «Комфорт+». Цвет серый металлик с зеркальной панелью — отражает интерьер. Стильное решение для дизайнерских проектов.</div>
           <div class="tags"><span class="prem">Класс Комфорт+</span><span>Зеркальная панель</span><span>Гарантия 4 года</span></div>
-          <a href="https://lessar.ru/catalog/seriya-home-business/nastennye-invertornye-split-sistemy/ego/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('LESSAR EGO')">📋 Получить расчет</button>
         </div>
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-lessar">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge">5</span>
-          <span class="icon">🐅</span>
-          LESSAR
+          <img src="ac-img-5-tiger.jpg" alt="LESSAR TIGER" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">LESSAR TIGER <span class="sub">LS-HE09KBE2/LU-HE09KBE2 INVERTER</span></div>
           <div class="why"><strong>Почему он?</strong> Тихий, стильный, экономичный. Полный комплект технологий. Встроенный Wi-Fi. Очень низкое энергопотребление.</div>
           <div class="tags"><span class="prem">Wi-Fi</span><span>Тихий</span><span>Экономичный</span><span>Гарантия 4 года</span></div>
-          <a href="https://lessar.ru/catalog/seriya-home-business/nastennye-invertornye-split-sistemy/Tiger2022/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('LESSAR TIGER')">📋 Получить расчет</button>
         </div>
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-lessar">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge">6</span>
-          <span class="icon">☀️</span>
-          LESSAR
+          <img src="ac-img-6-stella.png" alt="LESSAR STELLA" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">LESSAR STELLA <span class="sub">LS-HE09KJE2/LU-HE09KJE2 INVERTER</span></div>
           <div class="why"><strong>Почему он?</strong> Мощный тепловой насос — греет до −30°C. Согреет зимой, охладит летом. Максимальная функциональность.</div>
           <div class="tags"><span class="warn">Обогрев до −30°C</span><span>Тепловой насос</span><span>Гарантия 4 года</span></div>
-          <a href="https://lessar.ru/catalog/seriya-home-business/nastennye-invertornye-split-sistemy/Stella/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('LESSAR STELLA')">📋 Получить расчет</button>
         </div>
       </div>
 
       <div class="rating-card">
-        <div class="rating-visual v-bg-clivia">
+        <div class="rating-visual rating-visual-img">
           <span class="pos-badge">7</span>
-          <span class="icon">🧠</span>
-          TOSOT
+          <img src="ac-img-7-clivia.png" alt="TOSOT Clivia Deluxe" style="width:100%;height:auto;display:block;border-radius:6px;">
         </div>
         <div class="info">
           <div class="brand">TOSOT Clivia Deluxe <span class="sub">T09H-SCD/I/T09H-SCD/O</span></div>
           <div class="why"><strong>Почему он?</strong> Адаптируется под ваши привычки — AI сам подстраивает работу. Контроль влажности. Необычный цвет. Премиум-сегмент.</div>
           <div class="tags"><span class="prem">AI-управление</span><span>Контроль влажности</span><span class="prem">Гарантия 5 лет</span></div>
-          <a href="https://tosot.ru/catalog/bytovye_split_sistemy/clivia-deluxe/" class="rating-link" target="_blank" rel="noopener">Смотреть на сайте производителя →</a>
+          <div style="font-size:12px;color:#64748b;margin-top:8px;">💰 Цена: официальная + дилерская скидка</div>
+          <button class="order-btn" onclick="openOrderModal('TOSOT Clivia Deluxe')">📋 Получить расчет</button>
         </div>
       </div>
 
     </div>
-    <p style="text-align:center;color:var(--text-muted);font-size:13px;margin-top:20px;">Подберём модель под вашу задачу и бюджет. Запишитесь на консультацию — подскажем, что подходит именно вам.</p>
+    <p style="text-align:center;color:var(--text-muted);font-size:13px;margin-top:20px;">Подберём модель под вашу задачу и бюджет. <a href="#calc" style="color:var(--accent);text-decoration:underline;font-weight:600;">Запишитесь на консультацию</a> — подскажем, что подходит именно вам.</p>
   </section>
-
-  <!-- ═══ MODAL ═══ -->
-  <div class="modal-overlay" id="modal">
-    <div class="modal">
-      <span class="icon">✅</span>
-      <h3 id="modalTitle">Заявка отправлена!</h3>
-      <p id="modalText">Мы отправили расчёт в Telegram. Проверьте <strong>@username</strong> — сообщение придёт в течение минуты.</p>
-      <button onclick="closeModal()">Хорошо</button>
-    </div>
-  </div>
 
   <!-- ═══ BLOG CTA ─── -->
   <section class="section" style="text-align:center;padding-bottom:0;">
     <div style="background:var(--accent-light);border-radius:20px;padding:36px 28px;border:1px solid rgba(37,99,235,0.12);">
       <div style="font-size:40px;margin-bottom:12px;">📖</div>
-      <h2 style="font-size:22px;font-weight:800;margin-bottom:8px;">Больше о климатической технике</h2>
+      <h2 style="font-weight:800;margin-bottom:8px;">Больше о климатической технике</h2>
       <p style="color:var(--text-muted);font-size:15px;max-width:480px;margin:0 auto 20px;">Дмитрий Пичугин делится экспертизой в Telegram-канале: разборы брендов, советы по выбору, обслуживанию и эксплуатации кондиционеров. Без рекламы.</p>
       <a href="https://t.me/climate_hall" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:white;padding:14px 32px;border-radius:var(--radius-sm);font-size:16px;font-weight:700;text-decoration:none;transition:0.15s;">
         💬 Подписаться в Telegram
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
+    </div>
+  </section>
+
+  <!-- ═══ CALC CTA ─── -->
+  <section class="section" style="text-align:center;padding-bottom:0;">
+    <div style="background:var(--bg);border:2px solid var(--accent);border-radius:20px;padding:36px 28px;">
+      <div style="font-size:40px;margin-bottom:12px;">🧊</div>
+      <h2 style="font-weight:800;margin-bottom:8px;">Готовы выбрать кондиционер?</h2>
+      <p style="color:var(--text-muted);font-size:15px;max-width:480px;margin:0 auto 20px;">Рассчитайте стоимость установки под ключ за 1 минуту. Честная смета без скрытых платежей.</p>
+      <a href="index.html#calc" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg, var(--accent), var(--accent-dark));color:white;padding:14px 32px;border-radius:var(--radius-sm);font-size:16px;font-weight:700;text-decoration:none;transition:0.15s;box-shadow:0 4px 16px rgba(37,99,235,0.3);">
+        🧊 Получить расчёт
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ OFFICE ═══ -->
+  <section class="section" id="office">
+    <h2>Наш офис</h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Приезжайте познакомиться и выбрать оборудование</p>
+
+    <div class="office-info">
+      <div class="office-info-card">
+        <div class="label">Адрес</div>
+        <div class="value">📍 Партизанский просп., 28</div>
+        <div class="sub">Владивосток</div>
+      </div>
+      <div class="office-info-card">
+        <div class="label">Телефон</div>
+        <a class="phone" href="tel:+79143350675">📞 +7 (914) 335-06-75</a>
+      </div>
+      <div class="office-info-card">
+        <div class="label">График работы</div>
+        <div class="hours">Пн–Сб <span>10:00–19:00</span></div>
+        <div class="hours">Воскресенье <span>11:00–18:00</span></div>
+      </div>
+    </div>
+
+    <div class="office-grid">
+      <div class="office-item">
+        <img src="images/office.jpg" alt="Офис Climate Hall" loading="lazy">
+      </div>
+      <div class="office-item">
+        <img src="images/office-2.webp" alt="Офис Climate Hall" loading="lazy">
+      </div>
+      <div class="office-item">
+        <img src="images/office-map.jpg" alt="Карта проезда" loading="lazy">
+        <div class="map-label">📍 Партизанский просп., 28 — схема проезда</div>
+      </div>
     </div>
   </section>
 
@@ -1084,18 +1330,9 @@
     // ─── STATE ───
     const state = {
       type: null,      // house | apartment | office | studio
-      rooms: 1,
+      area: 30,
       extras: {},
-      name: '',
       contact: '',
-    };
-
-    const PRICES = {
-      baseUnit: 28900,
-      install: 7500,
-      materials: 3500,
-      seasonDiscount: 3000,
-      roomMultiplier: [0, 1, 1.8, 2.5, 3.2, 3.8, 4.5],
     };
 
     let currentStep = 0;
@@ -1116,7 +1353,15 @@
       });
 
       currentStep = n;
-      if (n === 1) updateRoomsPreview();
+      if (n === 1) updateAreaPreview();
+
+      // 📊 Метрика: шаги заявки как виртуальные страницы
+      if (typeof ym !== 'undefined') {
+        const pages = ['/calc/type', '/calc/area', '/calc/conditions', '/calc/contact'];
+        if (n >= 0 && n < pages.length) {
+          ym(109687297, 'hit', pages[n], { title: 'Калькулятор: шаг ' + (n + 1) });
+        }
+      }
     }
 
     function nextStep() {
@@ -1140,23 +1385,21 @@
         document.querySelectorAll('#stepType .option-card').forEach(c => c.classList.remove('selected'));
         card.classList.add('selected');
         state.type = card.dataset.value;
-        updateRoomsPreview();
+        updateAreaPreview();
       });
     });
 
-    // ─── STEP 1: ROOMS ───
-    function updateRooms() {
-      state.rooms = parseInt(document.getElementById('roomsSlider').value);
-      document.getElementById('roomsDisplay').textContent = state.rooms;
-      updateRoomsPreview();
+    // ─── STEP 1: AREA ───
+    function updateArea() {
+      state.area = parseInt(document.getElementById('areaSlider').value);
+      document.getElementById('areaDisplay').textContent = state.area;
+      updateAreaPreview();
     }
 
-    function updateRoomsPreview() {
+    function updateAreaPreview() {
       const icons = { house: '🏡', apartment: '🏢', office: '🏪', studio: '🏠' };
       document.getElementById('previewType').textContent = icons[state.type] || '🏢';
-      const roomsText = state.rooms === 1 ? '1 комната' :
-                        state.rooms < 5 ? `${state.rooms} комнаты` : `${state.rooms} комнат`;
-      document.getElementById('previewRooms').textContent = roomsText;
+      document.getElementById('previewArea').textContent = `${state.area} м²`;
     }
 
     // ─── STEP 2: EXTRAS ───
@@ -1167,37 +1410,27 @@
     });
 
     // ─── STEP 3: CONTACTS ───
-    document.getElementById('userName').addEventListener('input', e => state.name = e.target.value);
     document.getElementById('userContact').addEventListener('input', e => state.contact = e.target.value);
 
     // ─── CALC ───
     function calcPrice() {
-      const base = PRICES.baseUnit;
-      const install = PRICES.install;
-      const materials = PRICES.materials;
-      const roomMult = PRICES.roomMultiplier[Math.min(state.rooms, 6)] || 4.5;
-      const unitPrice = Math.round(base * roomMult);
-      const installPrice = Math.round(install * roomMult);
+      // Простая оценка на основе площади
+      const areaMult = state.area / 20;  // базовая комната ~20 м²
+      const unitPrice = Math.round(28900 * areaMult);
+      const installPrice = Math.round(7500 * areaMult);
+      const materials = 3500;
+      const extrasPrice = 0;
 
-      let extrasPrice = 0;
-      for (const [key, val] of Object.entries(state.extras)) {
-        if (val) {
-          const price = parseInt(document.querySelector(`[data-key="${key}"]`)?.dataset?.price || 0);
-          extrasPrice += price;
-        }
-      }
-
-      const subtotal = unitPrice + installPrice + materials + extrasPrice;
-      const total = subtotal;
+      const total = unitPrice + installPrice + materials;
 
       return { unitPrice, installPrice, materials, extrasPrice, total };
     }
 
     // ─── SEND ───
     async function sendLead() {
-      if (!state.name.trim() || !state.contact.trim()) {
-        document.getElementById('sendBtn').textContent = '✏️ Заполните имя и Telegram';
-        setTimeout(() => { document.getElementById('sendBtn').innerHTML = '📩 Записаться на консультацию'; }, 2000);
+      if (!state.contact.trim()) {
+        document.getElementById('sendBtn').textContent = '✏️ Введите номер телефона';
+        setTimeout(() => { document.getElementById('sendBtn').innerHTML = '📩 Получить расчёт'; }, 2000);
         return;
       }
 
@@ -1229,24 +1462,21 @@
       };
 
       const payload = {
-        name: state.name.trim(),
         contact: state.contact.trim(),
         type: types[state.type] || state.type,
-        rooms: state.rooms,
+        area: state.area,
         extras: extrasList,
         utm,
         price: {
           unit: price.unitPrice,
           install: price.installPrice,
           materials: price.materials,
-          extras: price.extrasPrice,
-          // без скидок — честная цена
           total: price.total,
         }
       };
 
       // Яндекс.Метрика — цель
-      if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_sent');
+      if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_sent');
 
       try {
         const resp = await fetch('/api/lead', {
@@ -1255,40 +1485,25 @@
           body: JSON.stringify(payload),
         });
         const data = await resp.json();
-        showResult(price, data.tgLink);
-        if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_success');
+        showResult();
+        if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_success');
       } catch (err) {
         // Fallback: show anyway
-        showResult(price, null);
-        if (typeof ym !== 'undefined') ym(00000000, 'reachGoal', 'lead_fallback');
+        showResult();
+        if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_fallback');
       }
     }
 
     // ─── SHOW RESULT ───
-    function showResult(price, tgLink) {
-      document.querySelector('#calcCard .calc-step').style.display = 'none';
+    function showResult() {
+      // Скрываем ВСЕ шаги, а не только первый
+      document.querySelectorAll('#calcCard .calc-step').forEach(el => el.style.display = 'none');
       document.getElementById('resultBox').classList.add('show');
       document.getElementById('progressBar').style.display = 'none';
 
-      document.getElementById('rAcUnit').textContent = formatPrice(price.unitPrice);
-      document.getElementById('rInstall').textContent = formatPrice(price.installPrice);
-      document.getElementById('rMaterials').textContent = formatPrice(price.materials);
-
-      const extraRow = document.getElementById('rExtraRow');
-      if (price.extrasPrice > 0) {
-        extraRow.style.display = 'flex';
-        document.getElementById('rExtra').textContent = formatPrice(price.extrasPrice);
-      } else {
-        extraRow.style.display = 'none';
-      }
-
-      document.getElementById('rTotal').textContent = formatPrice(price.total);
-
-      const tg = document.getElementById('tgDeepLink');
-      if (tgLink) {
-        tg.href = tgLink;
-      } else {
-        tg.href = `https://t.me/${state.contact.replace('@', '')}`;
+      // 📊 Метрика: успешная заявка
+      if (typeof ym !== 'undefined') {
+        ym(109687297, 'hit', '/calc/success', { title: 'Заявка отправлена' });
       }
     }
 
@@ -1299,16 +1514,14 @@
     // ─── RESET ───
     function resetCalc() {
       state.type = null;
-      state.rooms = 1;
+      state.area = 30;
       state.extras = {};
-      state.name = '';
       state.contact = '';
 
       document.querySelectorAll('#stepType .option-card').forEach(c => c.classList.remove('selected'));
-      document.getElementById('roomsSlider').value = 1;
-      document.getElementById('roomsDisplay').textContent = '1';
+      document.getElementById('areaSlider').value = 30;
+      document.getElementById('areaDisplay').textContent = '30';
       document.querySelectorAll('#extrasGrid input').forEach(cb => cb.checked = false);
-      document.getElementById('userName').value = '';
       document.getElementById('userContact').value = '';
 
       document.getElementById('resultBox').classList.remove('show');
@@ -1339,6 +1552,130 @@
     const style = document.createElement('style');
     style.textContent = `@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }`;
     document.head.appendChild(style);
-  </script>
+
+    // ─── 📊 МЕТРИКА: отслеживание кликов как виртуальные страницы ───
+    function trackClick(path, title) {
+      if (typeof ym !== 'undefined') {
+        try {
+          ym(109687297, 'hit', path, { title: title });
+        } catch(e) {}
+      }
+    }
+
+    // Отслеживаем все CTA-кнопки по data-track
+    document.querySelectorAll('[data-track]').forEach(el => {
+      el.addEventListener('click', function(e) {
+        trackClick(this.dataset.track, this.dataset.trackTitle || this.textContent.trim());
+      });
+    });
+
+    // Герой: кнопка расчёта
+    document.querySelector('.hero-btn')?.addEventListener('click', function() {
+      trackClick('/cta/hero-calc', 'Рассчитать с героя');
+    });
+
+    // Мобильная навигация
+    // Эксперт: TG канал
+    document.querySelector('.expert-section .blog-link')?.addEventListener('click', function() {
+      trackClick('/cta/expert-tg', 'Эксперт: TG канал');
+    });
+
+    // Результат: TG канал (после отправки заявки)
+    document.querySelector('.result-box a[href*="climate_hall"]')?.addEventListener('click', function() {
+      trackClick('/cta/result-tg', 'Результат: TG канал');
+    });
+
+    // Нижний CTA блок
+    document.querySelectorAll('.section:last-of-type a[href*="#calc"]').forEach(el => {
+      el.addEventListener('click', function() {
+        trackClick('/cta/bottom-calc', 'Нижний CTA: расчёт');
+      });
+    });
+
+    // Все ссылки «позвонить»
+    document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+      el.addEventListener('click', function() {
+        trackClick('/cta/call', 'Звонок: ' + (el.textContent.trim() || el.getAttribute('href')));
+      });
+    });
+  
+    // ─── Modal Order ───
+    let currentModel = '';
+    function openOrderModal(model) {
+      currentModel = model;
+      document.getElementById('orderModalModel').textContent = model;
+      document.getElementById('orderPhone').value = '';
+      document.getElementById('orderStatus').style.display = 'none';
+      document.getElementById('orderSubmitBtn').disabled = false;
+      document.getElementById('orderSubmitBtn').textContent = '📩 Отправить заявку';
+      document.getElementById('orderModal').classList.add('active');
+    }
+    function closeOrderModal() {
+      document.getElementById('orderModal').classList.remove('active');
+    }
+    document.getElementById('orderModal').addEventListener('click', function(e) {
+      if (e.target === this) closeOrderModal();
+    });
+    document.getElementById('orderPhone').addEventListener('input', function(e) {
+      let val = e.target.value.replace(/[^0-9]/g, '');
+      if (!val.startsWith('7') && val.length > 0) val = '7' + val;
+      let f = '';
+      if (val.length > 0) f = '+7';
+      if (val.length > 1) f += ' (' + val.substring(1, 4);
+      if (val.length >= 5) f += ') ' + val.substring(4, 7);
+      if (val.length >= 8) f += '-' + val.substring(7, 9);
+      if (val.length >= 10) f += '-' + val.substring(9, 11);
+      e.target.value = f;
+    });
+    function submitOrder() {
+      const phone = document.getElementById('orderPhone').value.replace(/[^0-9]/g, '');
+      if (phone.length < 10) {
+        document.getElementById('orderStatus').style.display = 'block';
+        document.getElementById('orderStatus').style.color = '#ef4444';
+        document.getElementById('orderStatus').textContent = 'Введите корректный номер телефона';
+        return;
+      }
+      const btn = document.getElementById('orderSubmitBtn');
+      btn.disabled = true;
+      btn.textContent = '⏳ Отправка...';
+      fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contact: '+' + phone, name: 'Заказ: ' + currentModel, area: '0', type: 'order_model' })
+      })
+      .then(r => r.json())
+      .then(data => {
+        if (data.ok) {
+          document.getElementById('orderStatus').style.display = 'block';
+          document.getElementById('orderStatus').style.color = '#16a34a';
+          document.getElementById('orderStatus').textContent = '✅ Заявка отправлена! Мы перезвоним.';
+          btn.textContent = '✅ Отправлено';
+        } else throw new Error(data.error || '');
+      })
+      .catch(() => {
+        document.getElementById('orderStatus').style.display = 'block';
+        document.getElementById('orderStatus').style.color = '#ef4444';
+        document.getElementById('orderStatus').textContent = '❌ Ошибка. Попробуйте позже.';
+        btn.disabled = false;
+        btn.textContent = '📩 Отправить заявку';
+      });
+    }
+</script>
+
+  <!-- ═══ ORDER MODAL ═══ -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box order-modal-box">
+      <div style="position:relative;">
+        <button style="position:absolute;top:-8px;right:-8px;background:none;border:none;font-size:24px;cursor:pointer;color:#94a3b8;line-height:1;" onclick="closeOrderModal()">✕</button>
+      </div>
+      <h3>📋 Получить расчет</h3>
+      <p id="orderModalModel" style="font-size:15px;font-weight:600;color:#0f172a;"></p>
+      <p style="font-size:14px;color:#64748b;">Оставьте номер — перезвоним и обсудим детали</p>
+      <input type="tel" id="orderPhone" placeholder="+7 (___) ___-__-__" maxlength="18" inputmode="numeric" style="width:100%;padding:12px 16px;border:2px solid #e2e8f0;border-radius:10px;font-size:16px;outline:none;margin-bottom:12px;box-sizing:border-box;">
+      <button class="submit-btn" id="orderSubmitBtn" onclick="submitOrder()" style="width:100%;padding:12px;background:#2563eb;color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer;">📩 Отправить заявку</button>
+      <p id="orderStatus" style="font-size:13px;margin-top:10px;display:none;"></p>
+    </div>
+  </div>
+
 </body>
 </html>

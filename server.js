@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const { Telegraf } = require('telegraf');
 const fs = require('fs');
+const { exec } = require('child_process');
 
 // ⚙️ Config
 const configPath = path.join(__dirname, 'config.json');
@@ -54,25 +55,15 @@ app.use(express.static(path.join(__dirname)));
 app.post('/api/lead', async (req, res) => {
   const data = req.body;
 
-  if (!data || !data.name || !data.contact) {
-    return res.status(400).json({ ok: false, error: 'name and contact required' });
+  if (!data || !data.contact) {
+    return res.status(400).json({ ok: false, error: 'contact required' });
   }
 
-  console.log('📥 New lead:', data.name, data.contact, data.type, `${data.rooms} room(s)`);
+  const typeName = data.type || 'Не указан';
+  const areaStr = data.area ? `${data.area} м²` : 'Не указана';
+  const extrasStr = data.extras && data.extras.length > 0 ? `Особенности: ${data.extras.join(', ')}` : '—';
 
-  // Format price
-  const fmt = (n) => n.toLocaleString('ru-RU') + ' ₽';
-
-  const priceBlock =
-    `📋 *Смета для ${data.name}*\n\n` +
-    `🏠 *${data.type}* — ${data.rooms} ${data.rooms === 1 ? 'комната' : data.rooms < 5 ? 'комнаты' : 'комнат'}\n\n` +
-    `┌ Оборудование (премиум)${' '.repeat(20)}${fmt(data.price.unit)}\n` +
-    `├ Монтаж профессиональный${' '.repeat(19)}${fmt(data.price.install)}\n` +
-    `├ Материалы качественные${' '.repeat(20)}${fmt(data.price.materials)}\n` +
-    (data.extras.length > 0 ? `├ Особые условия${' '.repeat(27)}${fmt(data.price.extras)}\n` : '') +
-    `💎 *ИТОГО: ${fmt(data.price.total)}*\n\n` +
-    (data.extras.length > 0 ? `📎 Дополнительно: ${data.extras.join(', ')}\n\n` : '') +
-    `📞 Контакт: ${data.contact}\n`;
+  console.log('📥 New lead:', data.contact, typeName, areaStr);
 
   // Save to JSON log
   const logDir = path.join(__dirname, 'leads');
@@ -80,39 +71,48 @@ app.post('/api/lead', async (req, res) => {
   const logFile = path.join(logDir, `lead-${Date.now()}.json`);
   fs.writeFileSync(logFile, JSON.stringify(data, null, 2));
 
-  // Send to admin
-  let tgLink = null;
+  // Format message
+  const leadMsg =
+    `📬 *Новая заявка!*\n\n` +
+    `📞 Телефон: ${data.contact}\n` +
+    `🏠 Тип: ${typeName}\n` +
+    `📏 Площадь: ${areaStr}\n` +
+    `🔧 ${extrasStr}\n`;
+
+  // Send to admin via Telegram
   if (bot && ADMIN_ID) {
     try {
-      await bot.telegram.sendMessage(ADMIN_ID, priceBlock, { parse_mode: 'Markdown' });
-      tgLink = `https://t.me/${bot.botInfo?.username || ''}`;
+      await bot.telegram.sendMessage(ADMIN_ID, leadMsg, { parse_mode: 'Markdown' });
+      console.log('📨 Telegram notification sent');
     } catch (err) {
-      console.error('❌ Failed to send to admin:', err.message);
+      console.error('❌ Telegram notify failed:', err.message);
     }
   }
 
-  // Try to DM the user if they gave a username
-  if (bot && data.contact) {
-    const username = data.contact.replace('@', '').replace('https://t.me/', '').trim();
-    if (username && !username.startsWith('+') && !username.includes('.')) {
-      try {
-        await bot.telegram.sendMessage(`@${username}`,
-          `✅ *Ваш расчёт!*\n\n` +
-          `${priceBlock}\n` +
-          `Жмите /start чтобы записаться на удобное время 🗓️`,
-          { parse_mode: 'Markdown' }
-        );
-        console.log(`📨 DM sent to @${username}`);
-      } catch (err) {
-        console.log(`⚠️ Could not DM @${username}: ${err.message}`);
-      }
-    }
+  // 📧 Send emails via msmtp (без PHP!)
+  const emailBody =
+    `From: Climate Hall <shulginov@roborumba.com>\n` +
+    `Subject: 📬 Новая заявка — ${data.contact}\n` +
+    `MIME-Version: 1.0\n` +
+    `Content-Type: text/plain; charset=utf-8\n` +
+    `Content-Transfer-Encoding: 8bit\n\n` +
+    `Новая заявка с сайта Climate Hall — установка кондиционеров\n` +
+    `========================================================\n\n` +
+    `📞 Телефон: ${data.contact}\n` +
+    `🏠 Тип:      ${typeName}\n` +
+    `📏 Площадь:  ${areaStr}\n` +
+    `🔧 Условия:  ${extrasStr}\n\n` +
+    `Дата: ${new Date().toLocaleString('ru-RU')}\n`;
+
+  const mailTo = ['vadim.shulginov@ya.ru']; // тест
+  for (const addr of mailTo) {
+    exec(`echo ${JSON.stringify(emailBody)} | msmtp -a yandex ${addr}`, (err) => {
+      if (err) console.error(`❌ Email to ${addr}:`, err.message);
+      else console.log(`📧 Email sent to ${addr}`);
+    });
   }
 
-  res.json({
-    ok: true,
-    tgLink: tgLink || (data.contact.startsWith('@') ? `https://t.me/${data.contact.replace('@', '')}` : null),
-  });
+  res.json({ ok: true });
 });
 
 // ─── Health ───
@@ -125,3 +125,7 @@ app.listen(PORT, () => {
   console.log(`🧊 AC MVP server running at http://localhost:${PORT}`);
   console.log(`   Open: http://localhost:${PORT}`);
 });
+
+// Graceful shutdown
+process.once('SIGINT', () => { bot?.stop('SIGINT'); });
+process.once('SIGTERM', () => { bot?.stop('SIGTERM'); });
