@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Чистка и обслуживание кондиционеров во Владивостоке — Climate Hall</title>
+<meta name="description" content="Профессиональная чистка и ТО кондиционеров во Владивостоке. Полная разборка, промывка, безопасная химия. Запишитесь на обслуживание.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-light: #eff6ff;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --success: #16a34a;
+  --radius: 14px;
+  --radius-sm: 10px;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  color: white;
+  padding: 60px 20px 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at 30% 50%, rgba(37,99,235,0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-content { position: relative; max-width: 640px; margin: 0 auto; }
+.hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+.hero h1 span { color: #60a5fa; }
+.hero p { font-size: 18px; color: #cbd5e1; margin-bottom: 24px; line-height: 1.4; }
+.hero-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: white; padding: 12px 28px;
+  border-radius: 100px; font-size: 16px; font-weight: 600;
+  text-decoration: none; transition: 0.15s;
+}
+.hero-link:hover { background: var(--accent-dark); transform: translateY(-1px); }
+.section { max-width: 720px; margin: 0 auto; padding: 50px 20px; }
+.section h2 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+.section p { font-size: 16px; color: var(--text-muted); margin-bottom: 28px; line-height: 1.6; }
+.card { background: var(--card); border-radius: var(--radius); padding: 28px; margin-bottom: 20px; border: 1px solid var(--border); }
+.card h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.card h3 .emoji { font-size: 22px; }
+.card ul { list-style: none; padding: 0; }
+.card li {
+  padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 15px;
+  display: flex; align-items: flex-start; gap: 8px; color: var(--text);
+}
+.card li:last-child { border-bottom: none; }
+.card li::before { content: '✅'; font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+.cta-block {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  color: white; border-radius: var(--radius); padding: 36px 28px;
+  text-align: center; margin-top: 20px;
+}
+.cta-block h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.cta-block p { color: #cbd5e1; font-size: 15px; margin-bottom: 20px; }
+.cta-block .hero-link { background: var(--accent); }
+.cta-block .hero-link:hover { background: var(--accent-dark); }
+.steps { counter-reset: step; }
+.step-item { counter-increment: step; display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start; }
+.step-num {
+  flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+  background: var(--accent); color: white; display: flex;
+  align-items: center; justify-content: center; font-weight: 700; font-size: 16px;
+}
+.step-body h4 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.step-body p { font-size: 14px; color: var(--text-muted); margin: 0; }
+@media (max-width: 640px) {
+  .hero h1 { font-size: 28px; }
+  .section { padding: 30px 16px; }
+  .card { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-content">
+    <p style="color:#93c5fd;font-size:14px;font-weight:600;margin-bottom:8px;">🧼 ЧИСТКА И ТО</p>
+    <h1>Почистим кондиционер<br><span>как новый</span></h1>
+    <p>Полная разборка, промывка, безопасная химия. После ТО кондиционер снова работает как новый — охлаждает и греет на 100%.</p>
+    <a href="#order" class="hero-link">📅 Записаться на ТО</a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>💧 Что мы делаем при ТО</h2>
+  <p>Каждое обслуживание проходит по отработанной технологии. Полный цикл — от разбора до тестового запуска.</p>
+
+  <div class="steps">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>Полная разборка корпуса</h4>
+        <p>Разбираем внутренний и внешний блок до состояния, доступного для качественной промывки всех узлов.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>Обработка спецхимией</h4>
+        <p>Наносим безопасную химию для испарителя — она расщепляет жир, пыль и микробы без агрессивных компонентов.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>Обработка пластика</h4>
+        <p>Отдельно обрабатываем все пластиковые элементы корпуса и жалюзи — они моются и дезинфицируются.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>Промывка аппаратом высокого давления</h4>
+        <p>Промываем систему и корпус аппаратом высокого давления — вода уходит в спецмешки, ничего не течёт на стены и пол.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <h4>Сборка и тестовый запуск</h4>
+        <p>Собираем блок, запускаем, проверяем охлаждение, обогрев, дренаж, отсутствие запахов и вибраций.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0;">
+  <h2>✅ Почему стоит мыть кондиционер регулярно</h2>
+  <p>Грязный фильтр и испаритель — причина неприятного запаха, повышенного шума и роста счетов за электричество.</p>
+
+  <div class="card">
+    <ul>
+      <li>Снижает потребление электроэнергии до 20%</li>
+      <li>Устраняет неприятный запах при включении</li>
+      <li>Продлевает срок службы компрессора</li>
+      <li>Предотвращает размножение плесени и бактерий</li>
+      <li>Рекомендуемая периодичность — 2 раза в год (весна и осень)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0;">
+  <h2>🛠 Что входит в мойку</h2>
+
+  <div class="card">
+    <h3><span class="emoji">🧊</span> Внутренний блок</h3>
+    <ul>
+      <li>Снятие и промывка фильтров</li>
+      <li>Обработка испарителя пенным очистителем</li>
+      <li>Чистка дренажной системы</li>
+      <li>Дезинфекция поддона</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3><span class="emoji">🏗️</span> Внешний блок</h3>
+    <ul>
+      <li>Промывка радиатора конденсатора</li>
+      <li>Очистка вентилятора и корпуса</li>
+      <li>Проверка дренажа</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0;" id="order">
+  <div class="cta-block">
+    <h3>📅 Запишитесь на ТО</h3>
+    <p>Оставьте заявку — мы подберём удобное время для обслуживания вашего кондиционера</p>
+    <a href="/" class="hero-link">📞 Записаться</a>
+  </div>
+</div>
+
+<footer style="text-align:center;padding:30px 20px;color:var(--text-muted);font-size:14px;border-top:1px solid var(--border);">
+  <p>Climate Hall — продажа, монтаж и обслуживание кондиционеров во Владивостоке</p>
+  <p style="margin-top:4px;">📞 +7 (423) 242-36-52 · <a href="https://t.me/climate_hall" style="color:var(--accent);text-decoration:none;">@climate_hall</a></p>
+</footer>
+
+</body>
+</html>
