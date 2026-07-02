@@ -1482,7 +1482,7 @@
       if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_sent');
 
       try {
-        const resp = await fetch('/api/lead', {
+        const resp = await fetch('/api/lead.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
@@ -1641,7 +1641,7 @@
       const btn = document.getElementById('orderSubmitBtn');
       btn.disabled = true;
       btn.textContent = '⏳ Отправка...';
-      fetch('/api/lead', {
+      fetch('/api/lead.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contact: '+' + phone, name: 'Заказ: ' + currentModel, area: '0', type: 'order_model' })
