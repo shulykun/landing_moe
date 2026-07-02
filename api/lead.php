@@ -64,17 +64,16 @@ if ($botToken && $adminId) {
         'parse_mode' => 'Markdown',
     ];
 
-    $ch = curl_init($telegramUrl);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    $response = curl_exec($ch);
-    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
-
-    error_log("Telegram notify: HTTP {$httpCode}");
+    $json = json_encode($payload);
+    $opts = array('http' => array(
+        'method'  => 'POST',
+        'header'  => "Content-Type: application/json\r\n",
+        'content' => $json,
+        'timeout' => 10,
+    ));
+    $ctx = stream_context_create($opts);
+    @file_get_contents($telegramUrl, false, $ctx);
+    error_log("Telegram notify sent");
 }
 
 // ─── Отправляем email ───
