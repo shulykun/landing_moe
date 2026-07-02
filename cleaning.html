@@ -93,6 +93,34 @@ body {
   .section { padding: 30px 16px; }
   .card { padding: 20px; }
 }
+
+/* ─── Expert ─── */
+.expert-section {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column;
+}
+@media (min-width: 768px) { .expert-section { flex-direction: row; } }
+.expert-img { width: 100%; height: 280px; object-fit: cover; }
+@media (min-width: 768px) { .expert-img { width: 40%; height: auto; max-height: 320px; } }
+.expert-body { padding: 28px; flex: 1; }
+.expert-body h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.expert-body .title { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 12px; }
+.expert-body p { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+.expert-body .blog-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #2563eb; color: white; padding: 10px 20px;
+  border-radius: 8px; font-size: 14px; font-weight: 600;
+  text-decoration: none; transition: 0.15s;
+}
+.expert-body .blog-link:hover { background: #1d4ed8; }
+.expert-stats {
+  display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap;
+}
+.expert-stats div { text-align: center; }
+.expert-stats dt { font-size: 18px; font-weight: 800; }
+.expert-stats dd { font-size: 12px; color: #94a3b8; }
+
 </style>
 </head>
 <body>
@@ -242,6 +270,30 @@ body {
       <li>Проверка дренажа</li>
     </ul>
   </div>
+</div>
+
+
+<div class="section" style="padding-top:0;">
+  <h2>🧑‍🔧 Кто делает обслуживание</h2>
+
+  <div class="expert-section">
+    <img src="images/dmitriy-pichugin.jpg" alt="Дмитрий Пичугин" class="expert-img" loading="lazy">
+    <div class="expert-body">
+      <h3>Дмитрий Пичугин — ваш эксперт по климатической технике</h3>
+      <div class="title">Владелец Climate Hall, практикующий специалист с 2010 года</div>
+      <p>Лично контролирую каждое обслуживание и монтаж. Веду Telegram-канал — делюсь разборами техники, сравнением брендов и советами по эксплуатации. Без рекламы, только экспертиза.</p>
+      <a href="https://t.me/climate_hall" class="blog-link" target="_blank" rel="noopener">
+        📖 Telegram-канал о климатической технике
+      </a>
+      <dl class="expert-stats">
+        <div><dt>С 2010</dt><dd>На рынке климата</dd></div>
+        <div><dt>100+</dt><dd>Установок</dd></div>
+        <div><dt>5 лет</dt><dd>Гарантия на оборудование</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <img src="images/cleaning-conditioner.jpg" alt="Обслуживание кондиционера" style="width:100%;border-radius:var(--radius);margin-top:20px;" loading="lazy">
 </div>
 
 <div class="section" style="padding-top:0;" id="order">
