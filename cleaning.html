@@ -154,6 +154,41 @@ body {
 .map-label { font-size: 13px; color: var(--text-muted); text-align: center; padding: 8px; background: var(--card); }
 
 </style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+ (function(m,e,t,r,i,k,a){
+ m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+ m[i].l=1*new Date();
+ for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+ })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109687297', 'ym');
+
+ ym(109687297, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/109687297" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+// Yandex.Metrica goals for cleaning page
+function ymGoal(name){ 
+  if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', name); 
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Opening booking form
+  document.querySelectorAll('a[href="#order"], .hero-link').forEach(function(el){
+    el.addEventListener('click', function(){ ymGoal('cleaning_booking_open'); });
+  });
+  // Phone click
+  document.querySelectorAll('a[href*="tel:"]').forEach(function(el){
+    el.addEventListener('click', function(){ ymGoal('cleaning_phone_click'); });
+  });
+  // TG channel click
+  document.querySelectorAll('a[href*="t.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ ymGoal('cleaning_tg_click'); });
+  });
+});
+</script>
 </head>
 <body>
 
