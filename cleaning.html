@@ -48,9 +48,22 @@ body {
 }
 .hero-content { position: relative; max-width: 640px; margin: 0 auto; }
 @media (min-width: 1024px) { .hero-content { max-width: 900px; } }
-.hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
-.hero h1 span { color: #60a5fa; }
-.hero p { font-size: 18px; color: #cbd5e1; margin-bottom: 24px; line-height: 1.4; }
+.hero h1 {
+      font-size: clamp(30px, 6vw, 52px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 span { background: linear-gradient(135deg, #60a5fa, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p {
+      font-size: 18px;
+      color: #94a3b8;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 .hero-link {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--accent); color: white; padding: 12px 28px;
@@ -72,7 +85,7 @@ body {
   color: var(--text);
 }
 .card li:last-child { border-bottom: none; }
-.card li::before { content: var(--bullet, "– "); color: var(--text-muted); }
+.card li::before { content: "–"; color: var(--text-muted); }
 .cta-block {
   background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
   color: white; border-radius: var(--radius); padding: 36px 28px;
