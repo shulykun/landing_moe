@@ -901,6 +901,15 @@
 .brizers-card-icon { font-size: 48px; margin-bottom: 12px; }
 .brizers-card p { font-size: 16px; font-weight: 600; margin: 0; color: white; }
 
+
+.calc-option {
+  display:block;width:100%;padding:14px 18px;border:2px solid var(--border);
+  border-radius:var(--radius-sm);background:var(--card);cursor:pointer;
+  text-align:left;transition:0.15s;font-family:inherit;
+}
+.calc-option:hover { border-color:var(--accent); background:var(--accent-light); }
+.calc-option.selected { border-color:var(--accent); background:var(--accent-light); box-shadow:0 0 0 3px rgba(37,99,235,0.1); }
+
 </style>
 </head>
 <body>
@@ -1313,6 +1322,64 @@
         🧊 Получить расчёт
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
+    </div>
+  </section>
+
+    <!-- ═══ CALCULATOR ═══ -->
+  <section class="section" id="calculator">
+    <h2>💡 Какой кондиционер выбрать?</h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Ответьте на 3 вопроса — подберём подходящие варианты</p>
+
+    <div id="calcWidget" style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;max-width:600px;margin:0 auto;">
+      
+      <!-- Step 1: Inverter -->
+      <div class="calc-step" id="calcStep1">
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 1 из 3</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Выберите тип</h3>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <button type="button" class="calc-option" data-inverter="1" onclick="calcSelect(1, 'inverter', 1)">
+            <span style="display:block;font-size:16px;font-weight:600;margin-bottom:4px;">Инверторный</span>
+            <span style="display:block;font-size:13px;color:var(--text-muted);">Нужно обогреваться зимой, важна тишина и экономия</span>
+          </button>
+          <button type="button" class="calc-option" data-inverter="0" onclick="calcSelect(1, 'inverter', 0)">
+            <span style="display:block;font-size:16px;font-weight:600;margin-bottom:4px;">Обычный (on/off)</span>
+            <span style="display:block;font-size:13px;color:var(--text-muted);">Просто охлаждаться летом и подогрев в демисезон</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Area -->
+      <div class="calc-step hidden" id="calcStep2" style="display:none;">
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 2 из 3</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Какая площадь помещения?</h3>
+        <div style="text-align:center;margin-bottom:16px;">
+          <input type="range" id="calcArea" min="20" max="100" value="35" step="5" style="width:100%;" oninput="document.getElementById('calcAreaVal').textContent=this.value">
+          <div style="font-size:28px;font-weight:800;color:var(--accent);margin-top:12px;"><span id="calcAreaVal">35</span> м²</div>
+        </div>
+        <button type="button" class="hero-link" onclick="calcSelect(2)" style="width:100%;justify-content:center;">Далее →</button>
+      </div>
+
+      <!-- Step 3: Budget -->
+      <div class="calc-step hidden" id="calcStep3" style="display:none;">
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 2 из 3</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Что важнее по бюджету?</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <button type="button" class="calc-option" onclick="calcSelect(3, 'budget', 'ultra')"><span style="display:block;font-size:16px;font-weight:600;">Ультра-бюджет</span><span style="display:block;font-size:13px;color:var(--text-muted);">Самый доступный вариант</span></button>
+          <button type="button" class="calc-option" onclick="calcSelect(3, 'budget', 'budget')"><span style="display:block;font-size:16px;font-weight:600;">Бюджет</span><span style="display:block;font-size:13px;color:var(--text-muted);">Лучшее соотношение цена/качество</span></button>
+          <button type="button" class="calc-option" onclick="calcSelect(3, 'budget', 'optimal')"><span style="display:block;font-size:16px;font-weight:600;">Оптимальный</span><span style="display:block;font-size:13px;color:var(--text-muted);">Баланс функционала и цены</span></button>
+          <button type="button" class="calc-option" onclick="calcSelect(3, 'budget', 'premium')"><span style="display:block;font-size:16px;font-weight:600;">Премиум</span><span style="display:block;font-size:13px;color:var(--text-muted);">Максимум технологий и комфорта</span></button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="calc-step hidden" id="calcResult" style="display:none;text-align:center;">
+        <div style="font-size:32px;margin-bottom:8px;">🎯</div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Ваш подбор готов!</h3>
+        <p style="font-size:14px;color:var(--text-muted);margin-bottom:16px;">Оставьте номер — пришлём расчёт с подходящими моделями и ценами.</p>
+        <input type="tel" id="calcPhone" placeholder="+7 (___) ___-__-__" style="width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;outline:none;margin-bottom:12px;box-sizing:border-box;text-align:center;">
+        <button type="button" class="hero-link" onclick="calcSubmit()" style="width:100%;justify-content:center;">📩 Отправить</button>
+        <button type="button" style="display:block;margin:12px auto 0;background:none;border:none;color:var(--text-muted);font-size:13px;cursor:pointer;text-decoration:underline;" onclick="calcReset()">↻ Пройти заново</button>
+      </div>
     </div>
   </section>
 
@@ -1744,6 +1811,44 @@
     </div>
   </section>
 
+
+  <!-- ═══ CALCULATOR JS ═══ -->
+<script>
+var calcData = {};
+
+function calcSelect(step, field, value) {
+  if (field) calcData[field] = value;
+  
+  // Hide current
+  var current = document.getElementById('calcStep' + step);
+  if (current) current.style.display = 'none';
+  
+  if (step == 3) {
+    // Show result
+    document.getElementById('calcResult').style.display = 'block';
+    
+    var brands = 'ENERGOLUX, TOSOT, LESSAR, Kentatsu';
+    var info = '';
+    if (calcData.inverter == 1) info += '✅ Инвертор — экономия и тишина\n';
+    if (calcData.inverter == 0) info += '✅ On/Off — надёжная классика\n';
+    info += '📏 ' + (calcData.area || '35') + ' м²\n';
+    info += '💰 ' + calcData.budget + '\n';
+    document.getElementById('calcResultInfo').textContent = 'Подбор: ' + brands;
+  } else {
+    // Show next
+    var next = document.getElementById('calcStep' + (step + 1));
+    if (next) next.style.display = 'block';
+  }
+}
+function calcSubmit() { alert('Спасибо! Мы перезвоним в ближайшее время.'); calcReset(); }
+function calcReset() {
+  document.getElementById('calcStep1').style.display = 'block';
+  document.getElementById('calcStep2').style.display = 'none';
+  document.getElementById('calcStep3').style.display = 'none';
+  document.getElementById('calcResult').style.display = 'none';
+  calcData = {};
+}
+</script>
 
   <!-- ═══ ORDER MODAL ═══ -->
   <div class="modal-overlay" id="orderModal">
