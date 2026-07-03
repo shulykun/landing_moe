@@ -69,10 +69,10 @@ body {
 .card ul { list-style: none; padding: 0; }
 .card li {
   padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 15px;
-  display: flex; align-items: flex-start; gap: 8px; color: var(--text);
+  color: var(--text);
 }
 .card li:last-child { border-bottom: none; }
-.card li::before { content: '•'; font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+.card li::before { content: var(--bullet, "– "); color: var(--text-muted); }
 .cta-block {
   background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
   color: white; border-radius: var(--radius); padding: 36px 28px;
@@ -275,11 +275,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
   <div class="card">
     <ul>
-      <li>• Снижает потребление электроэнергии до 20%</li>
-      <li>• Устраняет неприятный запах при включении</li>
-      <li>• Продлевает срок службы компрессора</li>
-      <li>• Предотвращает размножение плесени и бактерий</li>
-      <li>• Рекомендуемая периодичность — 2 раза в год (весна и осень)</li>
+      <li>Снижает потребление электроэнергии до 20%</li>
+      <li>Устраняет неприятный запах при включении</li>
+      <li>Продлевает срок службы компрессора</li>
+      <li>Предотвращает размножение плесени и бактерий</li>
+      <li>Рекомендуемая периодичность — 2 раза в год (весна и осень)</li>
     </ul>
   </div>
 </div>
@@ -303,19 +303,19 @@ document.addEventListener('DOMContentLoaded', function(){
   <div class="card">
     <h3><span class="emoji">🧊</span> Внутренний блок</h3>
     <ul>
-      <li>• Снятие и промывка фильтров</li>
-      <li>• Обработка испарителя пенным очистителем</li>
-      <li>• Чистка дренажной системы</li>
-      <li>• Дезинфекция поддона</li>
+      <li>Снятие и промывка фильтров</li>
+      <li>Обработка испарителя пенным очистителем</li>
+      <li>Чистка дренажной системы</li>
+      <li>Дезинфекция поддона</li>
     </ul>
   </div>
 
   <div class="card">
     <h3><span class="emoji">🏗️</span> Внешний блок</h3>
     <ul>
-      <li>• Промывка радиатора конденсатора</li>
-      <li>• Очистка вентилятора и корпуса</li>
-      <li>• Проверка дренажа</li>
+      <li>Промывка радиатора конденсатора</li>
+      <li>Очистка вентилятора и корпуса</li>
+      <li>Проверка дренажа</li>
     </ul>
   </div>
 </div>
