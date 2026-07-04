@@ -1350,7 +1350,7 @@
 
       <!-- Step 3: Budget -->
       <div class="calc-step" id="calcStep3" style="display:none;">
-        <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 2 из 3</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 3 из 3</div>
         <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Что важнее по бюджету?</h3>
         <div style="display:flex;flex-direction:column;gap:10px;">
           <button type="button" class="calc-option" onclick="calcSelect(3, 'budget', 'ultra')"><span style="display:block;font-size:16px;font-weight:600;">Ультра-бюджет</span><span style="display:block;font-size:13px;color:var(--text-muted);">Самый доступный вариант</span></button>
@@ -1366,7 +1366,7 @@
         <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Ваш подбор готов!</h3>
         <p style="font-size:14px;color:var(--text-muted);margin-bottom:16px;">Оставьте номер — пришлём расчёт с подходящими моделями и ценами.</p>
         <input type="tel" id="calcPhone" placeholder="+7 (___) ___-__-__" style="width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;outline:none;margin-bottom:12px;box-sizing:border-box;text-align:center;">
-        <button type="button" class="hero-link" onclick="calcSubmit()" style="width:100%;justify-content:center;">📩 Отправить</button>
+        <button type="button" id="calcSubmitBtn" class="hero-link" onclick="calcSubmit()" style="width:100%;justify-content:center;">📩 Отправить</button>
         <button type="button" style="display:block;margin:12px auto 0;background:none;border:none;color:var(--text-muted);font-size:13px;cursor:pointer;text-decoration:underline;" onclick="calcReset()">↻ Пройти заново</button>
       </div>
     </div>
@@ -1793,33 +1793,80 @@ var calcData = {};
 function calcSelect(step, field, value) {
   if (field) calcData[field] = value;
   
+  // Запоминаем площадь из слайдера на шаге 2
+  if (step === 1 && !field) {
+    calcData.area = parseInt(document.getElementById('calcArea').value);
+  }
+  
   // Hide current
   var current = document.getElementById('calcStep' + step);
   if (current) current.style.display = 'none';
   
   if (step == 3) {
-    // Show result
+    // Show result step with phone form
     document.getElementById('calcResult').style.display = 'block';
-    
-    var brands = 'ENERGOLUX, TOSOT, LESSAR, Kentatsu';
-    var info = '';
-    if (calcData.inverter == 1) info += '✅ Инвертор — экономия и тишина\n';
-    if (calcData.inverter == 0) info += '✅ On/Off — надёжная классика\n';
-    info += '📏 ' + (calcData.area || '35') + ' м²\n';
-    info += '💰 ' + calcData.budget + '\n';
-    document.getElementById('calcResultInfo').textContent = 'Подбор: ' + brands;
   } else {
     // Show next
     var next = document.getElementById('calcStep' + (step + 1));
     if (next) next.style.display = 'block';
   }
 }
-function calcSubmit() { alert('Спасибо! Мы перезвоним в ближайшее время.'); calcReset(); }
+function calcSubmit() {
+  var phone = document.getElementById('calcPhone').value.trim();
+  if (!phone) {
+    document.getElementById('calcPhone').style.borderColor = '#ef4444';
+    setTimeout(function(){ document.getElementById('calcPhone').style.borderColor = ''; }, 2000);
+    return;
+  }
+  document.getElementById('calcSubmitBtn').disabled = true;
+  document.getElementById('calcSubmitBtn').innerHTML = '<span class="spinner"></span> Отправляем...';
+
+  var budgetLabels = { ultra: 'Ультра-бюджет', budget: 'Бюджет', optimal: 'Оптимальный', premium: 'Премиум' };
+  var payload = {
+    contact: phone,
+    type: 'Подбор модели',
+    area: calcData.area || 35,
+    extras: [
+      (calcData.inverter == 1 ? 'Инверторный' : 'Обычный On/Off'),
+      'Бюджет: ' + (budgetLabels[calcData.budget] || calcData.budget)
+    ],
+    source: 'calc-pick'
+  };
+
+  fetch('/api/lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).then(function(r) { return r.json(); }).then(function(data) {
+    if (data.ok) {
+      document.getElementById('calcResult').innerHTML = '<div style="text-align:center;padding:20px 0;">'
+        + '<div style="font-size:48px;margin-bottom:12px;">✅</div>'
+        + '<h3 style="font-size:18px;font-weight:700;margin-bottom:8px;">Спасибо! Заявка отправлена</h3>'
+        + '<p style="color:var(--text-muted);font-size:14px;margin-bottom:16px;">Перезвоним в ближайшее время и подберём подходящие модели</p>'
+        + '<button class="hero-link" onclick="calcReset()" style="margin:0 auto;">↻ Пройти заново</button>'
+        + '</div>';
+      if (typeof ym !== 'undefined') ym(109687297, 'reachGoal', 'lead_success');
+    } else {
+      alert('Ошибка отправки. Попробуйте позже.');
+      calcReset();
+    }
+  }).catch(function() {
+    alert('Ошибка сети. Попробуйте снова.');
+    calcReset();
+  });
+}
 function calcReset() {
   document.getElementById('calcStep1').style.display = 'block';
   document.getElementById('calcStep2').style.display = 'none';
   document.getElementById('calcStep3').style.display = 'none';
   document.getElementById('calcResult').style.display = 'none';
+  // Восстанавливаем исходный HTML с формой
+  document.getElementById('calcResult').innerHTML = '<div style="font-size:32px;margin-bottom:8px;">🎯</div>'
+    + '<h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Ваш подбор готов!</h3>'
+    + '<p style="font-size:14px;color:var(--text-muted);margin-bottom:16px;">Оставьте номер — пришлём расчёт с подходящими моделями и ценами.</p>'
+    + '<input type="tel" id="calcPhone" placeholder="+7 (___) ___-__-__" style="width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;outline:none;margin-bottom:12px;box-sizing:border-box;text-align:center;">'
+    + '<button type="button" id="calcSubmitBtn" class="hero-link" onclick="calcSubmit()" style="width:100%;justify-content:center;">📩 Отправить</button>'
+    + '<button type="button" style="display:block;margin:12px auto 0;background:none;border:none;color:var(--text-muted);font-size:13px;cursor:pointer;text-decoration:underline;" onclick="calcReset()">↻ Пройти заново</button>';
   calcData = {};
 }
 </script>
