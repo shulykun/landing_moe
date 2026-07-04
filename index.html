@@ -903,12 +903,13 @@
 
 
 .calc-option {
-  display:block;width:100%;padding:14px 18px;border:2px solid var(--border);
+  display:block;width:100%;padding:16px 20px;border:2px solid var(--border);
   border-radius:var(--radius-sm);background:var(--card);cursor:pointer;
-  text-align:left;transition:0.15s;font-family:inherit;
+  text-align:left;transition:0.15s;font-family:inherit;color:var(--text);
+  margin-bottom:10px;
 }
 .calc-option:hover { border-color:var(--accent); background:var(--accent-light); }
-.calc-option.selected { border-color:var(--accent); background:var(--accent-light); box-shadow:0 0 0 3px rgba(37,99,235,0.1); }
+.calc-option.selected { border-color:var(--accent); background:var(--accent-light); }
 
 </style>
 </head>
@@ -1086,7 +1087,7 @@
 
   <!-- ═══ WHY US ═══ -->
   <section class="section" id="why">
-    <h2>Почему нам доверяют</h2>
+    <h2 style="font-size:28px;font-weight:800;">Почему нам доверяют</h2>
     <div class="features-grid">
       <div class="feature-card">
         <span class="icon">🎯</span>
@@ -1135,7 +1136,7 @@
 
   <!-- ═══ QUALITY ─── -->
   <section class="section" id="quality">
-    <h2>Стандарты качественной установки</h2>
+    <h2 style="font-size:28px;font-weight:800;">Стандарты качественной установки</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">7 этапов, которые гарантируют, что ваш кондиционер прослужит 10+ лет</p>
     <div class="quality-grid">
 
@@ -1179,7 +1180,7 @@
 
   <!-- ═══ MONTAGE ═══ -->
   <section class="section" id="montage">
-    <h2>Примеры установок</h2>
+    <h2 style="font-size:28px;font-weight:800;">Примеры установок</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Аккуратный монтаж — визитная карточка нашей команды</p>
     <div class="montage-grid">
       <div class="montage-item">
@@ -1193,7 +1194,7 @@
 
   <!-- ═══ RATING ═══ -->
   <section class="section" id="rating">
-    <h2>Рейтинг кондиционеров: ТОП-7</h2>
+    <h2 style="font-size:28px;font-weight:800;">Рейтинг кондиционеров: ТОП-7</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Модели, которые наши клиенты выбирают чаще всего. Краткий обзор за последний квартал.</p>
         <div class="rating-grid">
 
@@ -1299,24 +1300,12 @@
     <p style="text-align:center;color:var(--text-muted);font-size:13px;margin-top:20px;">Подберём модель под вашу задачу и бюджет. <a href="#calc" style="color:var(--accent);text-decoration:underline;font-weight:600;">Запишитесь на консультацию</a> — подскажем, что подходит именно вам.</p>
   </section>
 
-  <!-- ═══ BLOG CTA ─── -->
-  <section class="section" style="text-align:center;padding-bottom:0;">
-    <div style="background:var(--accent-light);border-radius:20px;padding:36px 28px;border:1px solid rgba(37,99,235,0.12);">
-      <div style="font-size:40px;margin-bottom:12px;">📖</div>
-      <h2 style="font-weight:800;margin-bottom:8px;">Больше о климатической технике</h2>
-      <p style="color:var(--text-muted);font-size:15px;max-width:480px;margin:0 auto 20px;">Дмитрий Пичугин делится экспертизой в Telegram-канале: разборы брендов, советы по выбору, обслуживанию и эксплуатации кондиционеров. Без рекламы.</p>
-      <a href="https://t.me/climate_hall" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:white;padding:14px 32px;border-radius:var(--radius-sm);font-size:16px;font-weight:700;text-decoration:none;transition:0.15s;">
-        💬 Подписаться в Telegram
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </section>
 
   <!-- ═══ CALC CTA ─── -->
   <section class="section" style="text-align:center;padding-bottom:0;">
     <div style="background:var(--bg);border:2px solid var(--accent);border-radius:20px;padding:36px 28px;">
       <div style="font-size:40px;margin-bottom:12px;">🧊</div>
-      <h2 style="font-weight:800;margin-bottom:8px;">Готовы выбрать кондиционер?</h2>
+      <h2 style="font-size:28px;font-weight:800;margin-bottom:8px;">Готовы выбрать кондиционер?</h2>
       <p style="color:var(--text-muted);font-size:15px;max-width:480px;margin:0 auto 20px;">Рассчитайте стоимость установки под ключ за 1 минуту. Честная смета без скрытых платежей.</p>
       <a href="index.html#calc" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg, var(--accent), var(--accent-dark));color:white;padding:14px 32px;border-radius:var(--radius-sm);font-size:16px;font-weight:700;text-decoration:none;transition:0.15s;box-shadow:0 4px 16px rgba(37,99,235,0.3);">
         🧊 Получить расчёт
@@ -1327,13 +1316,13 @@
 
     <!-- ═══ CALCULATOR ═══ -->
   <section class="section" id="calculator">
-    <h2>💡 Какой кондиционер выбрать?</h2>
+    <h2 style="font-size:28px;font-weight:800;">💡 Какой кондиционер выбрать?</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Ответьте на 3 вопроса — подберём подходящие варианты</p>
 
     <div id="calcWidget" style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;max-width:600px;margin:0 auto;">
       
       <!-- Step 1: Inverter -->
-      <div class="calc-step" id="calcStep1">
+      <div class="calc-step" id="calcStep1" style="display:block;">
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 1 из 3</div>
         <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Выберите тип</h3>
         <div style="display:flex;flex-direction:column;gap:12px;">
@@ -1349,7 +1338,7 @@
       </div>
 
       <!-- Step 2: Area -->
-      <div class="calc-step hidden" id="calcStep2" style="display:none;">
+      <div class="calc-step" id="calcStep2" style="display:none;">
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 2 из 3</div>
         <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Какая площадь помещения?</h3>
         <div style="text-align:center;margin-bottom:16px;">
@@ -1360,7 +1349,7 @@
       </div>
 
       <!-- Step 3: Budget -->
-      <div class="calc-step hidden" id="calcStep3" style="display:none;">
+      <div class="calc-step" id="calcStep3" style="display:none;">
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Шаг 2 из 3</div>
         <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Что важнее по бюджету?</h3>
         <div style="display:flex;flex-direction:column;gap:10px;">
@@ -1372,7 +1361,7 @@
       </div>
 
       <!-- Result -->
-      <div class="calc-step hidden" id="calcResult" style="display:none;text-align:center;">
+      <div class="calc-step" id="calcResult" style="display:none;text-align:center;">
         <div style="font-size:32px;margin-bottom:8px;">🎯</div>
         <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Ваш подбор готов!</h3>
         <p style="font-size:14px;color:var(--text-muted);margin-bottom:16px;">Оставьте номер — пришлём расчёт с подходящими моделями и ценами.</p>
@@ -1383,23 +1372,6 @@
     </div>
   </section>
 
-  <!-- ═══ BRIZERS ═══ -->
-  <section class="section" id="brizers">
-    <h2>🌬️ Свежий воздух круглый год</h2>
-    <div class="brizers-content">
-      <div class="brizers-text">
-        <p><strong>Бризер</strong> — компактная приточная установка: подаёт свежий воздух с улицы, очищает и подогревает его, не открывая окна зимой.</p>
-        <p>Продаём и устанавливаем бризеры и рекуператоры для квартир, домов и офисов. Подберём модель под площадь и задачи — от устранения духоты до постоянного притока чистого воздуха.</p>
-        <div class="brizer-brands">
-          <a href="https://tion.ru/" target="_blank" rel="noopener noreferrer" class="brizer-brand-card">
-            <strong>ТИОН</strong>
-            <span>Российский лидер приточной вентиляции. Тихие компактные бризеры с HEPA-фильтрами и климат-контролем.</span>
-          </a>
-          <a href="https://www.ballu.ru/catalog/tekhnika_dlya_doma_i_ofisa/ventilyatsiya_i_ochistka_vozdukha/pritochno-ochistitelnye_multikompleksy/seriya_ballu_oneair/" target="_blank" rel="noopener noreferrer" class="brizer-brand-card">
-            <strong>Ballu OneAir</strong>
-            <span>Приточно-очистительные мультивентиляторы. Очистка, подогрев и увлажнение воздуха в одном устройстве.</span>
-          </a>
-        </div>
         <ul class="brizers-list">
           <li>Приточная вентиляция без сквозняков</li>
           <li>Многоступенчатая фильтрация</li>
@@ -1418,9 +1390,11 @@
 
   
 
-<!-- ═══ OFFICE ═══ -->
+</div>
+
+  <!-- ═══ OFFICE ═══ -->
   <section class="section" id="office">
-    <h2>Наш офис</h2>
+    <h2 style="font-size:28px;font-weight:800;">Офис во Владивостоке</h2>
     <p style="text-align:center;color:var(--text-muted);font-size:15px;margin-bottom:24px;">Приезжайте познакомиться и выбрать оборудование</p>
 
     <div class="office-info">
