@@ -1,0 +1,612 @@
+    <?xml version='1.0' encoding='UTF-8'?>
+<companies>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <shortname lang="ru">Kitaika</shortname>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Краснореченская улица, 193</address>
+        <coordinates>
+            <lat>48.44592961</lat>
+            <lon>135.1101521</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>187279590640</company-id>
+    </company>
+    <company>
+        <name lang="ru">Китайка</name>
+        <shortname lang="ru">Kitaika</shortname>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Краснореченская улица, 177В/5</address>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-boolean name="Possible_with_dog" value="1"/>
+        <feature-boolean name="toilet_childrens" value="0"/>
+        <feature-boolean name="caring_for_couriers_bool" value="0"/>
+        <feature-boolean name="caring_for_couriers_wc" value="0"/>
+        <feature-boolean name="caring_for_couriers_tea_food_discount" value="1"/>
+        <feature-boolean name="caring_for_couriers_tea" value="1"/>
+        <feature-boolean name="caring_for_couriers_water" value="1"/>
+        <feature-boolean name="online_takeaway" value="0"/>
+        <feature-boolean name="pickup" value="1"/>
+        <feature-boolean name="projector" value="0"/>
+        <feature-boolean name="payment_by_credit_card" value="1"/>
+        <feature-boolean name="preliminary_registration" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-boolean name="toilet" value="0"/>
+        <feature-boolean name="business_lunch" value="1"/>
+        <feature-boolean name="self_service_kiosks" value="0"/>
+        <feature-boolean name="craft_beer" value="0"/>
+        <feature-enum-multiple name="type_cuisine" value="asian_cuisine"/>
+        <feature-boolean name="menu for children" value="0"/>
+        <feature-enum-multiple name="promotions" value="discounts"/>
+        <feature-boolean name="winter_terrace" value="0"/>
+        <feature-enum-multiple name="type_public_catering" value="chinese_restaurant"/>
+        <feature-boolean name="gift_certificate" value="0"/>
+        <feature-boolean name="summer_terrace" value="0"/>
+        <feature-boolean name="breakfast" value="0"/>
+        <feature-in-units-single name="business lunch price" unit-value="rub" value="205"/>
+        <feature-boolean name="sports_broadcasts" value="0"/>
+        <feature-boolean name="caring_for_couriers_charging_station" value="1"/>
+        <feature-boolean name="coffee_to_go" value="0"/>
+        <feature-boolean name="around_the_clock_work1" value="0"/>
+        <feature-boolean name="caring_for_couriers_coffee" value="0"/>
+        <feature-boolean name="nursery" value="0"/>
+        <feature-boolean name="karaoke" value="0"/>
+        <feature-boolean name="billiards" value="0"/>
+        <feature-enum-multiple name="types_of_delivery" value="yandex_eda"/>
+        <feature-boolean name="dancefloor" value="0"/>
+        <feature-boolean name="table_games" value="0"/>
+        <feature-range-in-units-single from="205.0" name="average_bill2" unit-value="rub"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>223699317585</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Льва Толстого, 22Г</address>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <add-url>https://vk.com/kitaika_russia</add-url>
+        <add-url>https://www.instagram.com/kitaika_russia</add-url>
+        <rubric-id>184106386</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-boolean name="ramp" value="0"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>54416066877</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Постышева, 14</address>
+        <coordinates>
+            <lat>48.478931</lat>
+            <lon>135.085519</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <rubric-id>184108273</rubric-id>
+        <feature-boolean name="food_delivery" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-enum-single name="wheelchair_access" value="full_access"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-boolean name="ramp" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>214191826081</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <shortname lang="ru">Kitaika</shortname>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Карла Маркса, 91В</address>
+        <coordinates>
+            <lat>48.497355</lat>
+            <lon>135.098912</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-boolean name="ramp" value="0"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>57886158305</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Карла Маркса, 202</address>
+        <address-add lang="ru">этаж 1</address-add>
+        <address-add lang="en">floor 1</address-add>
+        <coordinates>
+            <lat>48.508481</lat>
+            <lon>135.142877</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <feature-boolean name="karaoke" value="0"/>
+        <feature-boolean name="food_delivery" value="0"/>
+        <feature-boolean name="nursery" value="0"/>
+        <feature-enum-multiple name="type_cuisine" value="chinese_cuisine"/>
+        <feature-enum-multiple name="type_public_catering" value="fast_food"/>
+        <feature-boolean name="dancefloor" value="0"/>
+        <feature-boolean name="billiards" value="0"/>
+        <feature-boolean name="breakfast" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-boolean name="summer_terrace" value="0"/>
+        <feature-boolean name="wi_fi" value="0"/>
+        <feature-boolean name="gift_certificate" value="0"/>
+        <feature-boolean name="business_lunch" value="1"/>
+        <feature-enum-multiple name="payment_method" value="cash"/>
+        <feature-enum-multiple name="payment_method" value="payment_card"/>
+        <feature-enum-multiple name="payment_method" value="wire_transfer"/>
+        <feature-boolean name="payment_by_credit_card" value="1"/>
+        <feature-boolean name="sports_broadcasts" value="0"/>
+        <feature-boolean name="coffee_to_go" value="0"/>
+        <feature-boolean name="around_the_clock_work1" value="0"/>
+        <feature-boolean name="self_service_kiosks" value="0"/>
+        <feature-boolean name="food_court1" value="1"/>
+        <feature-boolean name="craft_beer" value="0"/>
+        <feature-boolean name="parking_disabled" value="1"/>
+        <feature-in-units-single name="business lunch price" unit-value="rub" value="180"/>
+        <feature-boolean name="ramp" value="0"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>152003926504</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Ленинградский переулок</address>
+        <coordinates>
+            <lat>48.494967</lat>
+            <lon>135.073791</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <add-url>https://vk.com/kitaika_russia</add-url>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="karaoke" value="0"/>
+        <feature-boolean name="food_delivery" value="0"/>
+        <feature-boolean name="nursery" value="0"/>
+        <feature-enum-multiple name="type_cuisine" value="chinese_cuisine"/>
+        <feature-enum-multiple name="type_public_catering" value="fast_food"/>
+        <feature-boolean name="dancefloor" value="0"/>
+        <feature-boolean name="billiards" value="0"/>
+        <feature-boolean name="breakfast" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-boolean name="summer_terrace" value="0"/>
+        <feature-boolean name="gift_certificate" value="0"/>
+        <feature-boolean name="toilet" value="0"/>
+        <feature-boolean name="preliminary_registration" value="0"/>
+        <feature-boolean name="payment_by_credit_card" value="1"/>
+        <feature-boolean name="sports_broadcasts" value="0"/>
+        <feature-boolean name="around_the_clock_work1" value="0"/>
+        <feature-boolean name="self_service_kiosks" value="0"/>
+        <feature-boolean name="craft_beer" value="0"/>
+        <feature-boolean name="projector" value="0"/>
+        <feature-boolean name="menu for children" value="0"/>
+        <feature-boolean name="table_games" value="0"/>
+        <feature-boolean name="online_takeaway" value="0"/>
+        <feature-boolean name="Possible_with_dog" value="1"/>
+        <feature-boolean name="ramp" value="0"/>
+        <feature-boolean name="call_button" value="1"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>122085534536</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Китайка</name>
+        <shortname lang="ru">Kitaika</shortname>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Ким Ю Чена, 44/2</address>
+        <coordinates>
+            <lat>48.489578</lat>
+            <lon>135.083054</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-boolean name="ramp" value="0"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>225263155431</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <shortname lang="ru">Китайка</shortname>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Облачный переулок, 64Б</address>
+        <coordinates>
+            <lat>48.470374</lat>
+            <lon>135.095852</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://www.facebook.com/kitaikarussia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="karaoke" value="0"/>
+        <feature-boolean name="food_delivery" value="0"/>
+        <feature-boolean name="nursery" value="0"/>
+        <feature-enum-multiple name="type_cuisine" value="chinese_cuisine"/>
+        <feature-enum-multiple name="type_cuisine" value="asian_cuisine"/>
+        <feature-enum-multiple name="special_menu" value="exotic_menu"/>
+        <feature-enum-multiple name="type_public_catering" value="snack_bar"/>
+        <feature-enum-multiple name="music" value="pop_music"/>
+        <feature-boolean name="dancefloor" value="0"/>
+        <feature-boolean name="billiards" value="0"/>
+        <feature-boolean name="breakfast" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-boolean name="summer_terrace" value="0"/>
+        <feature-boolean name="wi_fi" value="0"/>
+        <feature-boolean name="gift_certificate" value="0"/>
+        <feature-boolean name="business_lunch" value="1"/>
+        <feature-enum-multiple name="payment_method" value="cash"/>
+        <feature-enum-multiple name="payment_method" value="payment_card"/>
+        <feature-enum-multiple name="payment_method" value="wire_transfer"/>
+        <feature-enum-multiple name="payment_method" value="cashless_payment"/>
+        <feature-boolean name="payment_by_credit_card" value="1"/>
+        <feature-boolean name="sports_broadcasts" value="0"/>
+        <feature-boolean name="coffee_to_go" value="0"/>
+        <feature-enum-multiple name="features_institution" value="free_parking1"/>
+        <feature-boolean name="around_the_clock_work1" value="0"/>
+        <feature-boolean name="self_service_kiosks" value="0"/>
+        <feature-boolean name="food_court1" value="1"/>
+        <feature-boolean name="craft_beer" value="0"/>
+        <feature-boolean name="projector" value="0"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <feature-boolean name="pickup" value="1"/>
+        <feature-boolean name="automatic_door" value="0"/>
+        <feature-boolean name="toilet_for_disabled" value="0"/>
+        <feature-enum-multiple name="promotions" value="discounts"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-boolean name="elevator_wheelchair_accessible" value="0"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>200073112461</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, микрорайон Красная Речка, Ульяновская улица, 160А</address>
+        <coordinates>
+            <lat>48.365913</lat>
+            <lon>135.037468</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <email>hello@kitaika-russia.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <rubric-id>184108273</rubric-id>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>59187411006</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Полярная улица, 2А</address>
+        <address-add lang="ru">Гипермаркет РЕМИ</address-add>
+        <coordinates>
+            <lat>48.578374</lat>
+            <lon>135.046528</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>176784084485</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Флегонтова, 2/4</address>
+        <coordinates>
+            <lat>48.433694</lat>
+            <lon>135.106078</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>117045039736</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Ленинградская улица, 28/9</address>
+        <coordinates>
+            <lat>48.483253</lat>
+            <lon>135.095905</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <add-url>https://vk.com/kitaika_russia</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-boolean name="ramp" value="0"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>111395596953</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Суворова, 51, стр. 1</address>
+        <address-add lang="ru">этаж 1</address-add>
+        <address-add lang="en">fl. 1</address-add>
+        <coordinates>
+            <lat>48.39235</lat>
+            <lon>135.112564</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-enum-single name="wheelchair_access" value="unavailable"/>
+        <feature-boolean name="call_button" value="0"/>
+        <feature-boolean name="ramp" value="0"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>41910036242</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Кола Бельды, 5</address>
+        <coordinates>
+            <lat>48.530854</lat>
+            <lon>135.091654</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <add-url>https://vk.com/kitaika_russia</add-url>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>38942487897</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Краснореченская улица, 9/1</address>
+        <address-add lang="ru">ТЦ Марина</address-add>
+        <coordinates>
+            <lat>48.376607</lat>
+            <lon>135.092774</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>219948415382</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Краснореченская улица, 44/8</address>
+        <coordinates>
+            <lat>48.396821</lat>
+            <lon>135.100173</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://www.facebook.com/kitaikarussia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="karaoke" value="0"/>
+        <feature-boolean name="food_delivery" value="0"/>
+        <feature-boolean name="nursery" value="0"/>
+        <feature-enum-multiple name="type_cuisine" value="chinese_cuisine"/>
+        <feature-enum-multiple name="type_cuisine" value="asian_cuisine"/>
+        <feature-enum-multiple name="special_menu" value="exotic_menu"/>
+        <feature-enum-multiple name="type_public_catering" value="snack_bar"/>
+        <feature-boolean name="dancefloor" value="0"/>
+        <feature-boolean name="billiards" value="0"/>
+        <feature-boolean name="breakfast" value="0"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <feature-boolean name="summer_terrace" value="0"/>
+        <feature-boolean name="wi_fi" value="0"/>
+        <feature-boolean name="gift_certificate" value="0"/>
+        <feature-boolean name="business_lunch" value="1"/>
+        <feature-enum-multiple name="payment_method" value="cash"/>
+        <feature-enum-multiple name="payment_method" value="payment_card"/>
+        <feature-enum-multiple name="payment_method" value="wire_transfer"/>
+        <feature-boolean name="payment_by_credit_card" value="1"/>
+        <feature-boolean name="sports_broadcasts" value="0"/>
+        <feature-boolean name="coffee_to_go" value="0"/>
+        <feature-boolean name="around_the_clock_work1" value="0"/>
+        <feature-boolean name="food_court1" value="1"/>
+        <feature-boolean name="projector" value="0"/>
+        <feature-boolean name="pickup" value="1"/>
+        <feature-enum-multiple name="promotions" value="discounts"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>13679867835</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, 1-й микрорайон, улица Калараша, 10Б</address>
+        <coordinates>
+            <lat>48.453352</lat>
+            <lon>135.112412</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://www.instagram.com/kitaika_russia/</add-url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-enum-multiple name="type_cuisine" value="chinese_cuisine"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>126844201478</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, проспект 60-летия Октября, 84/4</address>
+        <coordinates>
+            <lat>48.43173</lat>
+            <lon>135.130133</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <feature-enum-multiple name="type_cuisine" value="chinese_cuisine"/>
+        <feature-boolean name="takeaway" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>91383379862</company-id>
+    </company>
+    <company>
+        <name lang="en">Kitaika</name>
+        <name lang="ru">Китайка</name>
+        <shortname lang="en">Kitaika</shortname>
+        <shortname lang="ru">Китайка</shortname>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, Краснореченская улица, 213</address>
+        <coordinates>
+            <lat>48.451422</lat>
+            <lon>135.103987</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <url>https://kitaika-russia.ru/</url>
+        <add-url>https://wa.me/79244197770</add-url>
+        <add-url>https://max.ru/u/f9LHodD0cOKylzWHFDx6_T73BeJoSitUTjfF78TeTaqez9RXLpAj-x5gjf4</add-url>
+        <email>hello@vilki-palki.ru</email>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <rubric-id>184106396</rubric-id>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>10983843535</company-id>
+    </company>
+    <company>
+        <name lang="ru">Kitaika</name>
+        <address lang="ru">Дальневосточный федеральный округ, Хабаровский край, городской округ Хабаровск, Хабаровск, улица Карла Маркса, 105Б</address>
+        <coordinates>
+            <lat>48.503016</lat>
+            <lon>135.104724</lon>
+        </coordinates>
+        <working-time>ежедневно 11:00-21:00</working-time>
+        <phone>
+            <type>phone</type>
+            <number>+7 (924) 419-77-70</number>
+        </phone>
+        <add-url>https://vk.com/kitaika_russia</add-url>
+        <rubric-id>184106386</rubric-id>
+        <rubric-id>184106390</rubric-id>
+        <feature-boolean name="food_delivery" value="1"/>
+        <actualization-date>30.06.2026</actualization-date>
+        <company-id>234023387466</company-id>
+    </company>
+</companies>
